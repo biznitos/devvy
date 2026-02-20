@@ -1,0 +1,6 @@
+<form action="/api/subscribe" method="POST" class="flex flex-col sm:flex-row gap-2">
+  <input type="hidden" name="return_url" value="/?subscribed=1">
+  <input type="email" name="email" required placeholder="Your email"
+         class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+  <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-medium">Subscribe</button>
+</form>

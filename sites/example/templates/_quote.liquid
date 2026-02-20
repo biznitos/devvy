@@ -1,0 +1,35 @@
+<form action="/api/lead/v1" method="POST" class="space-y-4">
+  <input type="hidden" name="type" value="quote">
+  <input type="hidden" name="title" value="Quote Request - {{post.title}}">
+  <input type="hidden" name="data[service]" value="{{post.title}}">
+  <input type="hidden" name="return_url" value="/thank-you">
+  <input type="hidden" name="failure_url" value="{{path_info}}?error=1">
+
+  <div class="grid md:grid-cols-2 gap-4">
+    <div>
+      <label class="block text-sm font-medium">Name</label>
+      <input type="text" name="customer[name]" required
+             class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2">
+    </div>
+    <div>
+      <label class="block text-sm font-medium">Phone</label>
+      <input type="tel" name="customer[phone]" required
+             class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2">
+    </div>
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium">Email</label>
+    <input type="email" name="customer[email]" required
+           class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2">
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium">Details about your project</label>
+    <textarea name="notes" rows="4"
+              class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2"
+              placeholder="Tell us about your needs..."></textarea>
+  </div>
+
+  <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-medium">Request Quote</button>
+</form>

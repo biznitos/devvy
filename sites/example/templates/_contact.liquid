@@ -1,0 +1,32 @@
+<form action="/api/lead/v1" method="POST" class="space-y-4">
+  <input type="hidden" name="type" value="contact">
+  <input type="hidden" name="title" value="Contact Form">
+  <input type="hidden" name="return_url" value="/thank-you">
+  <input type="hidden" name="failure_url" value="/contact?error=1">
+
+  <div>
+    <label class="block text-sm font-medium">Name</label>
+    <input type="text" name="customer[name]" required
+           class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium">Email</label>
+    <input type="email" name="customer[email]" required
+           class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium">Phone</label>
+    <input type="tel" name="customer[phone]"
+           class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium">Message</label>
+    <textarea name="notes" rows="4" required
+              class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+  </div>
+
+  <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-medium">Send Message</button>
+</form>

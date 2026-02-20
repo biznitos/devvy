@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "zid": "lead-001",
+    "type": "contact",
+    "subtype": null,
+    "status": "new",
+    "title": "Contact Form",
+    "notes": "We just moved into a new condo on Sukhumvit 39 and need a full deep clean before we unpack. 3 bedrooms, 2 bathrooms.",
+    "customer": {
+      "name": "James Richardson",
+      "email": "james.r@example.com",
+      "phone": "+66-89-555-1234"
+    },
+    "inserted_at": "2026-02-10T09:30:00Z",
+    "updated_at": "2026-02-10T09:30:00Z"
+  },
+  {
+    "id": 2,
+    "zid": "lead-002",
+    "type": "quote",
+    "subtype": null,
+    "status": "pending",
+    "title": "Quote Request - Deep Home Cleaning",
+    "notes": "Looking for weekly deep cleaning for a penthouse in Thonglor. Approximately 350 sqm.",
+    "data": {
+      "service": "Deep Home Cleaning"
+    },
+    "customer": {
+      "name": "Arisa Tanaka",
+      "email": "arisa.t@example.com",
+      "phone": "+66-92-555-5678"
+    },
+    "inserted_at": "2026-02-12T14:15:00Z",
+    "updated_at": "2026-02-12T14:15:00Z"
+  },
+  {
+    "id": 3,
+    "zid": "lead-003",
+    "type": "contact",
+    "subtype": null,
+    "status": "completed",
+    "title": "Contact Form",
+    "notes": "Do you offer post-construction cleaning for commercial spaces? We have a new office fit-out finishing next month.",
+    "customer": {
+      "name": "Michael Chen",
+      "email": "m.chen@example.com",
+      "phone": "+66-81-555-9012"
+    },
+    "inserted_at": "2026-02-01T11:00:00Z",
+    "updated_at": "2026-02-02T08:00:00Z"
+  }
+]

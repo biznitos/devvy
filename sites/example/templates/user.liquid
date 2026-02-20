@@ -1,0 +1,29 @@
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    {% if member %}
+    <div class="text-center">
+      {% if member.user.avatar %}
+      <img src="{{member.user.avatar | resize: '200x200'}}" alt="{{member.user.name}}" class="w-32 h-32 rounded-full mx-auto">
+      {% endif %}
+      <h1 class="mt-4 text-3xl font-bold">{{member.user.name}}</h1>
+      {% if member.role %}
+      <p class="mt-2 text-gray-600">{{member.role | proper}}</p>
+      {% endif %}
+      <p class="mt-1 text-sm text-gray-400">@{{member.username}}</p>
+    </div>
+
+    {% if member.data.bio %}
+    <div class="mt-8 prose max-w-none">
+      {{member.data.bio | markdown}}
+    </div>
+    {% endif %}
+
+    {% else %}
+    <div class="text-center">
+      <h1 class="text-3xl font-bold">User Not Found</h1>
+      <p class="mt-4 text-gray-600">This user profile does not exist.</p>
+      <a href="/" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-medium">Go Home</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

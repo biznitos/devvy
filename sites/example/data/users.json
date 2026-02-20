@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "username": "john",
+    "role": "admin",
+    "subscribed": true,
+    "inserted_at": "2024-01-01T00:00:00Z",
+    "updated_at": "2025-06-01T00:00:00Z",
+    "user": {
+      "id": 1,
+      "name": "John Smith",
+      "email": "john@acme-services.com",
+      "avatar": "https://placehold.co/200x200?text=JS"
+    },
+    "data": {
+      "bio": "Founder and lead technician at Acme Services. 20+ years of experience in home services."
+    }
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "username": "sarah",
+    "role": "staff",
+    "subscribed": true,
+    "inserted_at": "2024-03-15T00:00:00Z",
+    "updated_at": "2025-05-01T00:00:00Z",
+    "user": {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "email": "sarah@acme-services.com",
+      "avatar": "https://placehold.co/200x200?text=SJ"
+    },
+    "data": {
+      "bio": "Operations manager at Acme Services. Ensures every project runs smoothly."
+    }
+  },
+  {
+    "id": 3,
+    "user_id": 3,
+    "username": "mike",
+    "role": "staff",
+    "subscribed": false,
+    "inserted_at": "2024-06-01T00:00:00Z",
+    "updated_at": "2025-04-01T00:00:00Z",
+    "user": {
+      "id": 3,
+      "name": "Mike Davis",
+      "email": "mike@acme-services.com",
+      "avatar": "https://placehold.co/200x200?text=MD"
+    },
+    "data": {
+      "bio": "Licensed electrician and HVAC specialist with 10 years of experience."
+    }
+  }
+]

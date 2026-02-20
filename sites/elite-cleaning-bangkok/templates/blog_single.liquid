@@ -1,0 +1,61 @@
+<nav class="bg-surface-100 py-4" aria-label="Breadcrumb">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <ol class="flex items-center space-x-2 text-xs tracking-wide">
+      <li><a href="/" class="tr text-neutral-400 hover:text-neutral-600 transition-colors duration-300">Home</a></li>
+      <li class="text-neutral-300">/</li>
+      <li><a href="/blog" class="tr text-neutral-400 hover:text-neutral-600 transition-colors duration-300">Blog</a></li>
+      <li class="text-neutral-300">/</li>
+      <li class="text-neutral-700">{{post.title}}</li>
+    </ol>
+  </div>
+</nav>
+
+<article class="py-14 md:py-32">
+  <div class="max-w-3xl mx-auto px-6 md:px-12">
+    <header class="text-center mb-16">
+      <p class="text-xs font-medium uppercase tracking-[0.15em] text-neutral-400">{{post.pubdate | date: '%B %d, %Y'}}</p>
+      <h1 class="mt-4 font-serif font-light text-3xl md:text-5xl tracking-tight leading-tight text-neutral-900">{{post.title}}</h1>
+      <p class="mt-6 text-lg text-neutral-500 leading-relaxed">{{post.description}}</p>
+    </header>
+
+    {% if post.cover_image %}
+    <img src="{{post.cover_image | resize: '1200x600'}}" alt="{{post.title}}" class="w-full rounded-none mb-16">
+    {% endif %}
+
+    <div class="prose prose-neutral max-w-none prose-headings:font-serif prose-headings:font-light prose-headings:tracking-tight prose-p:leading-relaxed prose-p:text-neutral-600">
+      {{post.content}}
+    </div>
+
+    {% posts type:"blog", limit:3, name:"related_posts", order:"pubdate" %}
+    {% if related_posts.size > 0 %}
+    <section class="mt-20 pt-16 border-t border-neutral-200/60">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Continue Reading</span>
+      <h2 class="tr mt-3 font-serif font-light text-2xl tracking-tight text-neutral-900">More Tips for Your Home</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        {% for r in related_posts %}
+        {% if r.permalink != post.permalink %}
+        <a href="{{r.permalink}}" class="group block bg-white border border-neutral-200/60 rounded-none overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+          {% if r.cover_image %}
+          <div class="overflow-hidden">
+            <img src="{{r.cover_image | resize: '400x200'}}" alt="{{r.title}}" class="w-full h-32 object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+          </div>
+          {% endif %}
+          <div class="p-6">
+            <h3 class="font-serif text-base font-normal text-neutral-900">{{r.title}}</h3>
+            <p class="text-xs text-neutral-400 mt-2">{{r.pubdate | date: '%B %d, %Y'}}</p>
+          </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <section class="mt-20 bg-navy-600 p-10 md:p-14 rounded-none text-center">
+      <div class="w-12 h-px bg-gold-400 mx-auto mb-6"></div>
+      <h2 class="tr font-serif font-light text-2xl tracking-tight text-white">Ready for a Spotless Home?</h2>
+      <p class="tr mt-3 text-neutral-400">Your dedicated assessor will visit your property at no cost</p>
+      <a href="/contact" class="tr mt-8 inline-block bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-gold-300 transition-colors duration-300">Book Your Property Assessment</a>
+    </section>
+  </div>
+</article>

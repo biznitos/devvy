@@ -1,0 +1,86 @@
+<section class="py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold">{{site.name}} – Serving {{site.city}}, {{site.region}}</h1>
+    <p class="mt-4 text-xl text-gray-600">{{site.description}}</p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-medium">Get a Free Quote</a>
+      <a href="tel:{{site.phone}}" class="inline-block border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-50 font-medium">{{site.phone}}</a>
+    </div>
+  </div>
+</section>
+
+{% posts type:"category", limit:6, name:"services", order:"alpha" %}
+{% if services.size > 0 %}
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for p in services %}
+      <a href="{{p.permalink}}" class="block bg-white rounded-lg shadow hover:shadow-lg transition">
+        {% if p.cover_image %}
+        <img src="{{p.cover_image | resize: '400x300'}}" alt="{{p.title}} - {{site.city}}" class="w-full h-48 object-cover rounded-t-lg">
+        {% endif %}
+        <div class="p-4">
+          <h3 class="font-bold">{{p.title}}</h3>
+          <p class="text-gray-600 mt-2">{{p.description | truncate: 100}}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="text-center mt-8">
+      <a href="/services" class="inline-block border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-50 font-medium">View All Services</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="py-16 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Why Choose {{site.name}}?</h2>
+    <p class="text-gray-600">Trusted by customers in {{site.city}} and surrounding areas.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-8 text-left">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-bold">Local Expertise</h3>
+        <p class="text-gray-600 mt-2">Serving {{site.city}}, {{site.region}} with pride.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-bold">Quality Service</h3>
+        <p class="text-gray-600 mt-2">Professional results every time.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-bold">Fast Response</h3>
+        <p class="text-gray-600 mt-2">Quick quotes and flexible scheduling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% posts type:"blog", limit:3, name:"recent_blogs", order:"pubdate" %}
+{% if recent_blogs.size > 0 %}
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Latest from Our Blog</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for p in recent_blogs %}
+      <a href="{{p.permalink}}" class="block bg-white rounded-lg shadow hover:shadow-lg transition">
+        {% if p.cover_image %}
+        <img src="{{p.cover_image | resize: '400x250'}}" alt="{{p.title}}" class="w-full h-40 object-cover rounded-t-lg">
+        {% endif %}
+        <div class="p-4">
+          <p class="text-sm text-gray-500">{{p.pubdate | date: '%B %d, %Y'}}</p>
+          <h3 class="font-bold mt-1">{{p.title}}</h3>
+          <p class="text-gray-600 mt-2 text-sm">{{p.description | truncate: 120}}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Us Today</h2>
+    {% partial "_contact" %}
+  </div>
+</section>

@@ -1,0 +1,29 @@
+{
+  "id": 2,
+  "name": "Khun Clean Elite",
+  "cname": "khuncleanelite.com",
+  "description": "Premium deep cleaning services for luxury homes in Bangkok. Trusted by the city's most discerning residents.",
+  "email": "contact@khuncleanelite.com",
+  "phone": "+66-2-123-4567",
+  "address": "88 Sukhumvit Road, Soi 24",
+  "city": "Bangkok",
+  "region": "Bangkok",
+  "country_code": "TH",
+  "postal_code": "10110",
+  "locale": "en",
+  "logo": "https://placehold.co/300x100?text=Khun+Clean+Elite",
+  "settings": {
+    "geo": {
+      "lat": "13.7228",
+      "lng": "100.5695"
+    },
+    "social": {
+      "facebook": "https://facebook.com/khuncleanelite",
+      "instagram": "https://instagram.com/khuncleanelite"
+    },
+    "theme": {
+      "primary": "#1a1a2e",
+      "secondary": "#c5a55a"
+    }
+  }
+}

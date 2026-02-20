@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="{{locale}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta_title | default: site.name}}</title>
+  <meta name="description" content="{{meta_description | default: site.description}}">
+  <link rel="canonical" href="{{current_url}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Montserrat"', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            gold: {
+              50: '#faf7f0',
+              100: '#f2edd9',
+              200: '#e6d9b3',
+              300: '#d4bf82',
+              400: '#c9a96e',
+              500: '#b08d57',
+              600: '#96743f',
+              700: '#7a5c33',
+              800: '#63492a',
+              900: '#523c23'
+            },
+            navy: {
+              50: '#f5f5f7',
+              100: '#e0e0e6',
+              200: '#b3b3c2',
+              300: '#80809e',
+              400: '#4d4d78',
+              500: '#2e2e54',
+              600: '#1c1c30',
+              700: '#161628',
+              800: '#111120',
+              900: '#0b0b16'
+            },
+            surface: {
+              50: '#fafaf8',
+              100: '#f5f0eb',
+              200: '#eee8df'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  {% partial "_seo" %}
+</head>
+<body class="min-h-screen flex flex-col bg-surface-50 font-sans font-light text-neutral-700">
+  <header class="bg-navy-600">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
+      <a href="/" class="font-serif text-2xl font-light tracking-tight text-white">
+        Khun Clean <span class="text-gold-400">/</span> <span class="text-gold-400">Elite</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-10" aria-label="Main navigation">
+        <a href="/services" class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">Services</a>
+        <a href="/pricing" class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">Pricing</a>
+        <a href="/about" class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">About</a>
+        <a href="/blog" class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">Blog</a>
+        <a href="/contact" class="tr text-xs font-medium uppercase tracking-[0.2em] bg-gold-400 text-navy-600 px-8 py-3 rounded-none hover:bg-gold-300 transition-colors duration-300">Contact Us</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden p-2 text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden md:hidden border-t border-white/10" aria-label="Mobile navigation">
+      <div class="px-6 py-4 space-y-4">
+        <a href="/services" class="tr block text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">Services</a>
+        <a href="/pricing" class="tr block text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">Pricing</a>
+        <a href="/about" class="tr block text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">About</a>
+        <a href="/blog" class="tr block text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">Blog</a>
+        <a href="/contact" class="tr block text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-gold-400 transition-colors duration-300">Contact</a>
+        <a href="tel:{{site.phone}}" class="block text-sm text-gold-400">{{site.phone}}</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow">
+    {{body}}
+  </main>
+
+  <footer class="bg-navy-600 pt-20 pb-12" itemscope itemtype="https://schema.org/LocalBusiness">
+    <div class="max-w-6xl mx-auto px-6 md:px-12">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <h3 class="font-serif text-xl font-light text-gold-400 mb-6" itemprop="name">{{site.name}}</h3>
+          <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <p class="text-neutral-400 text-sm leading-relaxed">
+              <span itemprop="streetAddress">{{site.address}}</span><br>
+              <span itemprop="addressLocality">{{site.city}}</span>,
+              <span itemprop="addressRegion">{{site.region}}</span>
+              <span itemprop="postalCode">{{site.postal_code}}</span><br>
+              <span itemprop="addressCountry">{{site.country_code | upcase}}</span>
+            </p>
+          </div>
+          <p class="mt-6">
+            <a href="tel:{{site.phone}}" itemprop="telephone" class="text-neutral-400 text-sm hover:text-gold-400 transition-colors duration-300">{{site.phone}}</a>
+          </p>
+          <p>
+            <a href="mailto:{{site.email}}" itemprop="email" class="text-neutral-400 text-sm hover:text-gold-400 transition-colors duration-300">{{site.email}}</a>
+          </p>
+        </div>
+
+        <div>
+          <h3 class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-400 mb-6">Quick Links</h3>
+          <nav aria-label="Footer navigation">
+            <ul class="space-y-3 text-neutral-400 text-sm">
+              <li><a href="/services" class="tr hover:text-gold-400 transition-colors duration-300">Services</a></li>
+              <li><a href="/pricing" class="tr hover:text-gold-400 transition-colors duration-300">Pricing</a></li>
+              <li><a href="/about" class="tr hover:text-gold-400 transition-colors duration-300">About Us</a></li>
+              <li><a href="/blog" class="tr hover:text-gold-400 transition-colors duration-300">Blog</a></li>
+              <li><a href="/contact" class="tr hover:text-gold-400 transition-colors duration-300">Contact</a></li>
+              <li><a href="/privacy" class="tr hover:text-gold-400 transition-colors duration-300">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <h3 class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-400 mb-6">Our Services</h3>
+          <nav aria-label="Services navigation">
+            <ul class="space-y-3 text-neutral-400 text-sm">
+              {% posts type:"category", limit:5, name:"footer_services", order:"alpha" %}
+              {% for s in footer_services %}
+              <li><a href="{{s.permalink}}" class="hover:text-gold-400 transition-colors duration-300">{{s.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="tr text-neutral-500 text-xs tracking-wide">
+          &copy; {{year}} <span itemprop="name">{{site.name}}</span>. All rights reserved.
+        </p>
+        <p class="tr text-neutral-500 text-xs tracking-wide mt-2 md:mt-0">
+          Premium Cleaning in {{site.city}}, {{site.region}}
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

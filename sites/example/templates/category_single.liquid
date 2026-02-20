@@ -1,0 +1,53 @@
+<nav class="bg-gray-100 py-3" aria-label="Breadcrumb">
+  <div class="max-w-4xl mx-auto px-4">
+    <ol class="flex items-center space-x-2 text-sm">
+      <li><a href="/" class="text-gray-500 hover:text-gray-700">Home</a></li>
+      <li class="text-gray-400">/</li>
+      <li><a href="/services" class="text-gray-500 hover:text-gray-700">Services</a></li>
+      <li class="text-gray-400">/</li>
+      <li class="text-gray-900">{{post.title}}</li>
+    </ol>
+  </div>
+</nav>
+
+<article class="py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <h1 class="text-4xl font-bold">{{post.title}} in {{site.city}}</h1>
+    <p class="mt-4 text-xl text-gray-600">{{post.description}}</p>
+
+    {% if post.price > 0 %}
+    <p class="mt-4 text-2xl font-bold text-blue-600">{{post.price | money: post.currency}} {{post.price_info}}</p>
+    {% endif %}
+
+    {% if post.cover_image %}
+    <img src="{{post.cover_image | resize: '800x600'}}" alt="{{post.title}} - {{site.name}}" class="mt-8 rounded-lg w-full">
+    {% endif %}
+
+    <div class="mt-8 prose max-w-none">
+      {{post.content}}
+    </div>
+
+    {% posts type:"category", limit:3, name:"related_services", order:"popular" %}
+    {% if related_services.size > 0 %}
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold mb-4">Related Services</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        {% for rs in related_services %}
+        {% if rs.permalink != post.permalink %}
+        <a href="{{rs.permalink}}" class="block p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition">
+          <h3 class="font-semibold">{{rs.title}}</h3>
+          <p class="text-sm text-gray-600 mt-1">{{rs.description | truncate: 80}}</p>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <section class="mt-16 bg-gray-50 p-8 rounded-lg">
+      <h2 class="text-2xl font-bold mb-4">Get a Free Quote</h2>
+      <p class="mb-4">Contact {{site.name}} for {{post.title}} in {{site.city}}, {{site.region}}.</p>
+      {% partial "_quote" %}
+    </section>
+  </div>
+</article>

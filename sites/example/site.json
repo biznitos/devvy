@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "name": "Acme Services",
+  "cname": "acme-services.com",
+  "description": "Professional home services in Austin, Texas. Quality workmanship and reliable service for residential and commercial properties.",
+  "email": "hello@acme-services.com",
+  "phone": "(512) 555-0123",
+  "address": "123 Main Street",
+  "city": "Austin",
+  "region": "Texas",
+  "country_code": "US",
+  "postal_code": "78701",
+  "locale": "en",
+  "logo": "https://placehold.co/300x100?text=Acme+Services",
+  "settings": {
+    "geo": {
+      "lat": "30.2672",
+      "lng": "-97.7431"
+    },
+    "social": {
+      "facebook": "https://facebook.com/acme-services",
+      "instagram": "https://instagram.com/acme-services"
+    },
+    "theme": {
+      "primary": "#2563eb",
+      "secondary": "#1e40af"
+    }
+  }
+}

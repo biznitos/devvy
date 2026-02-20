@@ -1,0 +1,28 @@
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center mb-4">Our Services</h1>
+    <p class="text-center text-gray-600 mb-8">Professional services in {{site.city}}, {{site.region}}</p>
+
+    {% posts type:"category", limit:20, name:"all_services", order:"alpha" %}
+    {% if all_services.size > 0 %}
+    <div class="grid md:grid-cols-3 gap-8">
+      {% for p in all_services %}
+      <a href="{{p.permalink}}" class="block bg-white rounded-lg shadow hover:shadow-lg transition">
+        {% if p.cover_image %}
+        <img src="{{p.cover_image | resize: '400x300'}}" alt="{{p.title}} - {{site.city}}" class="w-full h-48 object-cover rounded-t-lg">
+        {% endif %}
+        <div class="p-4">
+          <h2 class="font-bold text-lg">{{p.title}}</h2>
+          <p class="text-gray-600 mt-2">{{p.description | truncate: 100}}</p>
+          {% if p.price > 0 %}
+          <p class="mt-2 font-bold text-blue-600">{{p.price | money: p.currency}} {{p.price_info}}</p>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="text-center text-gray-500">No services available.</p>
+    {% endif %}
+  </div>
+</section>

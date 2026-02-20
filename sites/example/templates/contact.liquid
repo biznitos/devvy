@@ -1,0 +1,21 @@
+<section class="py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center">Contact Us</h1>
+    <p class="mt-4 text-center text-gray-600">Get in touch with {{site.name}}</p>
+
+    <div class="mt-8 grid md:grid-cols-2 gap-8">
+      <div>
+        {% partial "_contact" %}
+      </div>
+      <div>
+        <h2 class="text-xl font-bold">Contact Information</h2>
+        <div class="mt-4 space-y-2">
+          <p>{{site.address}}</p>
+          <p>{{site.city}}, {{site.region}}</p>
+          <p><a href="tel:{{site.phone}}" class="text-blue-600">{{site.phone}}</a></p>
+          <p><a href="mailto:{{site.email}}" class="text-blue-600">{{site.email}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

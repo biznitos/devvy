@@ -1,0 +1,43 @@
+<section class="py-14 md:py-32">
+  <div class="max-w-5xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">What We Do</span>
+      <h1 class="tr mt-4 font-serif font-light text-4xl md:text-5xl tracking-tight text-neutral-900">Cleaning Services for Your Home</h1>
+      <p class="tr mt-6 text-neutral-500 leading-relaxed">Premium cleaning tailored to your Bangkok property</p>
+    </div>
+
+    {% posts type:"category", limit:20, name:"all_services", order:"alpha" %}
+    {% if all_services.size > 0 %}
+    <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      {% for p in all_services %}
+      <a href="{{p.permalink}}" class="group block bg-white border border-neutral-200/60 rounded-none overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+        {% if p.cover_image %}
+        <div class="overflow-hidden">
+          <img src="{{p.cover_image | resize: '400x300'}}" alt="{{p.title}} - Bangkok" class="w-full h-56 object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+        </div>
+        {% endif %}
+        <div class="p-8">
+          <h2 class="font-serif text-xl font-normal text-neutral-900">{{p.title}}</h2>
+          <p class="text-neutral-500 mt-3 text-sm leading-relaxed">{{p.description | truncate: 150}}</p>
+          <span class="tr mt-6 inline-flex items-center text-xs font-medium uppercase tracking-[0.2em] text-neutral-900 group-hover:text-gold-500 transition-colors duration-300">
+            Learn More
+            <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+          </span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="tr text-center text-neutral-400">No services available.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="py-24 md:py-32 bg-navy-600">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-12 h-px bg-gold-400 mx-auto mb-8"></div>
+    <h2 class="tr font-serif font-light text-3xl md:text-4xl tracking-tight text-white">Not Sure What Your Property Needs?</h2>
+    <p class="tr mt-6 text-neutral-400 leading-relaxed max-w-xl mx-auto">Book a complimentary assessment. Your dedicated assessor will visit your property and recommend the perfect cleaning package.</p>
+    <a href="/contact" class="tr mt-10 inline-block bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-gold-300 transition-colors duration-300">Book Your Property Assessment</a>
+  </div>
+</section>

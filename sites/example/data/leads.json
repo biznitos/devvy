@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "zid": "lead-001",
+    "type": "contact",
+    "subtype": null,
+    "status": "new",
+    "title": "Contact Form",
+    "notes": "I need a quote for plumbing repair in my kitchen.",
+    "customer": {
+      "name": "Jane Doe",
+      "email": "jane@example.com",
+      "phone": "(512) 555-9876"
+    },
+    "inserted_at": "2025-06-10T14:30:00Z",
+    "updated_at": "2025-06-10T14:30:00Z"
+  },
+  {
+    "id": 2,
+    "zid": "lead-002",
+    "type": "quote",
+    "subtype": null,
+    "status": "pending",
+    "title": "Quote Request - HVAC Services",
+    "notes": "Looking for AC installation for a 2,500 sqft home.",
+    "data": {
+      "service": "HVAC Services"
+    },
+    "customer": {
+      "name": "Bob Wilson",
+      "email": "bob@example.com",
+      "phone": "(512) 555-4321"
+    },
+    "inserted_at": "2025-06-12T09:15:00Z",
+    "updated_at": "2025-06-12T09:15:00Z"
+  },
+  {
+    "id": 3,
+    "zid": "lead-003",
+    "type": "contact",
+    "subtype": null,
+    "status": "completed",
+    "title": "Contact Form",
+    "notes": "Do you offer emergency electrical services?",
+    "customer": {
+      "name": "Alice Chen",
+      "email": "alice@example.com",
+      "phone": "(512) 555-7890"
+    },
+    "inserted_at": "2025-06-01T11:00:00Z",
+    "updated_at": "2025-06-02T08:00:00Z"
+  }
+]

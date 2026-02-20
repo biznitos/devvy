@@ -1,0 +1,33 @@
+<form action="/api/lead/v1" method="POST" class="space-y-6">
+  <input type="hidden" name="type" value="contact">
+  <input type="hidden" name="title" value="Contact Form">
+  <input type="hidden" name="return_url" value="/thank-you">
+  <input type="hidden" name="failure_url" value="/contact?error=1">
+
+  <div>
+    <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">Your Name</label>
+    <input type="text" name="customer[name]" required
+           class="w-full bg-white border border-neutral-300 rounded-none px-5 py-4 text-sm font-light text-neutral-900 placeholder:text-neutral-400 focus:border-neutral-900 focus:outline-none transition-colors duration-300">
+  </div>
+
+  <div>
+    <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">Your Email</label>
+    <input type="email" name="customer[email]" required
+           class="w-full bg-white border border-neutral-300 rounded-none px-5 py-4 text-sm font-light text-neutral-900 placeholder:text-neutral-400 focus:border-neutral-900 focus:outline-none transition-colors duration-300">
+  </div>
+
+  <div>
+    <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">Your Phone</label>
+    <input type="tel" name="customer[phone]"
+           class="w-full bg-white border border-neutral-300 rounded-none px-5 py-4 text-sm font-light text-neutral-900 placeholder:text-neutral-400 focus:border-neutral-900 focus:outline-none transition-colors duration-300">
+  </div>
+
+  <div>
+    <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">About Your Property</label>
+    <textarea name="notes" rows="4" required
+              class="w-full bg-white border border-neutral-300 rounded-none px-5 py-4 text-sm font-light text-neutral-900 placeholder:text-neutral-400 focus:border-neutral-900 focus:outline-none transition-colors duration-300"
+              placeholder="Tell us about your property and your cleaning needs..."></textarea>
+  </div>
+
+  <button type="submit" class="tr w-full bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-6 py-4 rounded-none hover:bg-gold-300 transition-colors duration-300">Book Your Assessment</button>
+</form>

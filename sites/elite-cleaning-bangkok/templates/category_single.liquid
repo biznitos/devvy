@@ -1,0 +1,157 @@
+<!-- HERO -->
+<section class="bg-navy-600 py-14 md:py-32">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-12 h-px bg-gold-400 mx-auto mb-8"></div>
+    <h1 class="font-serif font-light text-4xl md:text-6xl lg:text-7xl tracking-tight leading-tight text-white">{{post.title}}</h1>
+    <p class="mt-8 text-lg leading-relaxed text-neutral-400 max-w-2xl mx-auto">{{post.description}}</p>
+    <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact" class="tr inline-block bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-gold-300 transition-colors duration-300">Book Your Property Assessment</a>
+      <a href="tel:{{site.phone}}" class="inline-block border border-gold-400 text-gold-400 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-gold-400 hover:text-navy-600 transition-all duration-300">{{site.phone}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+{% if post.benefits.size > 0 %}
+<section class="py-20 md:py-24 bg-white border-b border-neutral-200/60">
+  <div class="max-w-5xl mx-auto px-6 md:px-12">
+    <div class="grid md:grid-cols-3 gap-8 md:gap-12 text-center">
+      {% for b in post.benefits %}
+      <div>
+        <div class="w-8 h-px bg-gold-400 mx-auto mb-6"></div>
+        <h2 class="tr font-serif text-xl font-normal text-neutral-900">{{b.title}}</h2>
+        <p class="tr text-neutral-500 mt-4 text-sm leading-relaxed">{{b.text}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- BREADCRUMB -->
+<nav class="bg-surface-100 py-4" aria-label="Breadcrumb">
+  <div class="max-w-5xl mx-auto px-6 md:px-12">
+    <ol class="flex items-center space-x-2 text-xs tracking-wide">
+      <li><a href="/" class="tr text-neutral-400 hover:text-neutral-600 transition-colors duration-300">Home</a></li>
+      <li class="text-neutral-300">/</li>
+      <li><a href="/services" class="tr text-neutral-400 hover:text-neutral-600 transition-colors duration-300">Services</a></li>
+      <li class="text-neutral-300">/</li>
+      <li class="text-neutral-700">{{post.title}}</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- UNIQUE SERVICE CONTENT -->
+<section class="py-24 md:py-32">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="prose prose-lg prose-neutral max-w-none prose-headings:font-serif prose-headings:font-light prose-headings:tracking-tight prose-p:leading-relaxed prose-p:text-neutral-600 prose-li:text-neutral-600 prose-strong:text-neutral-900">
+      {{post.content}}
+    </div>
+  </div>
+</section>
+
+<!-- FULL-WIDTH IMAGE -->
+{% if post.cover_image %}
+<div class="max-w-6xl mx-auto px-6 md:px-12">
+  <img src="{{post.cover_image | resize: '1200x500'}}" alt="{{post.title}} - {{site.name}}" class="w-full rounded-none">
+</div>
+{% endif %}
+
+<!-- HOW IT WORKS -->
+<section class="py-24 md:py-32 bg-white">
+  <div class="max-w-5xl mx-auto px-6 md:px-12 text-center">
+    <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Your Process</span>
+    <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">How It Works</h2>
+    <p class="tr mt-4 text-neutral-500">Three simple steps to a spotless home</p>
+    <div class="mt-16 grid md:grid-cols-3 gap-12 md:gap-16">
+      <div>
+        <div class="w-16 h-16 border border-gold-400 text-gold-500 rounded-full flex items-center justify-center font-serif text-2xl font-light mx-auto">1</div>
+        <h3 class="tr font-serif text-xl font-normal text-neutral-900 mt-8">Request an Assessment</h3>
+        <p class="tr text-neutral-500 mt-4 text-sm leading-relaxed">Contact us to schedule a complimentary property assessment. Tell us about your space and we'll arrange a convenient time to visit.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 border border-gold-400 text-gold-500 rounded-full flex items-center justify-center font-serif text-2xl font-light mx-auto">2</div>
+        <h3 class="tr font-serif text-xl font-normal text-neutral-900 mt-8">On-Site Assessment</h3>
+        <p class="tr text-neutral-500 mt-4 text-sm leading-relaxed">Your assessor visits your property in person to understand the scope, walk through your priorities, and recommend the right team size — 3, 5, or 7 cleaners plus a dedicated supervisor.</p>
+      </div>
+      <div>
+        <div class="w-16 h-16 border border-gold-400 text-gold-500 rounded-full flex items-center justify-center font-serif text-2xl font-light mx-auto">3</div>
+        <h3 class="tr font-serif text-xl font-normal text-neutral-900 mt-8">We Clean, You Relax</h3>
+        <p class="tr text-neutral-500 mt-4 text-sm leading-relaxed">Your team works until you are completely satisfied. Your supervisor does a final walkthrough with you before the team leaves.</p>
+      </div>
+    </div>
+    <div class="mt-14">
+      <a href="/contact" class="tr inline-block bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-gold-300 transition-colors duration-300">Schedule Your Free Assessment</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING TEASER -->
+<section class="py-24 md:py-32 bg-surface-100">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Your Investment</span>
+    <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">Simple, Transparent Pricing</h2>
+    <p class="tr mt-6 text-neutral-500 leading-relaxed max-w-2xl mx-auto">Every team includes a dedicated supervisor, premium natural cleaning products, all equipment, and our satisfaction guarantee. Choose the team size that fits your property.</p>
+    <div class="mt-12 grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+      <div class="bg-white border border-neutral-200/60 p-8 rounded-none text-center">
+        <span class="tr text-xs font-medium uppercase tracking-[0.15em] text-neutral-400">Small</span>
+        <p class="mt-2 font-serif text-3xl font-light text-neutral-900">&#3647;19,000</p>
+        <p class="tr mt-1 text-xs text-neutral-400">3 cleaners + supervisor</p>
+      </div>
+      <div class="bg-white border border-gold-400 p-8 rounded-none text-center">
+        <span class="tr text-xs font-medium uppercase tracking-[0.15em] text-gold-500">Most Popular</span>
+        <p class="mt-2 font-serif text-3xl font-light text-neutral-900">&#3647;26,000</p>
+        <p class="tr mt-1 text-xs text-neutral-400">5 cleaners + supervisor</p>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8 rounded-none text-center">
+        <span class="tr text-xs font-medium uppercase tracking-[0.15em] text-neutral-400">Large</span>
+        <p class="mt-2 font-serif text-3xl font-light text-neutral-900">&#3647;34,000</p>
+        <p class="tr mt-1 text-xs text-neutral-400">7 cleaners + supervisor</p>
+      </div>
+    </div>
+    <a href="/pricing" class="tr mt-12 inline-block border border-neutral-900 text-neutral-900 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-neutral-900 hover:text-white transition-all duration-300">View Full Pricing</a>
+  </div>
+</section>
+
+<!-- RELATED SERVICES -->
+{% posts type:"category", limit:4, name:"related_services", order:"popular" %}
+{% if related_services.size > 0 %}
+<section class="py-24 md:py-32">
+  <div class="max-w-5xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Also Available</span>
+      <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">Other Services for Your Property</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      {% for rs in related_services %}
+      {% if rs.permalink != post.permalink %}
+      <a href="{{rs.permalink}}" class="group block bg-white border border-neutral-200/60 rounded-none overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+        {% if rs.cover_image %}
+        <div class="overflow-hidden">
+          <img src="{{rs.cover_image | resize: '400x300'}}" alt="{{rs.title}}" class="w-full h-48 object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+        </div>
+        {% endif %}
+        <div class="p-8">
+          <h3 class="font-serif text-xl font-normal text-neutral-900">{{rs.title}}</h3>
+          <p class="text-neutral-500 mt-3 text-sm leading-relaxed">{{rs.description | truncate: 100}}</p>
+        </div>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- BOTTOM CTA -->
+<section class="py-24 md:py-32 bg-navy-600">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-12 h-px bg-gold-400 mx-auto mb-8"></div>
+    <h2 class="tr font-serif font-light text-3xl md:text-4xl tracking-tight text-white">Ready to Experience the Difference?</h2>
+    <p class="tr mt-6 text-neutral-400 text-lg leading-relaxed max-w-2xl mx-auto">Your dedicated assessor will visit your property, walk through your priorities, and recommend the perfect team — at no cost and no obligation.</p>
+    <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact" class="tr inline-block bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-gold-300 transition-colors duration-300">Book Your Property Assessment</a>
+      <a href="tel:{{site.phone}}" class="inline-block border border-gold-400 text-gold-400 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 rounded-none hover:bg-gold-400 hover:text-navy-600 transition-all duration-300">Call {{site.phone}}</a>
+    </div>
+  </div>
+</section>

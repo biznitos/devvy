@@ -1,0 +1,23 @@
+<article class="py-16">
+  <div class="max-w-4xl mx-auto px-4">
+    <h1 class="text-4xl font-bold">{{post.title}}</h1>
+
+    {% if post.description %}
+    <p class="mt-4 text-xl text-gray-600">{{post.description}}</p>
+    {% endif %}
+
+    {% if post.cover_image %}
+    <img src="{{post.cover_image | resize: '1200x600'}}" alt="{{post.title}} - {{site.name}}" class="mt-8 w-full rounded-lg">
+    {% endif %}
+
+    <div class="mt-8 prose max-w-none">
+      {{post.content}}
+    </div>
+
+    <section class="mt-16 bg-gray-50 p-8 rounded-lg text-center">
+      <h2 class="text-2xl font-bold">Have Questions?</h2>
+      <p class="mt-2 text-gray-600">We're here to help.</p>
+      <a href="/contact" class="mt-4 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-medium">Contact Us</a>
+    </section>
+  </div>
+</article>

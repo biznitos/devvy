@@ -1,0 +1,35 @@
+<form action="/api/lead/v1" method="POST" class="space-y-6">
+  <input type="hidden" name="type" value="quote">
+  <input type="hidden" name="title" value="Quote Request - {{post.title}}">
+  <input type="hidden" name="data[service]" value="{{post.title}}">
+  <input type="hidden" name="return_url" value="/thank-you">
+  <input type="hidden" name="failure_url" value="{{path_info}}?error=1">
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">Your Name</label>
+      <input type="text" name="customer[name]" required
+             class="w-full bg-white/10 border border-white/20 rounded-none px-5 py-4 text-sm font-light text-white placeholder-neutral-500 focus:border-gold-400 focus:outline-none transition-colors duration-300">
+    </div>
+    <div>
+      <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">Your Phone</label>
+      <input type="tel" name="customer[phone]" required
+             class="w-full bg-white/10 border border-white/20 rounded-none px-5 py-4 text-sm font-light text-white placeholder-neutral-500 focus:border-gold-400 focus:outline-none transition-colors duration-300">
+    </div>
+  </div>
+
+  <div>
+    <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">Your Email</label>
+    <input type="email" name="customer[email]" required
+           class="w-full bg-white/10 border border-white/20 rounded-none px-5 py-4 text-sm font-light text-white placeholder-neutral-500 focus:border-gold-400 focus:outline-none transition-colors duration-300">
+  </div>
+
+  <div>
+    <label class="tr block text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-2">About Your Property</label>
+    <textarea name="notes" rows="4"
+              class="w-full bg-white/10 border border-white/20 rounded-none px-5 py-4 text-sm font-light text-white placeholder-neutral-500 focus:border-gold-400 focus:outline-none transition-colors duration-300"
+              placeholder="Your property type, size, specific needs..."></textarea>
+  </div>
+
+  <button type="submit" class="tr w-full bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-6 py-4 rounded-none hover:bg-gold-300 transition-colors duration-300">Book Assessment</button>
+</form>
