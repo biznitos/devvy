@@ -1,0 +1,1180 @@
+<style>
+.ck { list-style: none; padding-left: 0; }
+.ck li { position: relative; padding-left: 28px; break-inside: avoid; }
+.ck li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Crect x='0.75' y='0.75' width='14.5' height='14.5' rx='1.5' stroke='%23d4bf82' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+</style>
+
+<!-- HERO -->
+<section class="bg-navy-600 py-14 md:py-28">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-12 h-px bg-gold-400 mx-auto mb-8"></div>
+    <h1 class="font-serif font-light text-4xl md:text-6xl tracking-tight leading-tight text-white">Our Cleaning Checklist</h1>
+    <p class="mt-8 text-lg leading-relaxed text-neutral-400 max-w-2xl mx-auto">Every room. Every surface. Every detail. This is the standard your home deserves — and exactly what our hotel-trained teams deliver.</p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact" class="tr inline-block bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 hover:bg-gold-300 transition-colors duration-300">Book Your Assessment</a>
+      <a href="tel:{{site.phone}}" class="inline-block border border-gold-400 text-gold-400 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 hover:bg-gold-400 hover:text-navy-600 transition-all duration-300">{{site.phone}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- BREADCRUMB -->
+<nav class="bg-surface-100 py-4" aria-label="Breadcrumb">
+  <div class="max-w-5xl mx-auto px-6 md:px-12">
+    <ol class="flex items-center space-x-2 text-xs tracking-wide">
+      <li><a href="/" class="tr text-neutral-400 hover:text-neutral-600 transition-colors duration-300">Home</a></li>
+      <li class="text-neutral-300">/</li>
+      <li class="text-neutral-700">Cleaning Checklist</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- INTRO -->
+<section class="py-16 md:py-20">
+  <div class="max-w-3xl mx-auto px-6 md:px-12">
+    <p class="text-neutral-600 leading-relaxed">Every Khun Clean Elite engagement begins with a property assessment and ends with a supervised walkthrough. Between those two points, your team follows the checklist below — adapted to the specific rooms, finishes, and priorities of your home.</p>
+    <p class="mt-4 text-neutral-600 leading-relaxed">There is no "standard" tier here. Every task below is performed on every engagement. This is what deep cleaning means when your home is in the hands of hotel-trained professionals.</p>
+    <p class="mt-4 text-sm text-neutral-400">Click any section below to expand it.</p>
+  </div>
+</section>
+
+<!-- CHECKLIST ACCORDION -->
+<section class="pb-20">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+
+    <!-- GROUP: LIVING SPACES -->
+    <div class="mb-12">
+      <h2 class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-500 mb-6">Living Spaces</h2>
+
+      <!-- KITCHEN -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('kitchen')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Kitchen</h3>
+          <svg id="icon-kitchen" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-kitchen" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Clear and wipe down all countertops and backsplash</li>
+            <li>Clean and disinfect sink basin, drain, and faucet</li>
+            <li>Polish sink fixtures streak-free</li>
+            <li>Descale faucet and aerator</li>
+            <li>Wipe exterior of all major appliances</li>
+            <li>Clean stovetop, burner grates, drip pans, and knobs</li>
+            <li>Deep clean range hood filter (degrease, soak, scrub)</li>
+            <li>Wipe down small appliances (toaster, kettle, coffee machine, rice cooker)</li>
+            <li>Descale kettle and coffee machine</li>
+            <li>Clean microwave interior and exterior</li>
+            <li>Remove oven racks, soak and scrub; clean oven interior</li>
+            <li>Empty refrigerator; clean all shelves, drawers, seals, and drip tray</li>
+            <li>Pull refrigerator and oven away from wall; clean behind and underneath</li>
+            <li>Clean dishwasher filter, door seals, and interior</li>
+            <li>Empty all cabinets and drawers; vacuum and wipe interiors</li>
+            <li>Wipe exterior of all cabinet doors, drawer fronts, and hardware</li>
+            <li>Clean top of cabinets (dust and grease buildup)</li>
+            <li>Clean and organise pantry shelves</li>
+            <li>Scrub backsplash tile and grout lines</li>
+            <li>Scrub floor tile grout lines</li>
+            <li>Wipe down walls for grease splatters and fingerprints</li>
+            <li>Polish stainless steel surfaces</li>
+            <li>Clean and sanitise bins; replace liners</li>
+            <li>Wipe light switches, outlet covers, and door handles</li>
+            <li>Dust and wipe light fixtures</li>
+            <li>Sweep and mop floors including under toe kicks and corners</li>
+            <li>Clean interior windows and sills</li>
+            <li>Wipe down kitchen table/island, chairs, and stools</li>
+            <li>Clean water filtration system exterior</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BATHROOMS -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('bathrooms')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Bathrooms</h3>
+          <svg id="icon-bathrooms" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-bathrooms" class="hidden pb-8">
+          <p class="text-sm text-neutral-500 mb-6 italic">Applies to master bath, guest bathrooms, en-suites, and powder rooms.</p>
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Clean and disinfect toilet bowl interior</li>
+            <li>Wipe and disinfect toilet exterior: tank, lid, seat, base, and behind</li>
+            <li>Scrub toilet seat hinges, bolts, and behind plumbing</li>
+            <li>Clean and disinfect sink basin and faucet</li>
+            <li>Clean and descale faucet aerators</li>
+            <li>Polish all fixtures streak-free</li>
+            <li>Polish brass, copper, or gold fixtures with appropriate metal polish</li>
+            <li>Clean mirrors edge to edge</li>
+            <li>Wipe down countertop and vanity surface</li>
+            <li>Polish natural stone surfaces with pH-neutral cleaner</li>
+            <li>Clean shower/tub walls, floor, door, and fixtures</li>
+            <li>Scrub soap scum from glass shower doors (both sides)</li>
+            <li>Scrub tile walls for soap scum, mildew, and water stains</li>
+            <li>Remove and descale showerhead</li>
+            <li>Remove and clean shower accessories (caddies, soap dishes)</li>
+            <li>Clean and disinfect bathtub surface and drain</li>
+            <li>Clean shower/bath drain; remove debris</li>
+            <li>Clean jacuzzi/whirlpool jets if present</li>
+            <li>Scrub all grout lines on walls and floors</li>
+            <li>Inspect and clean caulking and silicone seals for mould</li>
+            <li>Empty all cabinets, vanity drawers, and medicine cabinet; wipe interiors</li>
+            <li>Wipe exterior of all cabinets and drawers</li>
+            <li>Disinfect toothbrush holders, soap dispensers, and accessories</li>
+            <li>Clean bidet and bidet sprayer</li>
+            <li>Clean heated towel rack</li>
+            <li>Wash and disinfect bath mats</li>
+            <li>Replace towels; fold or hang decoratively</li>
+            <li>Restock toilet paper and toiletries as needed</li>
+            <li>Empty and clean trash can; replace liner</li>
+            <li>Sweep and mop floor including behind toilet</li>
+            <li>Wipe light switches, door handles, and outlet covers</li>
+            <li>Clean exhaust fan cover</li>
+            <li>Clean window tracks and screens</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MASTER BEDROOM -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('master')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Master Bedroom</h3>
+          <svg id="icon-master" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-master" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Strip bed; vacuum mattress top and sides</li>
+            <li>Spot-treat mattress stains</li>
+            <li>Rotate or flip mattress</li>
+            <li>Make bed with fresh linens (hospital corners)</li>
+            <li>Fluff and arrange pillows</li>
+            <li>Dust all surfaces: nightstands, dressers, headboard, footboard</li>
+            <li>Wipe down headboard, footboard, and bed frame</li>
+            <li>Wipe nightstand surfaces, lamps, and accessories</li>
+            <li>Clean lamp shades (dust or wipe)</li>
+            <li>Dust and wipe behind nightstands and dressers</li>
+            <li>Polish wood furniture</li>
+            <li>Dust picture frames, artwork, and decorative items</li>
+            <li>Clean TV screen and wipe stand and equipment</li>
+            <li>Dust ceiling fan blades</li>
+            <li>Dust air vents and returns</li>
+            <li>Wipe light switches, outlet covers, and door handles</li>
+            <li>Clean mirrors and glass surfaces</li>
+            <li>Vacuum all carpeted areas including under bed</li>
+            <li>Vacuum or mop hard floors</li>
+            <li>Vacuum upholstered furniture; seams and crevices; spot clean</li>
+            <li>Vacuum or steam curtains and drapes</li>
+            <li>Clean blinds (individual slat wiping)</li>
+            <li>Wipe crown molding and ceiling edges</li>
+            <li>Wipe down baseboards</li>
+            <li>Empty and clean trash cans; replace liners</li>
+            <li>Clean interior windows and sills</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GUEST / KIDS BEDROOMS -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('guest')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Guest Bedrooms &amp; Kids Rooms</h3>
+          <svg id="icon-guest" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-guest" class="hidden pb-8">
+          <p class="text-sm text-neutral-500 mb-6 italic">All master bedroom tasks apply, plus the following.</p>
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Change and launder bed linens</li>
+            <li>Arrange welcome amenities for guest rooms</li>
+            <li>Wipe down study desk, chair, and lamp</li>
+            <li>Organise and clean toy storage bins and shelves</li>
+            <li>Wipe down and disinfect toys and play surfaces</li>
+            <li>Clean play mats and area rugs</li>
+            <li>Sanitise high-touch surfaces</li>
+            <li>Clean bunk bed rails and ladders</li>
+            <li>Organise bookshelf; dust books and shelving</li>
+            <li>Clean baby and child equipment (crib rails, changing table)</li>
+            <li>Check under beds for lost items; vacuum thoroughly</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LIVING ROOM -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('living')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Living Room</h3>
+          <svg id="icon-living" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-living" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Dust all surfaces: coffee table, side tables, consoles, shelving</li>
+            <li>Polish wood furniture</li>
+            <li>Wipe TV screen (dry cloth), entertainment centre, and equipment</li>
+            <li>Clean behind entertainment centre; organise cables</li>
+            <li>Wipe down remote controls</li>
+            <li>Dust picture frames, artwork, and decorative items</li>
+            <li>Clean and polish decorative items individually</li>
+            <li>Vacuum sofas and chairs including under cushions</li>
+            <li>Spot-clean upholstery stains</li>
+            <li>Fluff and arrange throw pillows and blankets</li>
+            <li>Wash throw blankets and pillow covers</li>
+            <li>Vacuum carpeted areas and area rugs</li>
+            <li>Sweep and mop hard floors</li>
+            <li>Vacuum under all furniture</li>
+            <li>Dust ceiling fan blades</li>
+            <li>Dust and clean light fixtures and sconces</li>
+            <li>Wipe light switches, outlet covers, and door handles</li>
+            <li>Clean interior windows and sills</li>
+            <li>Clean mirrors and glass surfaces</li>
+            <li>Polish glass table tops</li>
+            <li>Dust bookshelves</li>
+            <li>Clean inside display cabinets (glass shelves and doors)</li>
+            <li>Wipe down built-in cabinetry interior and exterior</li>
+            <li>Dust and wipe crown molding</li>
+            <li>Dust air vents and returns</li>
+            <li>Dust baseboards</li>
+            <li>Clean fireplace surround, mantel, and hearth</li>
+            <li>Clean indoor plants (wipe leaves) and planters</li>
+            <li>Vacuum or launder drapes</li>
+            <li>Clean blinds (individual slat wiping)</li>
+            <li>Empty trash cans; replace liners</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DINING ROOM -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('dining')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Dining Room</h3>
+          <svg id="icon-dining" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-dining" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Wipe down dining table and chairs (legs, backs, seats, stretchers)</li>
+            <li>Polish wood table surface</li>
+            <li>Condition leather chair seats</li>
+            <li>Dust light fixtures and chandelier</li>
+            <li>Dust sideboard, buffet, hutch, and display cabinets</li>
+            <li>Empty sideboard and buffet; vacuum and wipe interiors</li>
+            <li>Wipe glass cabinet doors and shelves</li>
+            <li>Clean and polish china cabinet glass and shelving</li>
+            <li>Polish silver or metal serving pieces</li>
+            <li>Dust picture frames, artwork, and decorative items</li>
+            <li>Vacuum carpet or area rug; sweep and mop hard floors</li>
+            <li>Scrub grout lines on tile floors</li>
+            <li>Polish wood floors</li>
+            <li>Wipe walls for stains, marks, and fingerprints</li>
+            <li>Wipe light switches, door handles, and outlet covers</li>
+            <li>Clean interior windows and sills</li>
+            <li>Dust baseboards</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ENTRYWAY -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('entry')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Entryway &amp; Foyer</h3>
+          <svg id="icon-entry" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-entry" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Shake out and vacuum doormats</li>
+            <li>Sweep and mop entryway floor</li>
+            <li>Deep clean tile, stone, or marble floor (pH-neutral cleaner for natural stone)</li>
+            <li>Wipe down console table and entryway table</li>
+            <li>Clean entryway mirror</li>
+            <li>Sanitise door handle and lockset (interior and exterior)</li>
+            <li>Polish door hardware</li>
+            <li>Clean door frame, threshold, and weatherstripping</li>
+            <li>Organise shoe rack and cabinet</li>
+            <li>Detail-clean shoe rack interior</li>
+            <li>Wipe down coat closet shelving and hooks</li>
+            <li>Clean umbrella stand</li>
+            <li>Polish decorative items</li>
+            <li>Wipe walls for scuff marks</li>
+            <li>Wipe light switches and outlet covers</li>
+            <li>Dust light fixtures</li>
+            <li>Remove cobwebs</li>
+            <li>Clean intercom and video doorbell screen</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HALLWAYS -->
+      <div class="border-t border-b border-neutral-200">
+        <button onclick="toggle('hallways')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Hallways, Corridors &amp; Stairways</h3>
+          <svg id="icon-hallways" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-hallways" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Dust handrails, banisters, and balusters</li>
+            <li>Polish wood banisters and handrails</li>
+            <li>Dust picture frames, artwork, and wall decor</li>
+            <li>Wipe walls for scuff marks, fingerprints, and stains</li>
+            <li>Wipe light switches, outlet covers, and door handles</li>
+            <li>Polish door hardware (knobs, hinges, kick plates)</li>
+            <li>Vacuum carpeted stairs and hallway runners</li>
+            <li>Vacuum stair edges and corners with crevice tool</li>
+            <li>Scrub stair risers and treads</li>
+            <li>Sweep and mop hard floors</li>
+            <li>Scrub grout lines on tiled floors</li>
+            <li>Dust console tables and hallway furniture</li>
+            <li>Remove cobwebs from corners and ceiling edges</li>
+            <li>Dust and wipe crown molding</li>
+            <li>Clean baseboards along entire length</li>
+            <li>Dust air vents and returns</li>
+            <li>Dust light fixtures and sconces</li>
+            <li>Clean hall closet shelves and floor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROUP: WORK & UTILITY -->
+    <div class="mb-12">
+      <h2 class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-500 mb-6 mt-16">Work &amp; Utility</h2>
+
+      <!-- HOME OFFICE -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('office')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Home Office &amp; Study</h3>
+          <svg id="icon-office" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-office" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Dust desk surface, monitor, and keyboard area</li>
+            <li>Wipe down desk surface</li>
+            <li>Polish wood desk and bookshelves</li>
+            <li>Clean monitor screen with dry microfibre cloth</li>
+            <li>Clean keyboard with compressed air and disinfectant</li>
+            <li>Wipe down mouse, mouse pad, phone, and peripherals</li>
+            <li>Dust bookshelves, filing cabinets, and printer</li>
+            <li>Dust individual books on shelves; wipe shelf surfaces</li>
+            <li>Dust top of bookshelves and cabinets</li>
+            <li>Clean printer exterior and paper tray</li>
+            <li>Vacuum or wipe desk chair</li>
+            <li>Vacuum floor including under desk</li>
+            <li>Sweep and mop hard floors</li>
+            <li>Organise and dust behind desk (cable area)</li>
+            <li>Clean desk drawer interiors</li>
+            <li>Dust picture frames, certificates, and decorative items</li>
+            <li>Clean whiteboard or corkboard</li>
+            <li>Wipe light switches, door handles, and outlet covers</li>
+            <li>Clean interior windows and sills</li>
+            <li>Empty trash and shredder bin; replace liners</li>
+            <li>Dust lamps and lamp shades</li>
+            <li>Dust air vents and returns</li>
+            <li>Wipe baseboards</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- LAUNDRY ROOM -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('laundry')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Laundry &amp; Utility Room</h3>
+          <svg id="icon-laundry" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-laundry" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Wipe down exterior of washer and dryer</li>
+            <li>Clean washer door seal and gasket</li>
+            <li>Run washer cleaning cycle</li>
+            <li>Clean washing machine dispenser drawers</li>
+            <li>Clean lint trap and filter on dryer</li>
+            <li>Pull washer and dryer from wall; clean behind and underneath</li>
+            <li>Wipe laundry counter and cabinet doors</li>
+            <li>Clean and organise detergent and supply shelves</li>
+            <li>Clean laundry sink and faucet</li>
+            <li>Clean utility sink drain</li>
+            <li>Wipe down ironing board and iron</li>
+            <li>Wipe down and organise drying rack</li>
+            <li>Sweep and mop floor</li>
+            <li>Wipe down walls and baseboards</li>
+            <li>Check and clean floor drain</li>
+            <li>Empty trash; replace liner</li>
+            <li>Wipe light switches and door handles</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- WALK-IN CLOSETS -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('closets')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Walk-in Closets &amp; Wardrobes</h3>
+          <svg id="icon-closets" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-closets" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Vacuum floor including corners and edges</li>
+            <li>Remove all items from shelves; vacuum and wipe thoroughly</li>
+            <li>Wipe closet rods and brackets</li>
+            <li>Clean drawer interiors</li>
+            <li>Clean built-in dresser and counter surface</li>
+            <li>Clean jewellery storage area</li>
+            <li>Dust shoe racks and storage</li>
+            <li>Dust luggage on upper shelves</li>
+            <li>Clean sliding door tracks</li>
+            <li>Check for and treat mould or mildew</li>
+            <li>Inspect leather goods for mould; wipe down</li>
+            <li>Clean cedar blocks or dehumidifier units</li>
+            <li>Straighten hangers; organise garments</li>
+            <li>Wipe light switches and fixtures</li>
+            <li>Clean full-length mirror</li>
+            <li>Wipe baseboards</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- STORAGE ROOMS -->
+      <div class="border-t border-b border-neutral-200">
+        <button onclick="toggle('storage')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Storage Rooms</h3>
+          <svg id="icon-storage" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-storage" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Remove all items from shelves; vacuum and wipe surfaces</li>
+            <li>Reorganise contents</li>
+            <li>Sweep and mop floor</li>
+            <li>Wipe walls for dust and moisture</li>
+            <li>Wipe baseboards</li>
+            <li>Clean light fixtures</li>
+            <li>Clean ventilation grilles</li>
+            <li>Check and clean dehumidifier</li>
+            <li>Inspect for water damage, mould, or pest evidence</li>
+            <li>Clean door and frame</li>
+            <li>Remove cobwebs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROUP: SPECIALTY ROOMS -->
+    <div class="mb-12">
+      <h2 class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-500 mb-6 mt-16">Specialty Rooms</h2>
+
+      <!-- HOME GYM -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('gym')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Home Gym</h3>
+          <svg id="icon-gym" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-gym" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Wipe down all equipment surfaces</li>
+            <li>Deep clean all equipment: under seats, inside mechanisms</li>
+            <li>Disinfect handles, grips, buttons, screens, and cup holders</li>
+            <li>Wipe down free weights, kettlebells, and plates</li>
+            <li>Detail-clean treadmill belt edges and under machine</li>
+            <li>Clean yoga and exercise mats with disinfecting solution</li>
+            <li>Clean foam rollers and accessories</li>
+            <li>Clean resistance band storage and hooks</li>
+            <li>Clean mirrors streak-free</li>
+            <li>Vacuum or sweep rubber flooring</li>
+            <li>Deep mop rubber floor mats (dilute cleaner, rinse, dry)</li>
+            <li>Wipe walls for sweat stains</li>
+            <li>Wipe TV and monitor screen (dry cloth)</li>
+            <li>Wipe down sound system and speakers</li>
+            <li>Clean and disinfect water bottle areas</li>
+            <li>Clean towel and supply storage</li>
+            <li>Dust behind and under equipment</li>
+            <li>Dust ceiling fan and air vents</li>
+            <li>Clean air purifier filters</li>
+            <li>Empty and disinfect trash can; replace liner</li>
+            <li>Wipe light switches and door handles</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- HOME THEATER -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('theater')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Home Theatre &amp; Media Room</h3>
+          <svg id="icon-theater" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-theater" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Dust media console, shelving, and speaker stands</li>
+            <li>Dust behind media console; organise cables</li>
+            <li>Clean projector screen gently (dry microfibre, side-to-side)</li>
+            <li>Wipe TV screen with dry microfibre cloth</li>
+            <li>Dust speaker grilles and exterior surfaces</li>
+            <li>Remove speaker grilles; vacuum separately; dust cones carefully</li>
+            <li>Wipe down remote controls and gaming controllers</li>
+            <li>Clean control system touchscreens</li>
+            <li>Vacuum or wipe theatre seating</li>
+            <li>Deep clean theatre seating: shampoo fabric or condition leather</li>
+            <li>Clean cup holders and armrest mechanisms</li>
+            <li>Vacuum floor and under seating</li>
+            <li>Organise and dust media collection</li>
+            <li>Clean acoustic panels (vacuum with brush attachment)</li>
+            <li>Clean blackout curtain tracks and fabric</li>
+            <li>Dust ceiling diffusers and HVAC vents</li>
+            <li>Wipe light switches, dimmers, and control panels</li>
+            <li>Clean popcorn machine or mini-bar area</li>
+            <li>Empty trash; replace liner</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- WINE CELLAR / BAR -->
+      <div class="border-t border-b border-neutral-200">
+        <button onclick="toggle('wine')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Wine Cellar &amp; Bar Area</h3>
+          <svg id="icon-wine" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-wine" class="hidden pb-8">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-4">Wine Cellar</h4>
+              <ul class="ck space-y-2 text-sm text-neutral-600">
+                <li>Dust wine racks with dry microfibre cloth</li>
+                <li>Dust individual bottles (gentle handling)</li>
+                <li>Wipe down countertops and tasting surfaces</li>
+                <li>Sweep and mop floor with mild pH-neutral solution</li>
+                <li>Clean cellar door and frame</li>
+                <li>Wipe light fixtures</li>
+                <li>Check and clean humidifier or dehumidifier unit</li>
+                <li>Clean cooling unit air filter</li>
+                <li>Inspect for mould on walls, racks, and labels</li>
+                <li>Clean glass display door interior and exterior</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xs font-medium uppercase tracking-[0.15em] text-neutral-400 mb-4">Bar Area</h4>
+              <ul class="ck space-y-2 text-sm text-neutral-600">
+                <li>Wipe down bar top and back bar surfaces</li>
+                <li>Clean and polish bar sink and faucet</li>
+                <li>Clean bar fridge and wine cooler (interior and exterior)</li>
+                <li>Wipe down glassware shelves</li>
+                <li>Wash and polish bar glassware</li>
+                <li>Clean ice maker (empty, clean, sanitise)</li>
+                <li>Wipe bottle display shelves; organise bottles</li>
+                <li>Clean bar seating and stools</li>
+                <li>Sweep and mop bar floor</li>
+                <li>Clean bar lighting fixtures</li>
+                <li>Polish brass or metal bar rail and foot rail</li>
+                <li>Clean cocktail tools and equipment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROUP: OUTDOOR AREAS -->
+    <div class="mb-12">
+      <h2 class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-500 mb-6 mt-16">Outdoor &amp; Exterior</h2>
+
+      <!-- BALCONY / TERRACE -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('balcony')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Balcony, Terrace &amp; Patio</h3>
+          <svg id="icon-balcony" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-balcony" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Sweep floor surface</li>
+            <li>Mop or wash down floor</li>
+            <li>Scrub tile grout or stone joints</li>
+            <li>Wipe down outdoor furniture</li>
+            <li>Deep clean outdoor furniture frames; treat for rust</li>
+            <li>Wash outdoor cushion covers</li>
+            <li>Clean balcony railing (top and balusters)</li>
+            <li>Treat metal railings for corrosion</li>
+            <li>Wash balcony glass panels streak-free</li>
+            <li>Clean sliding door tracks and glass doors</li>
+            <li>Remove cobwebs from ceiling, corners, and light fixtures</li>
+            <li>Remove algae, moss, or mildew from shaded surfaces</li>
+            <li>Scrub planters inside and out</li>
+            <li>Tidy plants; remove dead leaves</li>
+            <li>Clean drainage holes and floor drains</li>
+            <li>Clean outdoor ceiling fan</li>
+            <li>Wipe outdoor speakers or lighting systems</li>
+            <li>Empty outdoor trash receptacle</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- POOL AREA -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('pool')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Swimming Pool Area &amp; Pool Deck</h3>
+          <svg id="icon-pool" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-pool" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Sweep or blow debris from pool deck</li>
+            <li>Mop or hose down deck surface</li>
+            <li>Scrub tile border and waterline tiles</li>
+            <li>Clean pool coping stones</li>
+            <li>Treat and remove algae, moss, or mould from deck</li>
+            <li>Wipe down all outdoor furniture, loungers, and umbrellas</li>
+            <li>Deep clean outdoor furniture; apply protective treatment</li>
+            <li>Wash all cushions and umbrella fabric</li>
+            <li>Clean poolside shower fixture, plumbing, and showerhead</li>
+            <li>Scrub pool drain covers and overflow channels</li>
+            <li>Clean deck drainage channels</li>
+            <li>Clean poolside bar or kitchenette area</li>
+            <li>Clean pool fence or glass barrier streak-free</li>
+            <li>Clean jacuzzi or hot tub shell and jets</li>
+            <li>Wipe pool railing and ladder</li>
+            <li>Organise towel storage</li>
+            <li>Empty and clean pool-area trash bins</li>
+            <li>Clean outdoor lighting fixtures</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GARAGE -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('garage')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Garage &amp; Parking Area</h3>
+          <svg id="icon-garage" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-garage" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Sweep floor thoroughly</li>
+            <li>Mop or hose down floor surface</li>
+            <li>Treat oil and grease stains on floor</li>
+            <li>Wipe workbench and tool storage surfaces</li>
+            <li>Dust storage shelves and cabinets</li>
+            <li>Clean storage cabinet interiors</li>
+            <li>Clean garage door interior and tracks</li>
+            <li>Clean and lubricate garage door tracks and rollers</li>
+            <li>Scrub walls for marks and stains</li>
+            <li>Clean windows and light fixtures</li>
+            <li>Clean car charging station</li>
+            <li>Clean floor drain</li>
+            <li>Remove cobwebs from ceiling and corners</li>
+            <li>Wipe light switches</li>
+            <li>Empty trash bins</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ROOFTOP -->
+      <div class="border-t border-b border-neutral-200">
+        <button onclick="toggle('rooftop')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Rooftop Areas</h3>
+          <svg id="icon-rooftop" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-rooftop" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Sweep entire rooftop surface</li>
+            <li>Mop or hose down accessible areas</li>
+            <li>Wipe down outdoor furniture and fixtures</li>
+            <li>Clean railing and parapet wall tops</li>
+            <li>Clean safety barriers and glass railings</li>
+            <li>Clean rooftop garden planters and plant care</li>
+            <li>Scrub drainage channels and clean roof drains</li>
+            <li>Clean pergola or shade structure</li>
+            <li>Wipe down rooftop bar or kitchen area</li>
+            <li>Clean rooftop jacuzzi or hot tub</li>
+            <li>Treat and remove algae or mould from shaded surfaces</li>
+            <li>Treat metal surfaces for corrosion</li>
+            <li>Remove cobwebs and debris from structures</li>
+            <li>Wipe outdoor lighting fixtures</li>
+            <li>Empty trash receptacles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROUP: STAFF AREAS -->
+    <div class="mb-12">
+      <h2 class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-500 mb-6 mt-16">Staff &amp; Additional</h2>
+
+      <!-- MAID'S QUARTERS -->
+      <div class="border-t border-neutral-200">
+        <button onclick="toggle('maid')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Maid's Quarters</h3>
+          <svg id="icon-maid" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-maid" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Change bed linens; make bed</li>
+            <li>Vacuum mattress; rotate if needed</li>
+            <li>Dust all surfaces: desk, shelving, nightstand</li>
+            <li>Clean inside closet and wardrobe; dust shelving</li>
+            <li>Vacuum, sweep, and mop floor</li>
+            <li>Wipe walls for marks and stains</li>
+            <li>Clean ceiling fan and light fixtures</li>
+            <li>Dust air vents and returns</li>
+            <li>Deep clean en-suite bathroom (full bathroom checklist)</li>
+            <li>Check for mould and mildew</li>
+            <li>Clean small kitchenette if present</li>
+            <li>Wipe baseboards</li>
+            <li>Wipe light switches, outlet covers, and door handles</li>
+            <li>Clean interior windows and sills</li>
+            <li>Clean window screens</li>
+            <li>Empty trash; replace liner</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PRIVATE ELEVATOR -->
+      <div class="border-t border-b border-neutral-200">
+        <button onclick="toggle('elevator')" class="w-full flex items-center justify-between py-5 text-left group">
+          <h3 class="font-serif text-xl font-normal text-neutral-900 group-hover:text-gold-600 transition-colors">Private Elevator</h3>
+          <svg id="icon-elevator" class="w-5 h-5 text-gold-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="section-elevator" class="hidden pb-8">
+          <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+            <li>Wipe down all interior wall panels</li>
+            <li>Clean elevator mirrors streak-free</li>
+            <li>Disinfect all buttons and control panels</li>
+            <li>Detail-clean button panel surrounds and crevices</li>
+            <li>Clean and polish handrails</li>
+            <li>Vacuum or mop elevator car floor</li>
+            <li>Clean floor mat</li>
+            <li>Wipe door frames and door surfaces</li>
+            <li>Clean elevator door tracks and threshold</li>
+            <li>Polish stainless steel or brass doors</li>
+            <li>Clean ceiling panel and light fixtures</li>
+            <li>Wipe ventilation grille</li>
+            <li>Clean floor indicator display</li>
+            <li>Clean emergency phone and intercom</li>
+            <li>Polish all metal surfaces</li>
+            <li>Clean exterior door frames on each floor</li>
+            <li>Clean elevator lobby areas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GENERAL WHOLE-HOME TASKS -->
+<section class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Applied to Every Room</span>
+      <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">General Whole-Home Tasks</h2>
+      <p class="mt-4 text-neutral-500">These tasks are performed across every room in your home, in addition to the room-specific checklists above.</p>
+    </div>
+    <ul class="ck space-y-2 text-sm text-neutral-600 columns-1 md:columns-2 gap-8">
+      <li>All light switches and outlet covers wiped and disinfected</li>
+      <li>All door handles (both sides) wiped and disinfected</li>
+      <li>All doors wiped completely (both sides, top, bottom edge)</li>
+      <li>All door frames and door tops wiped</li>
+      <li>All door hinges and hardware polished</li>
+      <li>All baseboards scrubbed</li>
+      <li>All air vents and returns dusted</li>
+      <li>All ceiling fan blades dusted</li>
+      <li>All light fixtures dusted and wiped</li>
+      <li>All mirrors cleaned streak-free</li>
+      <li>All glass surfaces cleaned streak-free</li>
+      <li>All interior windows and sills cleaned</li>
+      <li>All window tracks and screen frames cleaned</li>
+      <li>All blinds cleaned (individual slats)</li>
+      <li>All curtains vacuumed or removed for laundering</li>
+      <li>All curtain rods, rings, and finials polished</li>
+      <li>All crown molding dusted and wiped</li>
+      <li>All cobwebs removed</li>
+      <li>All trash emptied; liners replaced</li>
+      <li>All hard floors swept and mopped</li>
+      <li>All carpeted areas vacuumed including edges</li>
+      <li>All fingerprints and smudges removed</li>
+      <li>All wall plates (thermostats, intercoms, alarms) wiped</li>
+      <li>All smoke and CO detectors dusted and tested</li>
+      <li>All indoor plants wiped leaf by leaf</li>
+      <li>All upholstery vacuumed and spot-treated</li>
+      <li>All throw pillows fluffed; covers laundered</li>
+      <li>All rugs vacuumed on both sides</li>
+      <li>All smart locks and keypads wiped and disinfected</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SPECIALTY CLEANING -->
+<section class="py-20 bg-surface-100">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Material-Specific Care</span>
+      <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">Specialty Surface Cleaning</h2>
+      <p class="mt-4 text-neutral-500">Your home's premium finishes require material-specific techniques. Our teams are trained to treat every surface correctly.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Marble &amp; Natural Stone</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>pH-neutral, stone-specific products only</li>
+          <li>No vinegar, lemon, or acidic cleaners</li>
+          <li>Immediate spill treatment (marble is porous)</li>
+          <li>Soft cloth or mop dampened with stone cleaner</li>
+          <li>Etching addressed with polishing powder</li>
+          <li>Grout cleaned with pH-neutral grout cleaner</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Hardwood Floors</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Slightly damp microfibre mop with pH-neutral cleaner</li>
+          <li>No excessive water (prevents warping)</li>
+          <li>No steam mop or vinegar on finished hardwood</li>
+          <li>Immediate spill cleanup</li>
+          <li>Monthly polish with wood floor polish</li>
+          <li>Scratches addressed with touch-up pens</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Stainless Steel</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Wiped with the grain (follows brush pattern)</li>
+          <li>Stainless steel-specific cleaner</li>
+          <li>Polished with microfibre cloth</li>
+          <li>Protectant applied for fingerprint resistance</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Leather Furniture</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Dusted with soft dry cloth</li>
+          <li>Cleaned with leather-specific cleaner only</li>
+          <li>Conditioned every 6-12 months</li>
+          <li>No water, all-purpose cleaners, or abrasives</li>
+          <li>Stains treated immediately with leather stain remover</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Glass &amp; Mirrors</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Professional-grade glass cleaner</li>
+          <li>Lint-free microfibre cloth (not paper towels)</li>
+          <li>S-pattern strokes to prevent streaks</li>
+          <li>Edges and corners cleaned thoroughly</li>
+          <li>Rain-repellent treatment for shower glass</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Brass &amp; Copper Fixtures</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Polished with brass or copper-specific products</li>
+          <li>Lacquered brass wiped with damp cloth only</li>
+          <li>Unlacquered brass polished to desired patina level</li>
+          <li>Tarnish removed with specialised metal cleaner</li>
+          <li>Protective wax applied after polishing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANGKOK-SPECIFIC CONSIDERATIONS -->
+<section class="py-20 bg-navy-600">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-gold-400">Bangkok-Specific</span>
+      <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-white">Tropical Climate Considerations</h2>
+      <p class="mt-4 text-neutral-400">Bangkok's humidity, air quality, and tropical conditions require additional attention that standard checklists miss.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="border border-white/10 p-8">
+        <h4 class="font-serif text-lg font-normal text-gold-400 mb-4">Humidity &amp; Mould Prevention</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-300">
+          <li>Inspect every room for mould and mildew at every visit</li>
+          <li>Wipe surfaces prone to condensation</li>
+          <li>Ensure exhaust fans are functioning</li>
+          <li>Wipe silicone seals on windows, showers, and doors</li>
+          <li>Treat mould spots immediately with antifungal cleaner</li>
+          <li>Check wardrobes for adequate ventilation</li>
+          <li>Check behind furniture on exterior walls</li>
+          <li>Inspect leather goods in closets for mould</li>
+          <li>Ensure all wet items are dried after use</li>
+        </ul>
+      </div>
+      <div class="border border-white/10 p-8">
+        <h4 class="font-serif text-lg font-normal text-gold-400 mb-4">Pest Prevention</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-300">
+          <li>Seal and wipe all food storage areas after cleaning</li>
+          <li>Check and clean under kitchen appliances</li>
+          <li>Ensure all trash bins have tight-fitting lids</li>
+          <li>Wipe door frames and window sills (ant trails)</li>
+          <li>Inspect dark, damp areas for pest evidence</li>
+          <li>Clean drain covers and traps (cockroach entry points)</li>
+          <li>Remove standing water anywhere</li>
+          <li>Clean gecko droppings from walls, windows, and light fixtures</li>
+          <li>Report termite evidence immediately</li>
+        </ul>
+      </div>
+      <div class="border border-white/10 p-8">
+        <h4 class="font-serif text-lg font-normal text-gold-400 mb-4">Air Quality &amp; Pollution</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-300">
+          <li>Damp microfibre dusting to capture fine PM2.5 particulate</li>
+          <li>Wipe exterior window sills more frequently</li>
+          <li>Wipe electronics and screens more frequently (static attracts dust)</li>
+          <li>More frequent attention during high pollution season (Dec-Apr)</li>
+        </ul>
+      </div>
+      <div class="border border-white/10 p-8">
+        <h4 class="font-serif text-lg font-normal text-gold-400 mb-4">Rainy Season (May-Oct)</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-300">
+          <li>Extra attention to entryway floors (mud and water)</li>
+          <li>Increased mould and mildew checks</li>
+          <li>Clean and dry balconies and terraces more frequently</li>
+          <li>Check sliding door tracks for water intrusion</li>
+          <li>Dry shoes and shoe storage areas</li>
+          <li>Wipe outdoor furniture after rain</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MOVE-IN / MOVE-OUT -->
+<section class="py-20">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Service-Specific Checklists</span>
+      <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">Move-In &amp; Move-Out</h2>
+      <p class="mt-4 text-neutral-500">In addition to the full room-by-room checklist above, these additional tasks are included with our <a href="/services/move-in-move-out-cleaning" class="text-gold-600 hover:text-gold-500 transition-colors">move-in and move-out service</a>.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Move-Out Extras</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Remove all remaining personal items, debris, and trash</li>
+          <li>Dispose of leftover and expired food</li>
+          <li>Deep clean all appliance interiors</li>
+          <li>Clean all cabinet, drawer, and closet interiors</li>
+          <li>Clean inside all light fixture globes and covers</li>
+          <li>Remove adhesive residue from walls and doors</li>
+          <li>Remove scuff marks from walls and doors</li>
+          <li>Deep clean all window tracks; lubricate</li>
+          <li>Deep clean all grout (floors, counters, showers)</li>
+          <li>Polish all hardware (knobs, hinges, pulls)</li>
+          <li>Clean all plumbing fixtures: descale, polish</li>
+          <li>Clean parking spot and storage locker</li>
+          <li>Final walkthrough inspection</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Move-In Extras</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Full sanitisation of all surfaces before unpacking</li>
+          <li>Hospital-grade disinfection of all bathrooms</li>
+          <li>Deep sanitise kitchen surfaces and appliance interiors</li>
+          <li>Clean all closets and storage before unpacking</li>
+          <li>Clean inside all drawers and cabinets</li>
+          <li>Test and clean all exhaust fans and ventilation</li>
+          <li>Run water through all drains; check drainage</li>
+          <li>Verify all windows open and close; clean tracks</li>
+          <li>Verify pest-free environment; report evidence</li>
+          <li>Ensure all rooms are mould-free</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POST-CONSTRUCTION -->
+<section class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <h2 class="tr font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">Post-Construction &amp; Renovation</h2>
+      <p class="mt-4 text-neutral-500">Our <a href="/services/post-construction-cleaning" class="text-gold-600 hover:text-gold-500 transition-colors">post-construction service</a> follows a structured three-phase process.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="border border-neutral-200/60 p-8">
+        <div class="w-10 h-10 border border-gold-400 text-gold-500 rounded-full flex items-center justify-center font-serif text-lg font-light mb-6">1</div>
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Rough Clean</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Remove all large construction debris</li>
+          <li>Sweep all floors of major dust</li>
+          <li>HEPA vacuum all surfaces</li>
+          <li>Remove paint drips, plaster, and caulk from floors</li>
+          <li>Wipe down all walls for dust layer</li>
+          <li>Clean window frames and sills</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <div class="w-10 h-10 border border-gold-400 text-gold-500 rounded-full flex items-center justify-center font-serif text-lg font-light mb-6">2</div>
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Detail Clean</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Dust every horizontal and vertical surface</li>
+          <li>Remove paint overspray and adhesive residue</li>
+          <li>Remove protective film and tape residue</li>
+          <li>Remove stickers and labels from fixtures</li>
+          <li>Clean all door frames, tops, and surfaces</li>
+          <li>Clean all cabinet interiors (construction dust settles inside)</li>
+          <li>Clean all closet interiors</li>
+          <li>Wipe all trim, molding, and millwork</li>
+          <li>HEPA vacuum all surfaces again</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <div class="w-10 h-10 border border-gold-400 text-gold-500 rounded-full flex items-center justify-center font-serif text-lg font-light mb-6">3</div>
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Final Clean</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Wash all glass inside and out</li>
+          <li>Polish all chrome, brass, and metal fixtures</li>
+          <li>Sanitise all bathrooms and kitchen</li>
+          <li>Scrub all grout lines</li>
+          <li>Mop all hard floors (multiple passes)</li>
+          <li>Polish stone and marble with pH-neutral products</li>
+          <li>Clean all air vents and HVAC registers</li>
+          <li>Replace or clean HVAC filters</li>
+          <li>Polish all hardware</li>
+          <li>Final walkthrough with punch list</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEASONAL SCHEDULE -->
+<section class="py-20 bg-surface-100">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Maintenance Schedule</span>
+      <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">Seasonal Deep Cleaning</h2>
+      <p class="mt-4 text-neutral-500">Recommended frequencies for maintaining your home at the highest standard year-round.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Quarterly</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Vacuum all air vents throughout home</li>
+          <li>Wash throw blankets and pillow covers</li>
+          <li>Flip and rotate mattresses</li>
+          <li>Clean oven interior</li>
+          <li>Clean refrigerator interior</li>
+          <li>Run washing machine cleaning cycle</li>
+          <li>Deep clean shower grout</li>
+          <li>Clean all light fixture covers</li>
+          <li>Wipe all baseboards thoroughly</li>
+          <li>Check and replace water filters</li>
+          <li>Clean dehumidifiers; replace desiccants</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Semi-Annually</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Deep clean all upholstered furniture</li>
+          <li>Clean all curtains and drapes</li>
+          <li>Deep clean all blinds</li>
+          <li>Clean behind and under all major appliances</li>
+          <li>Condition all leather furniture</li>
+          <li>Deep clean all closets and reorganise</li>
+          <li>Clean exterior windows</li>
+        </ul>
+      </div>
+      <div class="bg-white border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Annually</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Clean behind all furniture</li>
+          <li>Full window cleaning (interior and exterior)</li>
+          <li>Inspect and reseal bathroom and kitchen caulking</li>
+          <li>Whole-home mould inspection</li>
+          <li>Wine cellar deep clean</li>
+          <li>Inspect safety equipment (fire extinguishers, smoke detectors)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPTIONAL ADD-ON SERVICES -->
+<section class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-4">
+      <span class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">Specialist Services</span>
+      <h2 class="tr mt-4 font-serif font-light text-3xl md:text-4xl tracking-tight text-neutral-900">Optional Add-On Services</h2>
+    </div>
+    <div class="max-w-2xl mx-auto text-center mb-12">
+      <p class="text-neutral-600 leading-relaxed">The following services require specialist equipment or expertise beyond our standard cleaning scope. We coordinate these through our trusted partners so you receive a single, seamless quotation — one team, one point of contact, one holistic experience for your entire property.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">HVAC &amp; Air Quality</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>AC deep cleaning (coils, drain lines, filters)</li>
+          <li>Air duct and ventilation cleaning</li>
+          <li>Air purifier filter replacement</li>
+          <li>Dryer exhaust vent and duct cleaning</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">High-Access &amp; Specialty Fixtures</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Chandelier cleaning (crystal, multi-tier, large)</li>
+          <li>High and exterior window cleaning</li>
+          <li>Ceiling-mounted projector cleaning</li>
+          <li>High ceiling cobweb removal</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Floor Specialist Services</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Professional carpet and rug steam cleaning</li>
+          <li>Hardwood floor polishing and refinishing</li>
+          <li>Marble and natural stone sealing and polishing</li>
+          <li>Floor stripping and waxing</li>
+          <li>Grout re-sealing</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Deep Sanitisation &amp; Restoration</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Professional mattress sanitisation</li>
+          <li>Professional upholstery shampooing and steam cleaning</li>
+          <li>Mould remediation (beyond surface cleaning)</li>
+          <li>Curtain and drape dry cleaning</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Outdoor &amp; Equipment</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Pressure washing (pool deck, terrace, rooftop, garage)</li>
+          <li>Pool and jacuzzi maintenance</li>
+          <li>Solar panel cleaning</li>
+          <li>Elevator maintenance service</li>
+        </ul>
+      </div>
+      <div class="border border-neutral-200/60 p-8">
+        <h4 class="font-serif text-lg font-normal text-neutral-900 mb-4">Pest Management</h4>
+        <ul class="ck space-y-2 text-sm text-neutral-600">
+          <li>Professional pest control treatment</li>
+          <li>Termite inspection</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="py-24 md:py-32 bg-navy-600">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-12 h-px bg-gold-400 mx-auto mb-8"></div>
+    <h2 class="tr font-serif font-light text-3xl md:text-4xl tracking-tight text-white">Ready to Experience This Standard?</h2>
+    <p class="tr mt-6 text-neutral-400 text-lg leading-relaxed max-w-2xl mx-auto">Your assessor will walk through your property, identify priorities, and tailor this checklist to your home — at no cost and no obligation.</p>
+    <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact" class="tr inline-block bg-gold-400 text-navy-600 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 hover:bg-gold-300 transition-colors duration-300">Book Your Property Assessment</a>
+      <a href="tel:{{site.phone}}" class="inline-block border border-gold-400 text-gold-400 text-xs font-medium uppercase tracking-[0.2em] px-10 py-4 hover:bg-gold-400 hover:text-navy-600 transition-all duration-300">Call {{site.phone}}</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggle(id) {
+  var section = document.getElementById('section-' + id);
+  var icon = document.getElementById('icon-' + id);
+  if (section.classList.contains('hidden')) {
+    section.classList.remove('hidden');
+    icon.style.transform = 'rotate(180deg)';
+  } else {
+    section.classList.add('hidden');
+    icon.style.transform = 'rotate(0deg)';
+  }
+}
+</script>

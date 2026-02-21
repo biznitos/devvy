@@ -174,5 +174,22 @@
     "updated_at": "2026-01-01T00:00:00Z",
     "created_by": 1,
     "views": 67
+  },
+  {
+    "id": 30,
+    "zid": "page-cleaning-checklist",
+    "type": "checklist",
+    "subtype": null,
+    "title": "Elite Cleaning Checklist — Every Room, Every Detail",
+    "description": "The complete room-by-room cleaning checklist used by Khun Clean Elite. See exactly what our hotel-trained teams clean in Bangkok's finest homes.",
+    "permalink": "/cleaning-checklist",
+    "content": "",
+    "cover_image": "https://placehold.co/1200x630?text=Cleaning+Checklist",
+    "tags": "checklist,cleaning,deep cleaning,bangkok,luxury,premium",
+    "pubdate": "2026-02-01T10:00:00Z",
+    "inserted_at": "2026-02-01T10:00:00Z",
+    "updated_at": "2026-02-21T10:00:00Z",
+    "created_by": 1,
+    "views": 0
   }
 ]
