@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "type": "booking",
+    "subtype": "ants",
+    "title": "Pest Control Booking",
+    "customer": {"name": "John Smith", "email": "john@example.com", "phone": "081-234-5678"},
+    "location": "Sukhumvit Soi 24, Watthana, Bangkok",
+    "notes": "Ants in kitchen and bathroom",
+    "scheduled": "2026-02-25",
+    "data": {"property": "Condo", "size": "Medium (50-150 sqm)", "severity": "Moderate", "time": "10:00 AM"}
+  }
+]

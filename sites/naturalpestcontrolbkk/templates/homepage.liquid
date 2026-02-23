@@ -1,0 +1,188 @@
+<!-- Hero -->
+<section class="bg-emerald-700 py-20 md:py-28">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto tr">Natural Pest Control for Bangkok Homes</h1>
+    <p class="text-emerald-100 text-lg md:text-xl max-w-2xl mx-auto tr">Eliminate ants, cockroaches, bed bugs, and more — without toxic chemicals. Safe for your family, pets, and food areas. Guaranteed results.</p>
+    {% partial "_hero_trust" %}
+  </div>
+</section>
+
+{% partial "_reviews" %}
+
+<!-- Pest Grid -->
+<section id="pests" class="py-16 fade-in">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-serif text-3xl md:text-4xl font-bold text-emerald-700 text-center mb-4 tr">Pests We Eliminate Naturally</h2>
+    <p class="text-center text-stone-600 mb-10 max-w-2xl mx-auto tr">Our natural treatment works on all common Bangkok pests — no sprays, no fumes, no toxic residue.</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      {% for c in categories %}
+      <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition text-center group">
+        <a href="{{c.permalink}}"><img src="{{c.cover_image}}" class="w-24 h-24 inline"></a>
+        <h3 class="font-serif font-bold text-stone-800 mb-1 tr"><a href="{{c.permalink}}">{{c.subtitle}}</a></h3>
+        <p class="text-sm text-stone-500 tr">{{c.meta3}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% partial "_why_natural" %}
+
+{% partial "_safe_for" %}
+
+<!-- How It Works -->
+<section class="py-16 fade-in">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-serif text-3xl md:text-4xl font-bold text-emerald-700 text-center mb-10 tr">How It Works</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div class="text-center">
+        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-2xl font-bold text-emerald-700">1</span>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-stone-800 mb-2 tr">Book Online</h3>
+        <p class="text-stone-600 text-sm tr">Tell us about your pest problem and choose a time that works for you. It takes less than 2 minutes.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-2xl font-bold text-emerald-700">2</span>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-stone-800 mb-2 tr">We Treat Your Home</h3>
+        <p class="text-stone-600 text-sm tr">Our technician arrives and applies a targeted natural treatment. No sprays, no fumes — you can stay home.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span class="text-2xl font-bold text-emerald-700">3</span>
+        </div>
+        <h3 class="font-serif font-bold text-lg text-stone-800 mb-2 tr">Pests Gone — Guaranteed</h3>
+        <p class="text-stone-600 text-sm tr">Pests are eliminated within 48 hours. We follow up to make sure your home stays pest-free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Areas -->
+<section class="py-12 bg-white fade-in">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="font-serif text-2xl md:text-3xl font-bold text-emerald-700 mb-6 tr">Serving All Bangkok Districts</h2>
+    <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Sukhumvit</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Silom</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Sathorn</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Thonglor</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Ekkamai</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Ari</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Ratchada</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Ladprao</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">On Nut</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Bang Na</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Chatuchak</span>
+      <span class="bg-emerald-50 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium tr">Phaya Thai</span>
+    </div>
+  </div>
+</section>
+
+{% partial "_cta" %}
+
+<!-- FAQ -->
+<section class="py-16 bg-white">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="font-serif text-3xl font-bold text-emerald-700 text-center mb-8 tr">Frequently Asked Questions</h2>
+    <div class="space-y-3">
+      <div class="border border-stone-200 rounded-xl overflow-hidden">
+        <button data-faq class="w-full flex items-center justify-between p-4 text-left font-medium text-stone-800 hover:bg-stone-50 transition">
+          <span class="tr">Is the treatment really safe for my family?</span>
+          <span data-faq-icon class="text-emerald-600 text-xl font-bold">+</span>
+        </button>
+        <div class="faq-answer px-4">
+          <p class="pb-4 text-stone-600 text-sm tr">Yes! Our treatment uses only natural, food-grade materials that are recognized as safe by health authorities worldwide. It works mechanically — not chemically — to eliminate pests. It's safe around children, pets, and food preparation areas.</p>
+        </div>
+      </div>
+      <div class="border border-stone-200 rounded-xl overflow-hidden">
+        <button data-faq class="w-full flex items-center justify-between p-4 text-left font-medium text-stone-800 hover:bg-stone-50 transition">
+          <span class="tr">How long does the treatment take to work?</span>
+          <span data-faq-icon class="text-emerald-600 text-xl font-bold">+</span>
+        </button>
+        <div class="faq-answer px-4">
+          <p class="pb-4 text-stone-600 text-sm tr">Most pests are eliminated within 24–48 hours. The treatment continues working as long as it remains in place, providing ongoing protection. We recommend leaving it undisturbed for at least 2 weeks for best results.</p>
+        </div>
+      </div>
+      <div class="border border-stone-200 rounded-xl overflow-hidden">
+        <button data-faq class="w-full flex items-center justify-between p-4 text-left font-medium text-stone-800 hover:bg-stone-50 transition">
+          <span class="tr">Do I need to leave my home during treatment?</span>
+          <span data-faq-icon class="text-emerald-600 text-xl font-bold">+</span>
+        </button>
+        <div class="faq-answer px-4">
+          <p class="pb-4 text-stone-600 text-sm tr">No! Unlike chemical pest control, you can stay in your home during and after our treatment. There are no toxic fumes or residues. You can carry on with your normal daily activities immediately.</p>
+        </div>
+      </div>
+      <div class="border border-stone-200 rounded-xl overflow-hidden">
+        <button data-faq class="w-full flex items-center justify-between p-4 text-left font-medium text-stone-800 hover:bg-stone-50 transition">
+          <span class="tr">How much does natural pest control cost?</span>
+          <span data-faq-icon class="text-emerald-600 text-xl font-bold">+</span>
+        </button>
+        <div class="faq-answer px-4">
+          <p class="pb-4 text-stone-600 text-sm tr">Pricing depends on property size and pest type. Book online and we'll provide an accurate quote before treatment. Our prices are competitive with traditional chemical pest control services.</p>
+        </div>
+      </div>
+      <div class="border border-stone-200 rounded-xl overflow-hidden">
+        <button data-faq class="w-full flex items-center justify-between p-4 text-left font-medium text-stone-800 hover:bg-stone-50 transition">
+          <span class="tr">Do you serve my area in Bangkok?</span>
+          <span data-faq-icon class="text-emerald-600 text-xl font-bold">+</span>
+        </button>
+        <div class="faq-answer px-4">
+          <p class="pb-4 text-stone-600 text-sm tr">We serve all districts within Bangkok including Sukhumvit, Silom, Sathorn, Thonglor, Ekkamai, Ari, Ratchada, Ladprao, On Nut, Bang Na, and more. Book online and we'll confirm availability for your area.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is the treatment really safe for my family?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Our treatment uses only natural, food-grade materials that are recognized as safe by health authorities worldwide. It works mechanically — not chemically — to eliminate pests. It's safe around children, pets, and food preparation areas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the treatment take to work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most pests are eliminated within 24–48 hours. The treatment continues working as long as it remains in place, providing ongoing protection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to leave my home during treatment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No! Unlike chemical pest control, you can stay in your home during and after our treatment. There are no toxic fumes or residues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does natural pest control cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pricing depends on property size and pest type. Book online and we'll provide an accurate quote before treatment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you serve my area in Bangkok?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We serve all districts within Bangkok including Sukhumvit, Silom, Sathorn, Thonglor, Ekkamai, Ari, Ratchada, Ladprao, On Nut, Bang Na, and more."
+      }
+    }
+  ]
+}
+</script>

@@ -1,0 +1,79 @@
+<section id="wizard" class="py-16 bg-emerald-800">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="font-serif text-3xl md:text-4xl font-bold text-white text-center mb-2">Book Your Treatment</h2>
+    <p class="text-center text-emerald-200 mb-8">Fill out the form below and we'll get back to you within a few hours.</p>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+      <form action="/api/lead/v1" method="POST">
+        <input type="hidden" name="type" value="booking">
+        <input type="hidden" name="title" value="Booking Request">
+        <input type="hidden" name="return_url" value="/thank-you">
+        <input type="hidden" name="failure_url" value="/booking-error">
+
+        <!-- Pest Type -->
+        <fieldset class="mb-6">
+          <legend class="font-serif text-xl font-bold text-stone-800 mb-4">What pests are you dealing with?</legend>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <label class="flex items-center gap-3 bg-stone-50 border border-stone-200 rounded-xl p-4 cursor-pointer hover:border-emerald-500 transition">
+              <input type="checkbox" name="data[pest][]" value="Ants" class="w-5 h-5 text-emerald-600 rounded border-stone-300 focus:ring-emerald-500">
+              <span class="font-medium text-stone-800 text-sm">Ants</span>
+            </label>
+            <label class="flex items-center gap-3 bg-stone-50 border border-stone-200 rounded-xl p-4 cursor-pointer hover:border-emerald-500 transition">
+              <input type="checkbox" name="data[pest][]" value="Cockroaches" class="w-5 h-5 text-emerald-600 rounded border-stone-300 focus:ring-emerald-500">
+              <span class="font-medium text-stone-800 text-sm">Cockroaches</span>
+            </label>
+            <label class="flex items-center gap-3 bg-stone-50 border border-stone-200 rounded-xl p-4 cursor-pointer hover:border-emerald-500 transition">
+              <input type="checkbox" name="data[pest][]" value="Bed Bugs" class="w-5 h-5 text-emerald-600 rounded border-stone-300 focus:ring-emerald-500">
+              <span class="font-medium text-stone-800 text-sm">Bed Bugs</span>
+            </label>
+            <label class="flex items-center gap-3 bg-stone-50 border border-stone-200 rounded-xl p-4 cursor-pointer hover:border-emerald-500 transition">
+              <input type="checkbox" name="data[pest][]" value="Fleas" class="w-5 h-5 text-emerald-600 rounded border-stone-300 focus:ring-emerald-500">
+              <span class="font-medium text-stone-800 text-sm">Fleas</span>
+            </label>
+            <label class="flex items-center gap-3 bg-stone-50 border border-stone-200 rounded-xl p-4 cursor-pointer hover:border-emerald-500 transition">
+              <input type="checkbox" name="data[pest][]" value="Centipedes" class="w-5 h-5 text-emerald-600 rounded border-stone-300 focus:ring-emerald-500">
+              <span class="font-medium text-stone-800 text-sm">Centipedes</span>
+            </label>
+            <label class="flex items-center gap-3 bg-stone-50 border border-stone-200 rounded-xl p-4 cursor-pointer hover:border-emerald-500 transition">
+              <input type="checkbox" name="data[pest][]" value="Other Pests" class="w-5 h-5 text-emerald-600 rounded border-stone-300 focus:ring-emerald-500">
+              <span class="font-medium text-stone-800 text-sm">Other Pests</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Description -->
+        <div class="mb-6">
+          <label for="notes" class="block text-sm font-medium text-stone-700 mb-2">Describe your pest problem</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Where are you seeing them? How long has it been going on?" class="w-full border border-stone-300 rounded-lg px-4 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder:text-stone-400"></textarea>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-6">
+          <label for="location" class="block text-sm font-medium text-stone-700 mb-2">Address</label>
+          <input type="text" id="location" name="location" placeholder="Street address, building, district" class="w-full border border-stone-300 rounded-lg px-4 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder:text-stone-400">
+        </div>
+
+        <!-- Name -->
+        <div class="mb-6">
+          <label for="name" class="block text-sm font-medium text-stone-700 mb-2">Name <span class="text-red-500">*</span></label>
+          <input type="text" id="name" name="customer[name]" required placeholder="Your name" class="w-full border border-stone-300 rounded-lg px-4 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder:text-stone-400">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium text-stone-700 mb-2">Email <span class="text-red-500">*</span></label>
+          <input type="email" id="email" name="customer[email]" required placeholder="you@email.com" class="w-full border border-stone-300 rounded-lg px-4 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder:text-stone-400">
+        </div>
+
+        <!-- Phone -->
+        <div class="mb-6">
+          <label for="phone" class="block text-sm font-medium text-stone-700 mb-2">Phone</label>
+          <input type="tel" id="phone" name="customer[phone]" placeholder="08X-XXX-XXXX" class="w-full border border-stone-300 rounded-lg px-4 py-2.5 text-stone-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 placeholder:text-stone-400">
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition btn-pulse">Request Booking</button>
+      </form>
+    </div>
+  </div>
+</section>

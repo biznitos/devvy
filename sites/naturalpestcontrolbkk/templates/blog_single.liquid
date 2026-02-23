@@ -1,0 +1,141 @@
+<!-- Breadcrumb -->
+<section class="bg-stone-100 py-4">
+  <div class="max-w-6xl mx-auto px-4">
+    <nav class="text-sm text-stone-500" aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item" class="hover:text-emerald-700 transition"><span itemprop="name" class="tr">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li class="text-stone-400">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/blogs" itemprop="item" class="hover:text-emerald-700 transition"><span itemprop="name" class="tr">Blog</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <li class="text-stone-400">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name" class="text-stone-700">{{post.title}}</span>
+          <meta itemprop="position" content="3">
+        </li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- Hero -->
+<section class="bg-emerald-700 py-20 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h1 class="font-serif text-3xl md:text-5xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">{{post.title}}</h1>
+    <div class="flex items-center justify-center gap-4 text-emerald-200 text-sm mb-4">
+      {% if post.created_by.name %}
+      <span class="tr">By {{post.created_by.name}}</span>
+      <span>&middot;</span>
+      {% endif %}
+      <time datetime="{{post.pubdate | date: '%Y-%m-%d'}}">{{post.pubdate | date: "%B %d, %Y"}}</time>
+    </div>
+    {% if post.description %}
+    <p class="text-emerald-100 text-lg md:text-xl max-w-2xl mx-auto">{{post.description}}</p>
+    {% endif %}
+  </div>
+</section>
+
+{% partial "_reviews" %}
+
+<!-- Cover Image -->
+{% if post.cover_image %}
+<section class="bg-white">
+  <div class="max-w-4xl mx-auto px-4 -mt-8">
+    <img src="{{post.cover_image | resize: '1200x630'}}" alt="{{post.title}}" class="w-full rounded-2xl shadow-lg" loading="eager">
+  </div>
+</section>
+{% endif %}
+
+<!-- Article Content -->
+<section class="py-16 fade-in">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="prose prose-lg max-w-none text-stone-700 prose-headings:font-serif prose-headings:text-emerald-800 prose-a:text-emerald-700 prose-a:underline prose-img:rounded-xl">
+      {{post.content}}
+    </div>
+  </div>
+</section>
+
+<!-- Tags -->
+{% if post.tags %}
+<section class="pb-12 fade-in">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="flex flex-wrap gap-2">
+      {% assign tag_list = post.tags | split: "," %}
+      {% for tag in tag_list %}
+        {% assign clean_tag = tag | strip %}
+        <a href="/blogs?tag={{clean_tag | to_url}}" class="bg-emerald-50 text-emerald-700 text-sm px-3 py-1 rounded-full hover:bg-emerald-100 transition">{{clean_tag}}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Related Posts -->
+{% if related.size > 0 %}
+<section class="py-16 bg-stone-100 fade-in">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-serif text-3xl font-bold text-emerald-700 text-center mb-10 tr">You Might Also Like</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      {% for item in related %}
+      <a href="{{item.permalink}}" class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition group">
+        {% if item.cover_image %}
+        <img src="{{item.cover_image | resize: '600x400'}}" alt="{{item.title}}" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+        {% endif %}
+        <div class="p-6">
+          <time class="text-stone-400 text-xs" datetime="{{item.pubdate | date: '%Y-%m-%d'}}">{{item.pubdate | date: "%B %d, %Y"}}</time>
+          <h3 class="font-serif font-bold text-stone-800 mt-2 mb-2 group-hover:text-emerald-700 transition">{{item.title}}</h3>
+          <p class="text-stone-600 text-sm line-clamp-2">{{item.description}}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% partial "_cta" %}
+
+<!-- JSON-LD: Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{post.title | strip_html}}",
+  "description": "{{post.description | strip_html}}",
+  "image": "{{post.cover_image}}",
+  "datePublished": "{{post.pubdate | date: '%Y-%m-%dT%H:%M:%S+07:00'}}",
+  "dateModified": "{{post.updated_at | date: '%Y-%m-%dT%H:%M:%S+07:00'}}",
+  {% if post.created_by.name %}
+  "author": {
+    "@type": "Person",
+    "name": "{{post.created_by.name}}"
+  },
+  {% endif %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "Khun Clean",
+    "url": "https://naturalpestcontrolbkk.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://naturalpestcontrolbkk.com{{post.permalink}}"
+  }
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://naturalpestcontrolbkk.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://naturalpestcontrolbkk.com/blogs"},
+    {"@type": "ListItem", "position": 3, "name": "{{post.title | strip_html}}"}
+  ]
+}
+</script>

@@ -1,0 +1,72 @@
+<!-- Hero -->
+<section class="bg-emerald-700 py-20 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h1 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6 tr">Bangkok Home & Living Guide</h1>
+    <p class="text-emerald-100 text-lg md:text-xl max-w-2xl mx-auto tr">Discover the best home services, pet care, moving companies, and more in Bangkok. Curated guides for homeowners and renters.</p>
+  </div>
+</section>
+
+<!-- Post Grid -->
+<section class="py-16 fade-in">
+  <div class="max-w-6xl mx-auto px-4">
+    {% if posts.size > 0 %}
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for item in posts %}
+      <a href="{{item.permalink}}" class="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition group">
+        {% if item.cover_image %}
+        <img src="{{item.cover_image | resize: '600x400'}}" alt="{{item.title}}" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" loading="lazy">
+        {% endif %}
+        <div class="p-6">
+          <time class="text-stone-400 text-xs" datetime="{{item.pubdate | date: '%Y-%m-%d'}}">{{item.pubdate | date: "%B %d, %Y"}}</time>
+          <h2 class="font-serif font-bold text-lg text-stone-800 mt-2 mb-2 group-hover:text-emerald-700 transition">{{item.title}}</h2>
+          <p class="text-stone-600 text-sm line-clamp-3">{{item.description}}</p>
+          <span class="inline-block mt-4 text-emerald-700 text-sm font-semibold group-hover:underline tr">Read More &rarr;</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    {% if total_pages > 1 %}
+    <nav class="flex items-center justify-center gap-4 mt-12" aria-label="Pagination">
+      {% if prev_page_link %}
+      <a href="{{prev_page_link}}" class="bg-emerald-700 text-white px-5 py-2 rounded-lg hover:bg-emerald-800 transition font-semibold text-sm tr">&larr; Previous</a>
+      {% else %}
+      <span class="bg-stone-200 text-stone-400 px-5 py-2 rounded-lg font-semibold text-sm cursor-not-allowed tr">&larr; Previous</span>
+      {% endif %}
+
+      <span class="text-stone-600 text-sm">
+        <span class="tr">Page</span> {{page_number}} <span class="tr">of</span> {{total_pages}}
+      </span>
+
+      {% if next_page_link %}
+      <a href="{{next_page_link}}" class="bg-emerald-700 text-white px-5 py-2 rounded-lg hover:bg-emerald-800 transition font-semibold text-sm tr">Next &rarr;</a>
+      {% else %}
+      <span class="bg-stone-200 text-stone-400 px-5 py-2 rounded-lg font-semibold text-sm cursor-not-allowed tr">Next &rarr;</span>
+      {% endif %}
+    </nav>
+    {% endif %}
+
+    {% else %}
+    <p class="text-center text-stone-500 text-lg tr">No blog posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</section>
+
+{% partial "_cta" %}
+
+<!-- JSON-LD: CollectionPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Bangkok Home & Living Guide",
+  "description": "Discover the best home services, pet care, moving companies, and more in Bangkok.",
+  "url": "https://naturalpestcontrolbkk.com/blogs",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Khun Clean",
+    "url": "https://naturalpestcontrolbkk.com"
+  }
+}
+</script>

@@ -1,0 +1,120 @@
+<!-- Hero -->
+<section class="bg-emerald-700 py-20 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h1 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto tr">{{post.title}}</h1>
+    <p class="text-emerald-100 text-lg md:text-xl max-w-2xl mx-auto tr">{{post.meta2}}</p>
+    {% partial "_hero_trust" %}
+  </div>
+</section>
+
+{% partial "_reviews" %}
+
+<!-- Problem Section -->
+<section class="py-16 fade-in">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="prose max-w-none text-stone-700 space-y-4">
+      {{post.content}}
+    </div>
+  </div>
+</section>
+
+<!-- Treatment Steps -->
+<section class="py-16 bg-white fade-in">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="font-serif text-3xl font-bold text-emerald-700 mb-6 tr">{{post.meta.stepsheading}}</h2>
+    <div class="space-y-6">
+      {% for step in post.meta.steps %}
+      <div class="flex gap-4">
+        <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center shrink-0">
+          <span class="font-bold text-emerald-700">{{forloop.index}}</span>
+        </div>
+        <div>
+          <h3 class="font-serif font-bold text-stone-800 mb-1 tr">{{step.title}}</h3>
+          <p class="text-stone-600 tr">{{step.text}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% partial "_why_natural" %}
+
+{% partial "_safe_for" %}
+
+<!-- Pest Types -->
+<section class="py-16 fade-in">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-serif text-3xl font-bold text-emerald-700 text-center mb-4 tr">{{post.meta.typesheading}}</h2>
+    <p class="text-center text-stone-600 mb-10 max-w-2xl mx-auto tr">{{post.meta.typestext}}</p>
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      {% for type in post.meta.types %}
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <h3 class="font-serif font-bold text-lg text-stone-800 mb-2 tr">{{type.name}}</h3>
+        <p class="text-stone-600 text-sm tr">{{type.text}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% partial "_cta" %}
+
+<!-- FAQ -->
+<section class="py-16 bg-white">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="font-serif text-3xl font-bold text-emerald-700 text-center mb-8 tr">{{post.meta.faqheading}}</h2>
+    <div class="space-y-3">
+      {% for item in post.meta.faq %}
+      <div class="border border-stone-200 rounded-xl overflow-hidden">
+        <button data-faq class="w-full flex items-center justify-between p-4 text-left font-medium text-stone-800 hover:bg-stone-50 transition">
+          <span class="tr">{{item.q}}</span>
+          <span data-faq-icon class="text-emerald-600 text-xl font-bold">+</span>
+        </button>
+        <div class="faq-answer px-4">
+          <p class="pb-4 text-stone-600 text-sm tr">{{item.a}}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Schema: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{post.title}}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{site.name}}"
+  },
+  "description": "{{post.description | strip_html}}",
+  "areaServed": {
+    "@type": "City",
+    "name": "Bangkok"
+  },
+  "serviceType": "{{post.subtitle}}"
+}
+</script>
+
+<!-- Schema: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in post.meta.faq %}
+    {
+      "@type": "Question",
+      "name": "{{item.q}}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{item.a}}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

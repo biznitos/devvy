@@ -1,0 +1,26 @@
+<section class="pt-16 pb-10 fade-in">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <p class="text-stone-500 text-sm font-semibold uppercase tracking-wide mb-6 tr">What Our Customers Say</p>
+    <div id="reviews-grid" class="grid md:grid-cols-3 gap-6"></div>
+    <div id="reviews-pool" class="hidden">
+      <img src="https://s3.biznitos.com/cdn-cgi/image/gravity=auto,fit=cover,width=600/curator/suploads/a11e2d11-3bef-43ef-aac0-bbf726d96039.jpg" alt="Google Review" class="w-full rounded-2xl shadow-sm" loading="lazy">
+      <img src="https://s3.biznitos.com/cdn-cgi/image/gravity=auto,fit=cover,width=600/curator/suploads/560fb195-e289-4d42-9fae-20050daa8700.jpg" alt="Google Review" class="w-full rounded-2xl shadow-sm" loading="lazy">
+      <img src="https://s3.biznitos.com/cdn-cgi/image/gravity=auto,fit=cover,width=600/curator/suploads/da5f7354-cef5-42b7-b423-8d039e358064.jpg" alt="Google Review" class="w-full rounded-2xl shadow-sm" loading="lazy">
+      <img src="https://s3.biznitos.com/cdn-cgi/image/gravity=auto,fit=cover,width=600/curator/suploads/4f852bb6-979d-49c0-95f9-3a5e65519116.jpg" alt="Google Review" class="w-full rounded-2xl shadow-sm" loading="lazy">
+      <img src="https://s3.biznitos.com/cdn-cgi/image/gravity=auto,fit=cover,width=600/curator/suploads/6912b7bb-cade-458e-9c5c-4e45c4d677d1.jpg" alt="Google Review" class="w-full rounded-2xl shadow-sm" loading="lazy">
+      <img src="https://s3.biznitos.com/cdn-cgi/image/gravity=auto,fit=cover,width=600/curator/suploads/9d33d848-2c49-4290-9fa4-70f73fade7b6.jpg" alt="Google Review" class="w-full rounded-2xl shadow-sm" loading="lazy">
+      <img src="https://s3.biznitos.com/cdn-cgi/image/gravity=auto,fit=cover,width=600/curator/suploads/22c89b94-788f-4670-bb8e-a9c542d54be9.jpg" alt="Google Review" class="w-full rounded-2xl shadow-sm" loading="lazy">
+    </div>
+  </div>
+  <script>
+    (function() {
+      var pool = Array.from(document.querySelectorAll('#reviews-pool img'));
+      var grid = document.getElementById('reviews-grid');
+      for (var i = pool.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = pool[i]; pool[i] = pool[j]; pool[j] = t;
+      }
+      pool.slice(0, 3).forEach(function(img) { grid.appendChild(img); });
+    })();
+  </script>
+</section>
