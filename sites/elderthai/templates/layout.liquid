@@ -1,0 +1,138 @@
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+    <meta name="author" content="{{site.name}}">
+    {% partial "_seo" %}
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: {
+                50: '#FFFDF7',
+                100: '#FFF9E8',
+                200: '#FFF3D1',
+              },
+              sage: {
+                50: '#F0F5F0',
+                100: '#D9E8D9',
+                200: '#B3D1B3',
+                300: '#8CBA8C',
+                400: '#6FA36F',
+                500: '#5C8A5C',
+                600: '#4A7A4A',
+                700: '#3D6B3D',
+                800: '#305530',
+                900: '#234023',
+              },
+              warm: {
+                50: '#FAF8F5',
+                100: '#F5F0EA',
+                200: '#E8E0D5',
+                300: '#D4C8B8',
+                400: '#B8A890',
+                500: '#9C8B70',
+                600: '#7A6B55',
+                700: '#5E5343',
+                800: '#4A4133',
+                900: '#362F24',
+              },
+              gold: {
+                400: '#E0B040',
+                500: '#D4A030',
+                600: '#B88A20',
+                700: '#9C7418',
+              },
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+              sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      html { font-family: 'Montserrat', system-ui, sans-serif; }
+      /* FAQ accordion */
+      .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; padding: 0 1.25rem; }
+      .faq-answer.open { max-height: 500px; padding: 0 1.25rem 1rem; }
+      .faq-icon { transition: transform 0.3s ease; }
+      .faq-item.open .faq-icon { transform: rotate(45deg); }
+      /* Fade-in on scroll */
+      .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+      .fade-in.visible { opacity: 1; transform: translateY(0); }
+      /* Gold pulse CTA */
+      @keyframes btn-pulse {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(212, 160, 48, 0.4); }
+        50% { box-shadow: 0 0 0 10px rgba(212, 160, 48, 0); }
+      }
+      .btn-pulse { animation: btn-pulse 2.5s ease-in-out infinite; }
+      /* Mobile nav */
+      .mobile-nav { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+      .mobile-nav.open { max-height: 400px; }
+    </style>
+  </head>
+  <body class="bg-cream-50 text-warm-900 font-sans">
+    {% partial "_header" %}
+    <main>
+      {{body}}
+    </main>
+    {% partial "_footer" %}
+    <script>
+      // FAQ accordion toggle
+      document.addEventListener('click', function(e) {
+        var btn = e.target.closest('.faq-toggle');
+        if (!btn) return;
+        var item = btn.closest('.faq-item');
+        var answer = item.querySelector('.faq-answer');
+        var isOpen = item.classList.contains('open');
+        // Close all others
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-answer').classList.remove('open');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.classList.add('open');
+        }
+      });
+      // Mobile nav toggle
+      document.addEventListener('click', function(e) {
+        var btn = e.target.closest('#mobile-nav-toggle');
+        if (!btn) return;
+        var nav = document.getElementById('mobile-nav');
+        nav.classList.toggle('open');
+        // Toggle hamburger/X icon
+        var bars = btn.querySelector('.hamburger-bars');
+        var x = btn.querySelector('.hamburger-x');
+        if (bars && x) {
+          bars.classList.toggle('hidden');
+          x.classList.toggle('hidden');
+        }
+      });
+      // Fade-in on scroll
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+      } else {
+        document.querySelectorAll('.fade-in').forEach(function(el) { el.classList.add('visible'); });
+      }
+    </script>
+  </body>
+</html>

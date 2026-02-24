@@ -1,0 +1,204 @@
+<!-- Hero -->
+<section class="bg-sage-700 py-12 md:py-16">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h1 class="font-serif text-3xl md:text-5xl font-medium text-white tr">{{post.title}}</h1>
+    <p class="text-sage-100 text-lg mt-4 max-w-2xl mx-auto tr">{{post.description}}</p>
+    <div class="flex flex-wrap justify-center gap-3 mt-5 text-sm">
+      <span class="bg-white/15 text-white px-3 py-1 rounded-full tr">Nurse-Coordinated</span>
+      <span class="bg-white/15 text-white px-3 py-1 rounded-full tr">Background-Checked</span>
+      <span class="bg-white/15 text-white px-3 py-1 rounded-full tr">Bilingual Team</span>
+    </div>
+    <div class="mt-6">
+      {% partial "_cta_buttons" %}
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="bg-cream-100 border-y border-cream-200">
+  <div class="max-w-5xl mx-auto px-4 py-10">
+    <h2 class="font-serif text-2xl md:text-3xl font-medium text-warm-900 text-center tr">Service Packages</h2>
+    <p class="text-warm-800 text-center mt-2 max-w-2xl mx-auto tr">All packages include caregiver support, family updates and nurse-reviewed care plans.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+      <div class="bg-white rounded-xl p-5 border border-cream-200 text-center shadow-sm">
+        <div class="text-xs font-semibold text-sage-600 uppercase tracking-wide tr">4-Hour Block</div>
+        <div class="mt-2 font-serif text-3xl font-medium text-warm-900">2,200</div>
+        <div class="text-xs text-warm-800 mt-1 tr">THB per visit</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-cream-200 text-center shadow-sm">
+        <div class="text-xs font-semibold text-sage-600 uppercase tracking-wide tr">8-Hour Block</div>
+        <div class="mt-2 font-serif text-3xl font-medium text-warm-900">4,000</div>
+        <div class="text-xs text-warm-800 mt-1 tr">THB per visit</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-cream-200 text-center shadow-sm">
+        <div class="text-xs font-semibold text-sage-600 uppercase tracking-wide tr">12-Hour Block</div>
+        <div class="mt-2 font-serif text-3xl font-medium text-warm-900">6,200</div>
+        <div class="text-xs text-warm-800 mt-1 tr">THB per visit</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 border border-sage-300 text-center shadow-sm ring-2 ring-sage-200">
+        <div class="text-xs font-semibold text-sage-600 uppercase tracking-wide tr">24-Hour Live-in</div>
+        <div class="mt-2 font-serif text-3xl font-medium text-warm-900">11,000</div>
+        <div class="text-xs text-warm-800 mt-1 tr">THB per day</div>
+      </div>
+    </div>
+    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 text-sm text-warm-800 text-center">
+      <span><strong class="text-warm-900 tr">Assessment &amp; Trial:</strong> <span class="tr">5,500 THB (1-hr assessment + 4-hr session)</span></span>
+      <span><strong class="text-warm-900 tr">Monthly Support:</strong> <span class="tr">from 65,000 THB (20 days &times; 8 hrs, 19% savings)</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<div class="max-w-4xl mx-auto px-4 py-10">
+  {% if post.meta2.size > 0 %}
+  <div class="bg-cream-100 border border-cream-200 rounded-xl p-6 mb-8">
+    <div class="prose prose-sm max-w-none prose-headings:font-serif prose-headings:text-warm-900 text-warm-900">
+      {{post.meta2 | markdown}}
+    </div>
+  </div>
+  {% endif %}
+  <div class="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-warm-900 prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:font-semibold prose-a:text-sage-600 hover:prose-a:text-sage-700 text-warm-900 prose-li:text-warm-900 prose-strong:text-warm-900">
+    {{post.content}}
+  </div>
+</div>
+
+<!-- Trust cards -->
+<section class="py-10 md:py-14">
+  <div class="max-w-4xl mx-auto px-4">
+    <p class="text-center text-warm-800 mb-8 md:mb-10 tr">Trusted by retirees, expat families, and local professionals across Bangkok.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-warm-100 text-center">
+        <svg class="w-10 h-10 text-warm-800 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+        <h3 class="text-lg font-semibold text-warm-900 tr">Bilingual Team</h3>
+        <p class="text-warm-800 mt-2 leading-relaxed tr">Thai–English caregivers who understand hospital systems and daily living in Bangkok.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-warm-100 text-center">
+        <svg class="w-10 h-10 text-warm-800 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+        <h3 class="text-lg font-semibold text-warm-900 tr">Nurse Oversight</h3>
+        <p class="text-warm-800 mt-2 leading-relaxed tr">A Nurse Coordinator designs care plans and supports caregivers on call.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-sm border border-warm-100 text-center">
+        <svg class="w-10 h-10 text-warm-800 mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <h3 class="text-lg font-semibold text-warm-900 tr">Simple Pricing</h3>
+        <p class="text-warm-800 mt-2 leading-relaxed tr">4, 8, 12, or 24-hour coverage. Flexible for day, night, or live-in needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="bg-warm-50 py-12 md:py-14">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="font-serif text-3xl md:text-4xl font-medium text-center text-warm-900 tr">How Does ElderThai Work?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <div class="text-center">
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sage-600 text-white font-medium text-xl mb-4">1</div>
+        <h3 class="text-lg font-semibold text-warm-900 tr">Consultation</h3>
+        <p class="text-warm-800 mt-2 tr">Tell us your situation, where you are, and your goals.</p>
+      </div>
+      <div class="text-center">
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sage-600 text-white font-medium text-xl mb-4">2</div>
+        <h3 class="text-lg font-semibold text-warm-900 tr">Nurse Plan</h3>
+        <p class="text-warm-800 mt-2 tr">Our Nurse Coordinator builds the best-sized plan for you.</p>
+      </div>
+      <div class="text-center">
+        <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sage-600 text-white font-medium text-xl mb-4">3</div>
+        <h3 class="text-lg font-semibold text-warm-900 tr">Start Your Care</h3>
+        <p class="text-warm-800 mt-2 tr">Your caregiver gets to work with a clear checklist and care plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Areas We Serve -->
+<section class="bg-cream-100 border-y border-cream-200 py-10">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="font-serif text-2xl md:text-3xl font-medium text-warm-900 tr">Areas We Serve in Bangkok</h2>
+    <p class="text-warm-800 mt-2 tr">We provide home care across central Bangkok and surrounding neighborhoods.</p>
+    <div class="flex flex-wrap justify-center gap-2 mt-6">
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Sukhumvit</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Thong Lo</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Ekkamai</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Phrom Phong</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Asoke</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Sathorn</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Silom</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Ari</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Ratchadamri</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Phra Khanong</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">On Nut</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Bang Na</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Rama 9</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Huai Khwang</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Ladprao</span>
+      <span class="bg-white text-warm-900 text-sm px-3 py-1.5 rounded-full border border-cream-200">Pattaya</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-10">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="font-serif text-2xl md:text-3xl font-medium text-warm-900 text-center tr">Frequently Asked Questions</h2>
+    <div class="mt-8 space-y-3">
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">How quickly can care start?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">Most clients can begin within 24–48 hours after completing the nurse consultation and caregiver matching process. Urgent cases can often start the same day.</div>
+      </div>
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">Do you offer day, night, and live-in care?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">Yes. You can choose flexible 4, 8, 12, or 24-hour blocks depending on your needs. Schedules can be adjusted weekly as your situation changes.</div>
+      </div>
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">Are caregivers background-checked?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">Every caregiver undergoes ID verification, criminal background checks and reference reviews, followed by hands-on skill training with our Nurse Coordinator before placement.</div>
+      </div>
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">What languages do caregivers speak?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">All caregivers speak Thai and English. Other languages can be arranged upon request for international clients. Family updates are provided in your preferred language.</div>
+      </div>
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">Can caregivers manage medications?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">Caregivers handle medication reminders, organization and tracking. Registered nurses perform injections, wound dressings or clinical tasks as needed under the care plan.</div>
+      </div>
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">How are caregivers supervised?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">Our Nurse Coordinator reviews each care plan weekly, conducts regular check-ins with caregivers and remains on-call for any medical questions or changes in condition.</div>
+      </div>
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">What if my caregiver is unavailable?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">ElderThai guarantees continuity of care. If your primary caregiver is sick or on leave, we provide a qualified replacement who has been briefed on your care plan.</div>
+      </div>
+      <div class="faq-item border border-warm-200 rounded-lg bg-white">
+        <button class="faq-toggle w-full flex items-center justify-between px-5 py-4 text-left">
+          <span class="font-semibold text-warm-900 tr">Can I change my schedule?</span>
+          <svg class="faq-icon w-5 h-5 text-sage-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12M6 12h12"/></svg>
+        </button>
+        <div class="faq-answer text-warm-800 text-sm leading-relaxed tr">Yes. Care schedules are flexible and can be adjusted with advance notice. You can increase, decrease or change your block times as needs evolve.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% partial "_cta" %}

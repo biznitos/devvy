@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "type": "request",
+    "subtype": "care",
+    "title": "Care evaluation request",
+    "customer": {
+      "name": "John Smith",
+      "email": "john@example.com",
+      "phone": "+66812345678"
+    },
+    "notes": "My mother needs companionship care, she lives alone in Sukhumvit.",
+    "data": {
+      "who": "Relative",
+      "age": "65+",
+      "location": "Bangkok"
+    },
+    "created_at": "2025-11-01T10:00:00Z"
+  }
+]

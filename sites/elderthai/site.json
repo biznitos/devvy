@@ -1,0 +1,21 @@
+{
+  "id": 1,
+  "name": "Elder Thai",
+  "cname": "elderthai.com",
+  "description": "In-home elder care in Bangkok for expats and Thai families. Bilingual caregivers, nurse-guided care.",
+  "email": "hello@elderthai.com",
+  "phone": "+66991273745",
+  "address": "Phra Khanong, Bangkok, Thailand",
+  "city": "Phra Khanong",
+  "region": "Bangkok",
+  "country_code": "th",
+  "postal_code": "",
+  "locale": "th",
+  "logo": "https://placehold.co/300x100?text=ElderThai",
+  "meta2": "https://wa.me/66991273745",
+  "meta3": "https://line.me/ti/p/elderthai",
+  "settings": {
+    "geo": { "lat": "13.7150", "lng": "100.5853" },
+    "social": { "facebook": "", "instagram": "" }
+  }
+}

@@ -1,0 +1,19 @@
+<div class="flex flex-wrap items-center justify-center gap-2 md:gap-3">
+  <a href="/go?utm_source={{params.utm_source | default: 'cta'}}" class="inline-flex items-center space-x-2 bg-gold-500 hover:bg-gold-600 text-warm-900 px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-sm md:text-lg transition-colors btn-pulse">
+    <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+    <span class="tr">Request Care</span>
+  </a>
+  {% if site.meta3.size > 0 %}
+  <a href="{{site.meta3}}" target="_blank" class="inline-flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-sm md:text-lg transition-colors">
+    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.814 4.27 8.846 10.035 9.608.391.084.922.258 1.057.592.121.303.079.776.039 1.081l-.171 1.028c-.052.314-.24 1.227 1.075.669 1.314-.558 7.088-4.174 9.674-7.144C23.395 14.127 24 12.317 24 10.304zM8.078 12.83H6.012a.573.573 0 01-.573-.572V8.283a.573.573 0 011.145 0v3.403h1.494a.573.573 0 010 1.145zm2.24-.572a.573.573 0 01-1.146 0V8.283a.573.573 0 011.145 0v3.975zm5.295 0a.573.573 0 01-1.017.36l-2.19-2.98v2.62a.573.573 0 01-1.145 0V8.283a.573.573 0 011.016-.361l2.191 2.98V8.283a.573.573 0 011.145 0v3.975zm3.836-2.83a.573.573 0 010 1.145h-1.494v.83h1.494a.573.573 0 010 1.145h-2.066a.573.573 0 01-.573-.572V8.283a.573.573 0 01.573-.573h2.066a.573.573 0 010 1.145h-1.494v.573h1.494z"/></svg>
+    <span class="tr">LINE</span>
+  </a>
+  {% endif %}
+  {% if site.meta2.size > 0 %}
+  <a href="{{site.meta2}}" target="_blank" class="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-sm md:text-lg transition-colors">
+    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.558 4.143 1.534 5.887L.058 23.71l5.99-1.57A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.91 0-3.74-.508-5.34-1.47l-.382-.227-3.964 1.04 1.058-3.867-.25-.396A9.77 9.77 0 012.18 12 9.82 9.82 0 0112 2.18 9.82 9.82 0 0121.82 12 9.82 9.82 0 0112 21.82z"/></svg>
+    <span class="tr">WhatsApp</span>
+  </a>
+  {% endif %}
+</div>
+<p class="mt-4 text-center text-sm opacity-90">{{site.email}} &nbsp;|&nbsp; {{site.phone}}</p>
