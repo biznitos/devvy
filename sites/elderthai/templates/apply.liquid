@@ -1,8 +1,8 @@
 <!-- Hero -->
-<section class="bg-sage-700 py-10">
+<section class="bg-green-700 py-10">
   <div class="max-w-4xl mx-auto px-4 text-center">
     <h1 class="font-serif text-3xl md:text-4xl font-medium text-white tr">Apply to Be an ElderThai Caregiver</h1>
-    <p class="text-sage-100 mt-3 max-w-2xl mx-auto tr">Join our team of professional caregivers serving seniors across Bangkok. We provide training, nurse supervision, and steady work with families who value quality care.</p>
+    <p class="text-green-100 mt-3 max-w-2xl mx-auto tr">Join our team of professional caregivers serving seniors across Bangkok. We provide training, nurse supervision, and steady work with families who value quality care.</p>
   </div>
 </section>
 
@@ -10,45 +10,50 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Form -->
     <div class="md:col-span-2">
-      <div class="bg-white rounded-xl shadow-md border border-warm-200 overflow-hidden">
+      <div class="bg-white rounded-xl shadow-md border border-stone-200 overflow-hidden">
         <form method="POST" action="/api/post/v1" enctype="multipart/form-data">
           <input type="hidden" name="title" value="Caregiver application">
           <input type="hidden" name="type" value="caregiver">
           <input type="hidden" name="subtype" value="application">
           <input type="hidden" name="return_url" value="/apply/thanks">
           <input type="hidden" name="failure_url" value="/apply">
+          <input type="hidden" name="notify" value="{{site.email}}">
           <input type="hidden" name="src" value="{{params.utm_source | default: 'web'}}">
+          <input type="hidden" name="data[utm_source]" value="{{params.utm_source}}">
+          <input type="hidden" name="data[utm_campaign]" value="{{params.utm_campaign}}">
+          <input type="hidden" name="data[tz]" id="apply-tz" value="">
+          <input type="hidden" name="data[localtime]" id="apply-localtime" value="">
 
           <!-- Personal info -->
           <div class="p-6">
-            <h2 class="font-serif text-lg font-semibold text-warm-900 border-l-4 border-sage-400 pl-3 tr">Personal Information</h2>
+            <h2 class="font-serif text-lg font-semibold text-stone-900 border-l-4 border-green-400 pl-3 tr">Personal Information</h2>
             <div class="mt-4">
-              <label class="block text-sm font-medium text-warm-900 tr">Full name <span class="text-red-500">*</span></label>
-              <input type="text" name="customer[name]" required class="mt-1 w-full border border-warm-300 bg-white rounded-lg px-3 py-2.5 text-sm text-warm-900 focus:border-sage-500 focus:ring-2 focus:ring-sage-200 outline-none transition-colors">
+              <label class="block text-sm font-medium text-stone-900"><span class="tr">Full name</span> <span class="text-red-500">*</span></label>
+              <input type="text" name="customer[name]" required class="mt-1 w-full border border-stone-300 bg-white rounded-lg px-3 py-2.5 text-sm text-stone-900 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors">
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <div>
-                <label class="block text-sm font-medium text-warm-900 tr">Email <span class="text-red-500">*</span></label>
-                <input type="email" name="customer[email]" required class="mt-1 w-full border border-warm-300 bg-white rounded-lg px-3 py-2.5 text-sm text-warm-900 focus:border-sage-500 focus:ring-2 focus:ring-sage-200 outline-none transition-colors">
+                <label class="block text-sm font-medium text-stone-900"><span class="tr">Email</span> <span class="text-red-500">*</span></label>
+                <input type="email" name="customer[email]" required class="mt-1 w-full border border-stone-300 bg-white rounded-lg px-3 py-2.5 text-sm text-stone-900 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors">
               </div>
               <div>
-                <label class="block text-sm font-medium text-warm-900 tr">Phone number <span class="text-red-500">*</span></label>
-                <input type="tel" name="customer[phone]" required class="mt-1 w-full border border-warm-300 bg-white rounded-lg px-3 py-2.5 text-sm text-warm-900 focus:border-sage-500 focus:ring-2 focus:ring-sage-200 outline-none transition-colors">
+                <label class="block text-sm font-medium text-stone-900"><span class="tr">Phone number</span> <span class="text-red-500">*</span></label>
+                <input type="tel" name="customer[phone]" required class="mt-1 w-full border border-stone-300 bg-white rounded-lg px-3 py-2.5 text-sm text-stone-900 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors">
               </div>
             </div>
             <div class="mt-4">
-              <label class="block text-sm font-medium text-warm-900 tr">LINE ID</label>
-              <input type="text" name="data[line_id]" class="mt-1 w-full border border-warm-300 bg-white rounded-lg px-3 py-2.5 text-sm text-warm-900 focus:border-sage-500 focus:ring-2 focus:ring-sage-200 outline-none transition-colors" placeholder="Your LINE username">
+              <label class="block text-sm font-medium text-stone-900 tr">LINE ID</label>
+              <input type="text" name="data[line_id]" class="mt-1 w-full border border-stone-300 bg-white rounded-lg px-3 py-2.5 text-sm text-stone-900 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors" placeholder="Your LINE username">
             </div>
           </div>
 
           <!-- Language proficiency -->
-          <div class="border-t border-warm-200 p-6">
-            <h2 class="font-serif text-lg font-semibold text-warm-900 border-l-4 border-sage-400 pl-3 tr">Language Proficiency</h2>
+          <div class="border-t border-stone-200 p-6">
+            <h2 class="font-serif text-lg font-semibold text-stone-900 border-l-4 border-green-400 pl-3 tr">Language Proficiency</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <div>
-                <label class="block text-sm font-medium text-warm-900 tr">Thai proficiency <span class="text-red-500">*</span></label>
-                <select name="data[thai_proficiency]" required class="mt-1 w-full border border-warm-300 bg-white rounded-lg px-3 py-2.5 text-sm text-warm-900 focus:border-sage-500 focus:ring-2 focus:ring-sage-200 outline-none transition-colors">
+                <label class="block text-sm font-medium text-stone-900"><span class="tr">Thai proficiency</span> <span class="text-red-500">*</span></label>
+                <select name="data[thai_proficiency]" required class="mt-1 w-full border border-stone-300 bg-white rounded-lg px-3 py-2.5 text-sm text-stone-900 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors">
                   <option value="" class="tr">Select level</option>
                   <option value="Native" class="tr">Native</option>
                   <option value="Fluent" class="tr">Fluent</option>
@@ -58,8 +63,8 @@
                 </select>
               </div>
               <div>
-                <label class="block text-sm font-medium text-warm-900 tr">English proficiency <span class="text-red-500">*</span></label>
-                <select name="data[english_proficiency]" required class="mt-1 w-full border border-warm-300 bg-white rounded-lg px-3 py-2.5 text-sm text-warm-900 focus:border-sage-500 focus:ring-2 focus:ring-sage-200 outline-none transition-colors">
+                <label class="block text-sm font-medium text-stone-900"><span class="tr">English proficiency</span> <span class="text-red-500">*</span></label>
+                <select name="data[english_proficiency]" required class="mt-1 w-full border border-stone-300 bg-white rounded-lg px-3 py-2.5 text-sm text-stone-900 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors">
                   <option value="" class="tr">Select level</option>
                   <option value="Native" class="tr">Native</option>
                   <option value="Fluent" class="tr">Fluent</option>
@@ -72,63 +77,63 @@
           </div>
 
           <!-- Services -->
-          <div class="border-t border-warm-200 p-6">
-            <h2 class="font-serif text-lg font-semibold text-warm-900 border-l-4 border-sage-400 pl-3 tr">Services You Can Provide</h2>
-            <p class="text-sm text-warm-700 mt-1 tr">Select all that apply.</p>
+          <div class="border-t border-stone-200 p-6">
+            <h2 class="font-serif text-lg font-semibold text-stone-900 border-l-4 border-green-400 pl-3 tr">Services You Can Provide</h2>
+            <p class="text-sm text-stone-700 mt-1 tr">Select all that apply.</p>
             <div class="mt-4 space-y-3">
               <label class="flex items-start space-x-3 cursor-pointer group">
-                <input type="checkbox" name="data[services][]" value="Senior Companionship" class="mt-0.5 w-4 h-4 rounded border-warm-300 text-sage-600 focus:ring-sage-400">
+                <input type="checkbox" name="data[services][]" value="Senior Companionship" class="mt-0.5 w-4 h-4 rounded border-stone-300 text-green-600 focus:ring-green-400">
                 <div>
-                  <span class="text-sm font-medium text-warm-900 group-hover:text-sage-700 tr">Senior Companionship</span>
-                  <p class="text-xs text-warm-600 tr">Daily visits, conversation, activities, meal support, outings</p>
+                  <span class="text-sm font-medium text-stone-900 group-hover:text-green-700 tr">Senior Companionship</span>
+                  <p class="text-xs text-stone-600 tr">Daily visits, conversation, activities, meal support, outings</p>
                 </div>
               </label>
               <label class="flex items-start space-x-3 cursor-pointer group">
-                <input type="checkbox" name="data[services][]" value="Dementia & Alzheimer's Care" class="mt-0.5 w-4 h-4 rounded border-warm-300 text-sage-600 focus:ring-sage-400">
+                <input type="checkbox" name="data[services][]" value="Dementia & Alzheimer's Care" class="mt-0.5 w-4 h-4 rounded border-stone-300 text-green-600 focus:ring-green-400">
                 <div>
-                  <span class="text-sm font-medium text-warm-900 group-hover:text-sage-700 tr">Dementia &amp; Alzheimer's Care</span>
-                  <p class="text-xs text-warm-600 tr">Memory care, routine management, safety supervision, behavioral support</p>
+                  <span class="text-sm font-medium text-stone-900 group-hover:text-green-700 tr">Dementia &amp; Alzheimer's Care</span>
+                  <p class="text-xs text-stone-600 tr">Memory care, routine management, safety supervision, behavioral support</p>
                 </div>
               </label>
               <label class="flex items-start space-x-3 cursor-pointer group">
-                <input type="checkbox" name="data[services][]" value="Post-Discharge Home Care" class="mt-0.5 w-4 h-4 rounded border-warm-300 text-sage-600 focus:ring-sage-400">
+                <input type="checkbox" name="data[services][]" value="Post-Discharge Home Care" class="mt-0.5 w-4 h-4 rounded border-stone-300 text-green-600 focus:ring-green-400">
                 <div>
-                  <span class="text-sm font-medium text-warm-900 group-hover:text-sage-700 tr">Post-Discharge Home Care</span>
-                  <p class="text-xs text-warm-600 tr">Recovery support, medication management, vitals, wound care coordination</p>
+                  <span class="text-sm font-medium text-stone-900 group-hover:text-green-700 tr">Post-Discharge Home Care</span>
+                  <p class="text-xs text-stone-600 tr">Recovery support, medication management, vitals, wound care coordination</p>
                 </div>
               </label>
               <label class="flex items-start space-x-3 cursor-pointer group">
-                <input type="checkbox" name="data[services][]" value="Hospital Escort & Interpreter" class="mt-0.5 w-4 h-4 rounded border-warm-300 text-sage-600 focus:ring-sage-400">
+                <input type="checkbox" name="data[services][]" value="Hospital Escort & Interpreter" class="mt-0.5 w-4 h-4 rounded border-stone-300 text-green-600 focus:ring-green-400">
                 <div>
-                  <span class="text-sm font-medium text-warm-900 group-hover:text-sage-700 tr">Hospital Escort &amp; Interpreter</span>
-                  <p class="text-xs text-warm-600 tr">Appointment accompaniment, Thai-English translation, registration help</p>
+                  <span class="text-sm font-medium text-stone-900 group-hover:text-green-700 tr">Hospital Escort &amp; Interpreter</span>
+                  <p class="text-xs text-stone-600 tr">Appointment accompaniment, Thai-English translation, registration help</p>
                 </div>
               </label>
             </div>
           </div>
 
           <!-- About -->
-          <div class="border-t border-warm-200 p-6">
-            <h2 class="font-serif text-lg font-semibold text-warm-900 border-l-4 border-sage-400 pl-3 tr">About You</h2>
-            <label class="block text-sm font-medium text-warm-900 mt-4 tr">Tell us about your experience and why you want to work with seniors <span class="text-red-500">*</span></label>
-            <textarea name="content" rows="5" required class="mt-1 w-full border border-warm-300 bg-white rounded-lg px-3 py-2.5 text-sm text-warm-900 focus:border-sage-500 focus:ring-2 focus:ring-sage-200 outline-none transition-colors leading-relaxed" placeholder="Describe your caregiving experience, relevant training, and what motivates you to care for elderly clients..."></textarea>
+          <div class="border-t border-stone-200 p-6">
+            <h2 class="font-serif text-lg font-semibold text-stone-900 border-l-4 border-green-400 pl-3 tr">About You</h2>
+            <label class="block text-sm font-medium text-stone-900 mt-4"><span class="tr">Tell us about your experience and why you want to work with seniors</span> <span class="text-red-500">*</span></label>
+            <textarea name="content" rows="5" required class="mt-1 w-full border border-stone-300 bg-white rounded-lg px-3 py-2.5 text-sm text-stone-900 focus:border-green-500 focus:ring-2 focus:ring-green-200 outline-none transition-colors leading-relaxed" placeholder="Describe your caregiving experience, relevant training, and what motivates you to care for elderly clients..."></textarea>
           </div>
 
           <!-- ID Upload -->
-          <div class="border-t border-warm-200 p-6">
-            <h2 class="font-serif text-lg font-semibold text-warm-900 border-l-4 border-sage-400 pl-3 tr">Identification</h2>
-            <p class="text-sm text-warm-700 mt-1 tr">Upload a photo of your Thai national ID card or passport. This is kept confidential and used for verification only.</p>
+          <div class="border-t border-stone-200 p-6">
+            <h2 class="font-serif text-lg font-semibold text-stone-900 border-l-4 border-green-400 pl-3 tr">Your Photo</h2>
+            <p class="text-sm text-stone-700 mt-1 tr">Upload a recent photo of yourself. This helps families feel comfortable and lets us match you with the right clients.</p>
             <div class="mt-4">
               <label class="block">
-                <input type="file" name="files[]" accept="image/*,.pdf" class="block w-full text-sm text-warm-800 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-sage-50 file:text-sage-700 hover:file:bg-sage-100 file:cursor-pointer cursor-pointer">
+                <input type="file" name="cover_image" accept="image/jpeg,image/png,image/webp,image/heic,image/heif" class="block w-full text-sm text-stone-800 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-green-50 file:text-green-700 hover:file:bg-green-100 file:cursor-pointer cursor-pointer">
               </label>
             </div>
           </div>
 
           <!-- Submit -->
-          <div class="border-t border-warm-200 p-6 flex items-center justify-between bg-cream-100">
-            <p class="text-xs text-warm-700 tr">Your information is kept confidential and used only for the application process.</p>
-            <button type="submit" class="flex-shrink-0 ml-4 bg-sage-600 hover:bg-sage-700 text-white px-6 py-2.5 rounded-lg font-semibold transition-colors tr">Submit Application &rarr;</button>
+          <div class="border-t border-stone-200 p-6 flex items-center justify-between bg-orange-50">
+            <p class="text-xs text-stone-700 tr">Your information is kept confidential and used only for the application process.</p>
+            <button type="submit" class="flex-shrink-0 ml-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2.5 rounded-lg font-semibold transition-colors tr">Submit Application &rarr;</button>
           </div>
         </form>
       </div>
@@ -136,49 +141,49 @@
 
     <!-- Sidebar -->
     <div class="md:col-span-1">
-      <div class="bg-cream-100 rounded-xl p-6 border border-cream-200 sticky top-24">
-        <h3 class="font-serif font-semibold text-warm-900 tr">Why Work With ElderThai?</h3>
-        <ul class="mt-4 space-y-3 text-sm text-warm-900">
+      <div class="bg-orange-50 rounded-xl p-6 border border-orange-100 sticky top-24">
+        <h3 class="font-serif font-semibold text-stone-900 tr">Why Work With ElderThai?</h3>
+        <ul class="mt-4 space-y-3 text-sm text-stone-900">
           <li class="flex items-start space-x-2">
-            <svg class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
             <span class="tr">Steady, reliable work with families across Bangkok</span>
           </li>
           <li class="flex items-start space-x-2">
-            <svg class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
             <span class="tr">Professional training from our Nurse Coordinator</span>
           </li>
           <li class="flex items-start space-x-2">
-            <svg class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
             <span class="tr">Flexible scheduling — day, night, or live-in shifts</span>
           </li>
           <li class="flex items-start space-x-2">
-            <svg class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
             <span class="tr">Fair, transparent pay with on-time payments</span>
           </li>
           <li class="flex items-start space-x-2">
-            <svg class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
             <span class="tr">Ongoing nurse support and supervision</span>
           </li>
           <li class="flex items-start space-x-2">
-            <svg class="w-5 h-5 text-sage-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
             <span class="tr">Be part of a respected, growing care team</span>
           </li>
         </ul>
 
         <!-- Contact -->
-        <div class="mt-6 pt-6 border-t border-cream-200">
-          <h4 class="font-serif font-semibold text-warm-900 text-sm tr">Questions about applying?</h4>
+        <div class="mt-6 pt-6 border-t border-orange-100">
+          <h4 class="font-serif font-semibold text-stone-900 text-sm tr">Questions about applying?</h4>
           <ul class="mt-3 space-y-2 text-sm">
             {% if site.meta3.size > 0 %}
             <li>
-              <a href="{{site.meta3}}" target="_blank" class="text-sage-600 hover:text-sage-700 inline-flex items-center space-x-2">
+              <a href="{{site.meta3}}" target="_blank" class="text-green-600 hover:text-green-700 inline-flex items-center space-x-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.814 4.27 8.846 10.035 9.608.391.084.922.258 1.057.592.121.303.079.776.039 1.081l-.171 1.028c-.052.314-.24 1.227 1.075.669 1.314-.558 7.088-4.174 9.674-7.144C23.395 14.127 24 12.317 24 10.304z"/></svg>
                 <span class="tr">LINE</span>
               </a>
             </li>
             {% endif %}
             <li>
-              <a href="mailto:{{site.email}}" class="text-sage-600 hover:text-sage-700 inline-flex items-center space-x-2">
+              <a href="mailto:{{site.email}}" class="text-green-600 hover:text-green-700 inline-flex items-center space-x-2">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                 <span>{{site.email}}</span>
               </a>
@@ -189,3 +194,15 @@
     </div>
   </div>
 </div>
+<script>
+(function(){
+  try {
+    var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var lt = new Date().toLocaleString();
+    var e1 = document.getElementById('apply-tz');
+    var e2 = document.getElementById('apply-localtime');
+    if (e1) e1.value = tz;
+    if (e2) e2.value = lt;
+  } catch(e){}
+})();
+</script>

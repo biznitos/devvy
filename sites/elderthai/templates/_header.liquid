@@ -2,43 +2,51 @@
   <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
     <!-- Logo -->
     <a href="/" class="flex items-center space-x-1" title="{{site.name}} Home">
-      <span class="font-serif text-2xl font-medium text-sage-700 tr">Elder</span><span class="font-serif text-2xl font-light text-warm-500 tr">Thai</span>
+      <span class="font-serif text-2xl font-medium text-green-700 tr">Elder</span><span class="font-serif text-2xl font-light text-stone-500 tr">Thai</span>
     </a>
 
     <!-- Desktop nav -->
-    <nav class="hidden md:flex items-center space-x-5 text-sm font-medium text-warm-900">
-      <a href="/" class="hover:text-sage-600 transition-colors tr">Home</a>
+    <nav class="hidden md:flex items-center space-x-5 text-sm font-medium text-stone-900">
+      <a href="/" class="hover:text-green-600 transition-colors tr">Home</a>
       <div class="relative group">
-        <button class="hover:text-sage-600 transition-colors inline-flex items-center">
+        <button class="hover:text-green-600 transition-colors inline-flex items-center">
           <span class="tr">Services</span>
           <svg class="ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
         <div class="absolute left-0 top-full pt-2 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200">
-          <div class="bg-white rounded-lg shadow-lg border border-warm-100 py-2 w-64">
+          <div class="bg-white rounded-lg shadow-lg border border-stone-100 py-2 w-64">
             {% for c in categories %}
-            <a href="{{c.permalink}}" class="block px-4 py-2 text-sm text-warm-900 hover:bg-cream-100 hover:text-sage-600 tr">{{c.title}}</a>
+            <a href="{{c.permalink}}" class="block px-4 py-2 text-sm text-stone-900 hover:bg-orange-50 hover:text-green-600 tr">{{c.title}}</a>
             {% endfor %}
           </div>
         </div>
       </div>
-      <a href="/apply" class="hover:text-sage-600 transition-colors tr">Caregivers</a>
-      {% if site.meta3.size > 0 %}
-      <a href="{{site.meta3}}" target="_blank" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-green-500 hover:bg-green-600 transition-colors" title="LINE">
-        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.814 4.27 8.846 10.035 9.608.391.084.922.258 1.057.592.121.303.079.776.039 1.081l-.171 1.028c-.052.314-.24 1.227 1.075.669 1.314-.558 7.088-4.174 9.674-7.144C23.395 14.127 24 12.317 24 10.304zM8.078 12.83H6.012a.573.573 0 01-.573-.572V8.283a.573.573 0 011.145 0v3.403h1.494a.573.573 0 010 1.145zm2.24-.572a.573.573 0 01-1.146 0V8.283a.573.573 0 011.145 0v3.975zm5.295 0a.573.573 0 01-1.017.36l-2.19-2.98v2.62a.573.573 0 01-1.145 0V8.283a.573.573 0 011.016-.361l2.191 2.98V8.283a.573.573 0 011.145 0v3.975zm3.836-2.83a.573.573 0 010 1.145h-1.494v.83h1.494a.573.573 0 010 1.145h-2.066a.573.573 0 01-.573-.572V8.283a.573.573 0 01.573-.573h2.066a.573.573 0 010 1.145h-1.494v.573h1.494z"/></svg>
+      <a href="/apply" class="hover:text-green-600 transition-colors tr">Caregivers</a>
+      {% if locale == "th" %}
+      <a href="{{accept.en}}" title="English" notr="true" class="inline-flex items-center justify-center w-9 h-9 rounded-full hover:bg-stone-100 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" class="w-6 h-4 inline rounded-sm"><clipPath id="a"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="b"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#a)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#b)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+      </a>
+      {% else %}
+      <a href="{{accept.th}}" title="ไทย" notr="true" class="inline-flex items-center justify-center w-9 h-9 rounded-full hover:bg-stone-100 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" class="w-6 h-4 inline rounded-sm"><path fill="#A51931" d="M0 0h9v6H0z"/><path fill="#F4F5F8" d="M0 1h9v4H0z"/><path fill="#2D2A4A" d="M0 2h9v2H0z"/></svg>
       </a>
       {% endif %}
-      <a href="/go?utm_source={{params.utm_source | default: 'menu'}}" class="bg-gold-500 hover:bg-gold-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm tr">Request Care</a>
+      <a href="/go?utm_source={{params.utm_source | default: 'menu'}}" class="bg-amber-500 hover:bg-amber-600 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm tr">Request Care</a>
     </nav>
 
     <!-- Mobile -->
     <div class="flex md:hidden items-center space-x-2">
-      {% if site.meta3.size > 0 %}
-      <a href="{{site.meta3}}" target="_blank" class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-green-500" title="LINE">
-        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738S0 4.935 0 10.304c0 4.814 4.27 8.846 10.035 9.608.391.084.922.258 1.057.592.121.303.079.776.039 1.081l-.171 1.028c-.052.314-.24 1.227 1.075.669 1.314-.558 7.088-4.174 9.674-7.144C23.395 14.127 24 12.317 24 10.304zM8.078 12.83H6.012a.573.573 0 01-.573-.572V8.283a.573.573 0 011.145 0v3.403h1.494a.573.573 0 010 1.145zm2.24-.572a.573.573 0 01-1.146 0V8.283a.573.573 0 011.145 0v3.975zm5.295 0a.573.573 0 01-1.017.36l-2.19-2.98v2.62a.573.573 0 01-1.145 0V8.283a.573.573 0 011.016-.361l2.191 2.98V8.283a.573.573 0 011.145 0v3.975zm3.836-2.83a.573.573 0 010 1.145h-1.494v.83h1.494a.573.573 0 010 1.145h-2.066a.573.573 0 01-.573-.572V8.283a.573.573 0 01.573-.573h2.066a.573.573 0 010 1.145h-1.494v.573h1.494z"/></svg>
+      {% if locale == "th" %}
+      <a href="{{accept.en}}" title="English" notr="true" class="inline-flex items-center justify-center w-8 h-8 rounded-full hover:bg-stone-100 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" class="w-6 h-4 inline rounded-sm"><clipPath id="ma"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="mb"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#ma)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#mb)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+      </a>
+      {% else %}
+      <a href="{{accept.th}}" title="ไทย" notr="true" class="inline-flex items-center justify-center w-8 h-8 rounded-full hover:bg-stone-100 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" class="w-6 h-4 inline rounded-sm"><path fill="#A51931" d="M0 0h9v6H0z"/><path fill="#F4F5F8" d="M0 1h9v4H0z"/><path fill="#2D2A4A" d="M0 2h9v2H0z"/></svg>
       </a>
       {% endif %}
-      <a href="/go?utm_source={{params.utm_source | default: 'menu'}}" class="bg-gold-500 text-white text-xs px-3 py-1.5 rounded-lg font-semibold tr">Request Care</a>
-      <button id="mobile-nav-toggle" class="p-1 text-warm-900" aria-label="Menu">
+      <a href="/go?utm_source={{params.utm_source | default: 'menu'}}" class="bg-amber-500 text-white text-xs px-3 py-1.5 rounded-lg font-semibold tr">Request Care</a>
+      <button id="mobile-nav-toggle" class="p-1 text-stone-900" aria-label="Menu">
         <span class="hamburger-bars">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </span>
@@ -50,14 +58,14 @@
   </div>
 
   <!-- Mobile nav -->
-  <div id="mobile-nav" class="mobile-nav md:hidden bg-white border-t border-warm-100">
+  <div id="mobile-nav" class="mobile-nav md:hidden bg-white border-t border-stone-100">
     <div class="px-4 py-3 space-y-3">
-      <a href="/" class="block text-warm-900 hover:text-sage-600 font-medium tr">Home</a>
+      <a href="/" class="block text-stone-900 hover:text-green-600 font-medium tr">Home</a>
       {% for c in categories %}
-      <a href="{{c.permalink}}" class="block text-warm-800 hover:text-sage-600 text-sm pl-2 tr">{{c.title}}</a>
+      <a href="{{c.permalink}}" class="block text-stone-800 hover:text-green-600 text-sm pl-2 tr">{{c.title}}</a>
       {% endfor %}
-      <a href="/apply" class="block text-warm-900 hover:text-sage-600 font-medium tr">Caregivers</a>
-      <a href="/hospitals" class="block text-warm-800 hover:text-sage-600 text-sm pl-2 tr">Hospitals</a>
+      <a href="/apply" class="block text-stone-900 hover:text-green-600 font-medium tr">Caregivers</a>
+      <a href="/hospitals" class="block text-stone-800 hover:text-green-600 text-sm pl-2 tr">Hospitals</a>
       <div class="pt-2">
         {% partial "_cta_buttons" %}
       </div>

@@ -4,8 +4,8 @@
     <div class="mb-6">
       <svg class="w-16 h-16 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
     </div>
-    <h1 class="font-serif text-3xl md:text-4xl font-medium text-white tr">Thank You for Applying</h1>
-    <p class="text-green-100 text-lg mt-4 tr">Your application has been received. We appreciate your interest in joining the ElderThai care team.</p>
+    <h1 class="font-serif text-3xl md:text-4xl font-medium text-white tr">Thank You for Reaching Out</h1>
+    <p class="text-green-100 text-lg mt-4 tr">We have received your care request. Our team will be in touch shortly.</p>
   </div>
 </section>
 
@@ -15,19 +15,20 @@
     <div class="mt-6 space-y-4 text-stone-900 text-left max-w-lg mx-auto">
       <div class="flex items-start space-x-3">
         <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-600 text-white text-sm font-semibold flex items-center justify-center">1</span>
-        <p class="tr">Our team reviews your application within 1–2 business days.</p>
+        <p class="tr">Our care coordinator reviews your request.</p>
       </div>
       <div class="flex items-start space-x-3">
         <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-600 text-white text-sm font-semibold flex items-center justify-center">2</span>
-        <p class="tr">If you're a good fit, we'll contact you via LINE, phone, or email to schedule an interview.</p>
+        <p class="tr">We contact you by phone, email, or WhatsApp to discuss your needs and schedule a consultation.</p>
       </div>
       <div class="flex items-start space-x-3">
         <span class="flex-shrink-0 w-7 h-7 rounded-full bg-green-600 text-white text-sm font-semibold flex items-center justify-center">3</span>
-        <p class="tr">Selected candidates complete training with our Nurse Coordinator before placement.</p>
+        <p class="tr">Our Nurse Coordinator prepares a personalized care plan and matches you with the right caregiver.</p>
       </div>
     </div>
     <div class="mt-8 pt-6 border-t border-stone-100">
-      <p class="text-stone-800 text-sm"><span class="tr">Questions? Reach us at</span> <a href="mailto:{{site.email}}" class="text-green-600 hover:text-green-700 font-medium">{{site.email}}</a> <span class="tr">or call</span> <a href="tel:{{site.phone}}" class="text-green-600 hover:text-green-700 font-medium">{{site.phone}}</a></p>
+      <p class="text-stone-800 text-sm mb-4 tr">Want to talk to us directly?</p>
+      {% partial "_cta_buttons" %}
     </div>
   </div>
   <div class="text-center mt-6">

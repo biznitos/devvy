@@ -8,7 +8,7 @@
 {% if post.cover_image.size > 0 %}
 <meta property="og:image" content="{{post.cover_image}}">
 {% else %}
-<meta property="og:image" content="{{site.logo}}">
+<meta property="og:image" content="https://s3.biznitos.com/curator/suploads/8d0c47d8-8163-42c9-b928-88e83b490124.jpeg">
 {% endif %}
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="600">
@@ -20,14 +20,14 @@
 {% if post.cover_image.size > 0 %}
 <meta name="twitter:image" content="{{post.cover_image}}">
 {% else %}
-<meta name="twitter:image" content="{{site.logo}}">
+<meta name="twitter:image" content="https://s3.biznitos.com/curator/suploads/8d0c47d8-8163-42c9-b928-88e83b490124.jpeg">
 {% endif %}
 
 <!-- Geo Meta Tags -->
 <meta name="geo.region" content="TH-10">
 <meta name="geo.placename" content="{{site.city}}, {{site.region}}">
-<meta name="geo.position" content="{{site.settings.geo.lat}};{{site.settings.geo.lng}}">
-<meta name="ICBM" content="{{site.settings.geo.lat}}, {{site.settings.geo.lng}}">
+<meta name="geo.position" content="13.7150;100.5853">
+<meta name="ICBM" content="13.7150, 100.5853">
 
 <!-- Canonical -->
 <link rel="canonical" href="https://{{site.cname}}{{post.permalink | default: '/'}}">
@@ -112,8 +112,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "{{site.settings.geo.lat}}",
-      "longitude": "{{site.settings.geo.lng}}"
+      "latitude": "13.7150",
+      "longitude": "100.5853"
     }
   },
   "areaServed": {

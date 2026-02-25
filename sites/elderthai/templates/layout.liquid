@@ -8,60 +8,13 @@
     <meta name="author" content="{{site.name}}">
     {% partial "_seo" %}
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              cream: {
-                50: '#FFFDF7',
-                100: '#FFF9E8',
-                200: '#FFF3D1',
-              },
-              sage: {
-                50: '#F0F5F0',
-                100: '#D9E8D9',
-                200: '#B3D1B3',
-                300: '#8CBA8C',
-                400: '#6FA36F',
-                500: '#5C8A5C',
-                600: '#4A7A4A',
-                700: '#3D6B3D',
-                800: '#305530',
-                900: '#234023',
-              },
-              warm: {
-                50: '#FAF8F5',
-                100: '#F5F0EA',
-                200: '#E8E0D5',
-                300: '#D4C8B8',
-                400: '#B8A890',
-                500: '#9C8B70',
-                600: '#7A6B55',
-                700: '#5E5343',
-                800: '#4A4133',
-                900: '#362F24',
-              },
-              gold: {
-                400: '#E0B040',
-                500: '#D4A030',
-                600: '#B88A20',
-                700: '#9C7418',
-              },
-            },
-            fontFamily: {
-              serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-              sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
-            },
-          },
-        },
-      }
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
       html { font-family: 'Montserrat', system-ui, sans-serif; }
+      .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+      .font-sans { font-family: 'Montserrat', system-ui, sans-serif; }
       /* FAQ accordion */
       .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; padding: 0 1.25rem; }
       .faq-answer.open { max-height: 500px; padding: 0 1.25rem 1rem; }
@@ -81,7 +34,7 @@
       .mobile-nav.open { max-height: 400px; }
     </style>
   </head>
-  <body class="bg-cream-50 text-warm-900 font-sans">
+  <body class="bg-stone-50 text-stone-900 font-sans">
     {% partial "_header" %}
     <main>
       {{body}}
