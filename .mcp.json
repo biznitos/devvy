@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "curator": {
+      "type": "http",
+      "url": "https://admin.revsense.com/mcp",
+      "headers": {
+        "Authorization": "Bearer 4aa704e7-5a08-48e3-a0cd-a1cb943a3408"
+      }
+    }
+  }
+}
