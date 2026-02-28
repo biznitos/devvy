@@ -105,6 +105,11 @@ Every generated site must include:
 7. **HTML semantics**: Single h1 per page, proper heading hierarchy, semantic elements
 8. **Internal linking**: Services cross-link, blog references services, homepage links key pages
 
+### Content Voice & Style Rules
+
+- **Second-person voice only.** Use "you/your/yours" instead of "we/us/our." Rarely, if ever, use first person. Example: "Your old furniture picked up fast" not "We pick up your old furniture fast."
+- **No em dashes (—) in content.** Never use em dashes in visible text. Use a comma, period, or reword instead. Regular hyphens in compound words (same-day, high-rise, eco-friendly, etc.) are fine.
+
 ### Template Conventions
 
 - Layout includes `{{body}}` placeholder where page content is injected

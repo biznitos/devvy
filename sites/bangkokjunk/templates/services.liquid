@@ -1,0 +1,47 @@
+<!-- Hero -->
+<section class="bg-slate_d-600 py-14 md:py-24">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-10 h-px bg-copper-400 mx-auto mb-8"></div>
+    <h1 class="tr font-serif font-light text-3xl md:text-5xl tracking-tight text-white">Junk Removal Services in Bangkok</h1>
+    <p class="tr mt-6 text-lg text-white/70 max-w-2xl mx-auto">From single items to full property clearouts, anything you need gone gets removed.</p>
+  </div>
+</section>
+
+<!-- Services Grid -->
+{% posts type:"category", limit:20, name:"all_services", order:"alpha" %}
+{% if all_services.size > 0 %}
+<section class="py-24 md:py-32">
+  <div class="max-w-5xl mx-auto px-6 md:px-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for p in all_services %}
+      <a href="{{p.permalink}}" class="group block bg-white border border-black/15 rounded-none overflow-hidden transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+        <div class="overflow-hidden">
+          <img src="{{p.cover_image | resize: '400x300'}}" alt="{{p.title}}" class="w-full h-48 object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h2 class="font-serif text-xl font-normal text-ink">{{p.title}}</h2>
+          <p class="text-ink-soft mt-3 text-sm leading-relaxed">{{p.description | truncate: 120}}</p>
+          <span class="tr inline-block mt-4 text-copper-400 text-xs font-medium uppercase tracking-[0.2em]">Learn More</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Bottom CTA -->
+<section class="py-24 md:py-32 bg-slate_d-600">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-12 h-px bg-copper-400 mx-auto mb-8"></div>
+    <h2 class="tr font-serif font-light text-3xl md:text-4xl tracking-tight text-white">Not Sure What You Need?</h2>
+    <p class="tr mt-6 text-white/70 text-lg">Send a photo and get a quick answer.</p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://line.me/R/ti/p/@khunclean" class="inline-flex items-center justify-center gap-2 bg-[#06C755] text-white text-xs font-medium uppercase tracking-[0.2em] px-8 py-4 rounded-none hover:bg-[#05b34c] transition-colors duration-300" style="min-height:48px">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        <span class="tr">LINE @khunclean</span>
+      </a>
+      <a href="/go" class="tr inline-flex items-center justify-center bg-copper-400 text-slate_d-600 text-xs font-medium uppercase tracking-[0.2em] px-8 py-4 rounded-none hover:bg-copper-300 transition-colors duration-300" style="min-height:48px">Book a Pickup</a>
+    </div>
+  </div>
+</section>

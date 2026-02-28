@@ -1,0 +1,161 @@
+{% if post %}
+<meta property="og:type" content="{% if post.type == 'blog' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{post.title}}">
+<meta property="og:description" content="{{post.description | truncate: 160}}">
+<meta property="og:url" content="{{current_url}}">
+{% if post.cover_image %}<meta property="og:image" content="{{post.cover_image}}">{% endif %}
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:locale" content="{{locale | default: 'en'}}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{post.title}}">
+<meta name="twitter:description" content="{{post.description | truncate: 160}}">
+{% if post.cover_image %}<meta name="twitter:image" content="{{post.cover_image}}">{% endif %}
+{% else %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{meta_title | default: site.name}}">
+<meta property="og:description" content="{{meta_description | default: site.description}}">
+<meta property="og:url" content="{{current_url}}">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:locale" content="{{locale | default: 'en'}}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{meta_title | default: site.name}}">
+<meta name="twitter:description" content="{{meta_description | default: site.description}}">
+{% endif %}
+
+{% if site.settings.geo %}
+<meta name="geo.region" content="{{site.country_code}}-{{site.region}}">
+<meta name="geo.placename" content="{{site.city}}">
+<meta name="geo.position" content="{{site.settings.geo.lat}};{{site.settings.geo.lng}}">
+<meta name="ICBM" content="{{site.settings.geo.lat}}, {{site.settings.geo.lng}}">
+{% endif %}
+
+<link rel="alternate" hreflang="en" href="{{current_url}}">
+<link rel="alternate" hreflang="th" href="{{accept.th | default: current_url}}">
+
+{% if post.type == 'category' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{post.title}}",
+  "description": "{{post.description | strip_html}}",
+  "url": "{{current_url}}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{site.name}}",
+    "telephone": "{{site.phone}}",
+    "email": "{{site.email}}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{site.city}}",
+      "addressRegion": "{{site.region}}",
+      "addressCountry": "{{site.country_code}}"
+    }
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Bangkok"
+  }{% if post.cover_image %},
+  "image": "{{post.cover_image}}"{% endif %}
+}
+</script>
+{% elsif post.type == 'blog' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{post.title}}",
+  "description": "{{post.description | strip_html}}",
+  "url": "{{current_url}}",
+  "datePublished": "{{post.pubdate}}",
+  {% if post.cover_image %}"image": "{{post.cover_image}}",{% endif %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{site.name}}"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "{{site.name}}"
+  }
+}
+</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{site.name}}",
+  "description": "{{site.description}}",
+  "url": "https://{{site.cname}}",
+  "telephone": "{{site.phone}}",
+  "email": "{{site.email}}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{site.address}}",
+    "addressLocality": "{{site.city}}",
+    "addressRegion": "{{site.region}}",
+    "addressCountry": "{{site.country_code}}"
+  }{% if site.settings.geo %},
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{site.settings.geo.lat}}",
+    "longitude": "{{site.settings.geo.lng}}"
+  }{% endif %},
+  "areaServed": [
+    { "@type": "City", "name": "Bangkok" },
+    { "@type": "City", "name": "Nonthaburi" },
+    { "@type": "City", "name": "Samut Prakan" }
+  ]{% if site.settings.social.facebook %},
+  "sameAs": [
+    "{{site.settings.social.facebook}}",
+    "{{site.settings.social.instagram}}"
+  ]{% endif %}
+}
+</script>
+{% endif %}
+
+{% if post %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://{{site.cname}}"
+    }{% if post.type == 'category' %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://{{site.cname}}/furniture-removal"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{post.title}}"
+    }{% elsif post.type == 'blog' %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://{{site.cname}}/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{post.title}}"
+    }{% else %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{post.title}}"
+    }{% endif %}
+  ]
+}
+</script>
+{% endif %}

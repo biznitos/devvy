@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "zid": "furniture-removal",
+    "type": "category",
+    "title": "Furniture Removal in Bangkok",
+    "description": "Old sofa, bed, or wardrobe? Get unwanted furniture picked up and removed from Bangkok condos, houses, and offices. Same-day available.",
+    "permalink": "/furniture-removal",
+    "cover_image": "https://placehold.co/800x600?text=Furniture+Removal",
+    "pubdate": "2026-01-01T10:00:00Z",
+    "tags": "tier1,furniture,removal",
+    "created_by": 1,
+    "meta_title": "Furniture Removal Bangkok | Old Sofa, Bed & Wardrobe Pickup | Bangkok Junk",
+    "meta_description": "Old sofa, bed, or wardrobe? Get unwanted furniture picked up and removed from Bangkok condos, houses, and offices. Same-day available.",
+    "content": "<p class=\"tr\">New furniture arriving? The old piece gets taken away. Bangkok Junk provides fast, reliable furniture removal across Bangkok for condos, houses, townhouses, and shophouses. Whether it's a single sofa or an entire apartment full of IKEA furniture, the heavy lifting is handled so you don't have to.</p>\n<p class=\"tr\">The team knows how to navigate Bangkok's condo buildings. Juristic offices coordinated, service lifts booked, and common areas protected during removal. You don't need to worry about building rules or logistics.</p>",
+    "meta": {
+      "items_heading": "What Gets Removed",
+      "items": [
+        {
+          "title": "Sofa",
+          "text": "Old sofa blocking your living room? Sofas and sectionals of all sizes picked up across Bangkok, same-day available."
+        },
+        {
+          "title": "Bed Frame & Mattress",
+          "text": "Full bed setups removed: frame, mattress, and base. Picked up from Bangkok condos and apartments."
+        },
+        {
+          "title": "Wardrobe",
+          "text": "Large built-in or freestanding wardrobes removed safely, even from high-rise Bangkok condos with lift restrictions."
+        },
+        {
+          "title": "Dining Table & Chairs",
+          "text": "Clear your dining room fast. Full dining sets removed from Bangkok homes and condos without fuss."
+        },
+        {
+          "title": "Desk",
+          "text": "Old desk no longer needed? Office and home desks of all sizes picked up across Bangkok."
+        },
+        {
+          "title": "Bookshelf",
+          "text": "Freestanding and modular bookshelves removed from Bangkok homes, offices, and condos."
+        },
+        {
+          "title": "Cabinet",
+          "text": "Storage cabinets, TV cabinets, and display units. All types collected and disposed of across Bangkok."
+        },
+        {
+          "title": "IKEA Furniture",
+          "text": "Moving out of a Bangkok condo full of IKEA pieces? This has been done hundreds of times and the team knows how to handle it fast."
+        },
+        {
+          "title": "Shoe Rack",
+          "text": "Even smaller items are welcome. Shoe racks and hallway furniture picked up as part of any Bangkok removal job."
+        },
+        {
+          "title": "Coffee Table",
+          "text": "Old coffee table on its way out? It gets taken away as a standalone pickup or as part of a larger Bangkok clearout."
+        }
+      ],
+      "highlight": {
+        "title": "IKEA Furniture Removal Specialist",
+        "text": "Moving out of a Bangkok condo full of IKEA? This is handled constantly. Billy bookcases, Kallax shelves, Malm beds, Hemnes dressers. Every piece known, every removal fast. One truck, one trip, done."
+      },
+      "pricing": "Pricing is based on volume, weight, and access difficulty, not by the hour. Send a photo on LINE or WhatsApp and get a clear, fixed quote before the team arrives. No hidden fees, no surprises.",
+      "faq": [
+        {
+          "q": "Can you remove a sofa from a high-floor condo?",
+          "a": "Yes. Service lift access is coordinated with your building's juristic office and all logistics are handled for you."
+        },
+        {
+          "q": "Do you take apart large furniture?",
+          "a": "If needed, yes. The team can disassemble wardrobes, bed frames, and large shelving units for easier removal."
+        },
+        {
+          "q": "What happens to the furniture?",
+          "a": "Usable items are donated or resold. Damaged items are recycled where possible and disposed of responsibly."
+        },
+        {
+          "q": "How fast can you come?",
+          "a": "Same-day pickup is available depending on location and schedule. Most jobs are completed within 24 hours of booking."
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "zid": "appliance-removal",
+    "type": "category",
+    "title": "Appliance Removal in Bangkok",
+    "description": "Old fridge, washing machine, or AC? Large appliances removed and disposed of across Bangkok responsibly. Same-day pickup available.",
+    "permalink": "/appliance-removal",
+    "cover_image": "https://placehold.co/800x600?text=Appliance+Removal",
+    "pubdate": "2026-01-01T10:00:00Z",
+    "tags": "tier1,appliances,removal",
+    "created_by": 1,
+    "meta_title": "Appliance Removal Bangkok | Fridge, AC & Washer Pickup | Bangkok Junk",
+    "meta_description": "Old fridge, washing machine, or AC? Large appliances removed and disposed of across Bangkok responsibly. Same-day pickup available.",
+    "content": "<p class=\"tr\">Getting a new appliance delivered? The old one gets taken away. Bangkok Junk removes all types of large appliances from condos, houses, townhouses, and offices across Bangkok. The heavy lifting, the logistics, and the responsible disposal are all handled for you.</p>\n<p class=\"tr\">Appliances like fridges and air conditioners contain refrigerants that require proper handling. Every appliance is disposed of in compliance with environmental standards, never dumped illegally.</p>",
+    "meta": {
+      "items_heading": "What Gets Removed",
+      "items": [
+        {
+          "title": "Fridge",
+          "text": "All fridge sizes removed, from bar fridges to large double-door models. Book a same-day fridge removal in Bangkok and the heavy lifting is handled for you."
+        },
+        {
+          "title": "Washing Machine",
+          "text": "Old washing machine taking up space? Front-loaders and top-loaders picked up across Bangkok, fast."
+        },
+        {
+          "title": "Air Conditioner",
+          "text": "Getting a new AC installed? The old unit gets removed at the same time, including wall-mounted and floor-standing models."
+        },
+        {
+          "title": "TV",
+          "text": "From old CRT sets to large flat screens, old TVs collected and disposed of across Bangkok responsibly."
+        },
+        {
+          "title": "Water Heater",
+          "text": "Old water heaters removed safely, including electric and gas models from Bangkok condos and houses."
+        },
+        {
+          "title": "Microwave & Oven",
+          "text": "No need to lug it downstairs yourself. Old microwaves and ovens picked up from any floor."
+        },
+        {
+          "title": "Dryer",
+          "text": "Moving on from your old dryer? It gets collected fast and disposed of properly in Bangkok."
+        },
+        {
+          "title": "Dishwasher",
+          "text": "Old dishwasher sitting unused? The Bangkok team picks up and disposes of dishwashers of all brands and sizes."
+        },
+        {
+          "title": "Exercise Equipment",
+          "text": "Treadmills, stationary bikes, and weight benches. Bulky exercise equipment removed from Bangkok condos and homes."
+        },
+        {
+          "title": "Water Dispenser",
+          "text": "Old water dispensers and coolers picked up from homes and offices across Bangkok."
+        }
+      ],
+      "highlight": {
+        "title": "Responsible Disposal Guarantee",
+        "text": "Fridges and air conditioners contain refrigerants that harm the environment if released. All appliances are disposed of properly through certified channels. Working appliances are donated where possible."
+      },
+      "pricing": "Appliance removal pricing depends on the type, size, and number of units plus access difficulty. Send a photo and get a clear quote before the team arrives.",
+      "faq": [
+        {
+          "q": "Can you remove an AC unit from the wall?",
+          "a": "The indoor unit is removed. If the outdoor compressor also needs removal, that can be coordinated too."
+        },
+        {
+          "q": "Do you disconnect appliances?",
+          "a": "Most appliances can be disconnected on-site. For gas or complex electrical disconnections, a licensed technician is recommended first."
+        },
+        {
+          "q": "Can you time the pickup with my new delivery?",
+          "a": "Yes, this is done regularly. Just share your delivery window and the removal will be scheduled to match."
+        },
+        {
+          "q": "Do you remove built-in appliances?",
+          "a": "Yes, built-in ovens, dishwashers, and similar units can be removed. Just send a photo so the job can be assessed."
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "zid": "condo-clearout",
+    "type": "category",
+    "title": "Full Property Clearout in Bangkok",
+    "description": "Moving out, clearing a rental, or downsizing? Full condo, house, and shophouse clearouts handled across Bangkok. No sorting required.",
+    "permalink": "/condo-clearout",
+    "cover_image": "https://placehold.co/800x600?text=Property+Clearout",
+    "pubdate": "2026-01-01T10:00:00Z",
+    "tags": "tier1,clearout,condo",
+    "created_by": 1,
+    "meta_title": "Property Clearout Bangkok | Condo, House & Shophouse | Bangkok Junk",
+    "meta_description": "Moving out, clearing a rental, or downsizing? Full condo, house, and shophouse clearouts handled across Bangkok. No sorting required.",
+    "content": "<p class=\"tr\">Whether you're leaving a condo, resetting a rental house, clearing out a shophouse, or downsizing to a smaller place, the entire clearout is handled from start to finish. You don't need to sort anything. You don't need to move anything. Just point at what needs to go and the rest is taken care of.</p>\n<p class=\"tr\">The team has cleared hundreds of properties across Bangkok, from studio condos in Sukhumvit to multi-story shophouses in Chinatown. Juristic offices, service lifts, common area protection, and truck parking are all coordinated as part of the job. Every situation handled without judgment.</p>\n<p class=\"tr\">Full clearouts are the highest-volume service and the entire operation is built around making them fast, efficient, and stress-free for you.</p>",
+    "meta": {
+      "items_heading": "Common Clearout Scenarios",
+      "items": [
+        {
+          "title": "Moving Out",
+          "text": "Leaving your condo, house, or townhouse and need everything gone before handover? The full property cleared fast, ready for inspection."
+        },
+        {
+          "title": "Landlord Property Reset",
+          "text": "Resetting a unit, house, or shophouse between tenants? All left-behind furniture and junk removed so your property is ready to re-let."
+        },
+        {
+          "title": "Expat Departure",
+          "text": "Leaving Thailand for good? Your entire home cleared: condo, house, or townhouse. So you can focus on your move, not the mess."
+        },
+        {
+          "title": "Post-Renovation Clearout",
+          "text": "Renovation done but debris and old fixtures everywhere? Everything removed and the space left clean."
+        },
+        {
+          "title": "Accumulated Clutter",
+          "text": "Years of stuff piled up and nowhere to start? Full clearouts handled regardless of how much there is."
+        },
+        {
+          "title": "Inherited Unit",
+          "text": "Clearing a property after a family member has passed? Everything handled with care and discretion."
+        },
+        {
+          "title": "Downsizing",
+          "text": "Moving to a smaller place and need to shed furniture fast? As much or as little as you need gone, picked up on your schedule."
+        },
+        {
+          "title": "New Tenant Move-In Prep",
+          "text": "Taking over a furnished condo, house, or shophouse with pieces you don't want? Unwanted items removed before you settle in."
+        },
+        {
+          "title": "Home Office Clearout",
+          "text": "Working from home left you with old equipment and furniture? Home offices cleared across Bangkok quickly."
+        },
+        {
+          "title": "Storage Room Clearout",
+          "text": "That storage room you've been avoiding? It gets emptied completely and left usable again."
+        }
+      ],
+      "sections": [
+        {
+          "heading": "You Don't Need to Sort Anything",
+          "text": "This is important: you do not need to sort, organize, or categorize anything before the team arrives. Point at what needs to go and the rest is handled. Recyclables separated, usable items donated, and everything disposed of responsibly. You don't lift a finger."
+        },
+        {
+          "heading": "Bangkok Buildings? No Problem",
+          "text": "Full property clearouts in Bangkok come with unique logistics. Condo juristic offices have rules about service lift booking, floor protection, working hours, and truck parking. All of this is handled as part of the job. Building management coordinated, floor protection laid down, and everything done within the building's permitted hours."
+        }
+      ],
+      "pricing": "Clearout pricing is based on the total volume of items, the number of truck loads required, and access difficulty. Send photos of every room and get a comprehensive quote. For large jobs, an in-person assessment can be arranged before quoting.",
+      "faq": [
+        {
+          "q": "How long does a full clearout take?",
+          "a": "A studio or one-bedroom condo typically takes 2-3 hours. Larger properties may take a full day. A time estimate is included with every quote."
+        },
+        {
+          "q": "Do I need to be present during the clearout?",
+          "a": "It helps if you can be there at the start to walk the team through what stays and what goes. After that, you can leave if you prefer."
+        },
+        {
+          "q": "Can you clear a property if I'm already overseas?",
+          "a": "Yes. Coordination with your building management or agent can be arranged to access the property. This has been done many times for expats who have already left Thailand."
+        },
+        {
+          "q": "Do you clean after the clearout?",
+          "a": "The space is left broom-clean. If you need a full deep clean afterward, a partner service can be recommended."
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "zid": "office-clearout",
+    "type": "category",
+    "title": "Office Clearout Bangkok",
+    "description": "Old desks, chairs, and equipment removed fast from Bangkok offices and commercial spaces. Scheduling around your hours. Get a free quote.",
+    "permalink": "/office-clearout",
+    "cover_image": "https://placehold.co/800x600?text=Office+Clearout",
+    "pubdate": "2026-01-01T10:00:00Z",
+    "tags": "tier1,office,clearout",
+    "created_by": 1,
+    "meta_title": "Office Clearout Bangkok | Desks, Chairs & Equipment Removed | Bangkok Junk",
+    "meta_description": "Old desks, chairs, and equipment removed fast from Bangkok offices and commercial spaces. Scheduling around your hours. Get a free quote.",
+    "content": "<p class=\"tr\">Closing an office, downsizing, or upgrading your workspace? Bangkok Junk handles commercial clearouts across Bangkok, from single-room offices to full-floor removals. Everything scheduled around your business hours so there's zero disruption to your operations.</p>\n<p class=\"tr\">Bangkok's mixed-use buildings have loading dock hours, lift restrictions, and specific rules for commercial waste. All of this is navigated for you. The team coordinates with building management to ensure smooth, compliant removal every time.</p>",
+    "meta": {
+      "items_heading": "What Gets Removed",
+      "items": [
+        {
+          "title": "Office Desks",
+          "text": "Old office desks of all sizes removed, from single units to full-floor clearouts across Bangkok."
+        },
+        {
+          "title": "Office Chairs",
+          "text": "Replacing your office seating? Old office chairs picked up in bulk from Bangkok offices and co-working spaces."
+        },
+        {
+          "title": "Filing Cabinets",
+          "text": "Old filing cabinets removed fast. Metal and wooden units handled from Bangkok offices and shophouses."
+        },
+        {
+          "title": "Printers & Copiers",
+          "text": "Heavy office equipment like printers and photocopiers removed safely from Bangkok office floors."
+        },
+        {
+          "title": "Computer Monitors",
+          "text": "Old monitors and desktop setups collected and disposed of responsibly from Bangkok offices."
+        },
+        {
+          "title": "Shelving Units",
+          "text": "Industrial and office shelving removed efficiently, even from large Bangkok warehouses and stockrooms."
+        },
+        {
+          "title": "Partition Walls",
+          "text": "Office partition panels and dividers removed cleanly from Bangkok commercial spaces and co-working areas."
+        },
+        {
+          "title": "Reception Furniture",
+          "text": "Old reception desks, waiting room seating, and lobby furniture removed from Bangkok offices."
+        },
+        {
+          "title": "Old Electronics",
+          "text": "Routers, servers, UPS units, and other old office tech collected and disposed of properly in Bangkok."
+        },
+        {
+          "title": "Whiteboards & Equipment",
+          "text": "Old whiteboards, projectors, and meeting room equipment removed from Bangkok offices and schools."
+        }
+      ],
+      "pricing": "Office clearout pricing is based on volume and access logistics. An on-site visit to assess the job can be arranged before quoting. All pricing is transparent and confirmed before work begins.",
+      "faq": [
+        {
+          "q": "Can you work outside business hours?",
+          "a": "Yes. Evening and weekend clearouts are done regularly to avoid disrupting your team's workday."
+        },
+        {
+          "q": "Do you handle data destruction?",
+          "a": "Secure data destruction for hard drives and storage media can be coordinated through certified partners."
+        },
+        {
+          "q": "How quickly can you clear a full office?",
+          "a": "Depending on size, most office clearouts are completed in one day. Large multi-floor jobs may take 2-3 days."
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "zid": "mattress-removal",
+    "type": "category",
+    "title": "Mattress Removal in Bangkok",
+    "description": "Old mattress taking up space? Mattresses picked up and disposed of from Bangkok condos, houses, and apartments. Fast, same-day service.",
+    "permalink": "/mattress-removal",
+    "cover_image": "https://placehold.co/800x600?text=Mattress+Removal",
+    "pubdate": "2026-01-02T10:00:00Z",
+    "tags": "tier2,mattress,removal",
+    "created_by": 1,
+    "meta_title": "Mattress Removal Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Old mattress taking up space? Mattresses picked up and disposed of from Bangkok condos, houses, and apartments. Fast, same-day service.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Getting a new mattress? The old one gets taken away. Bangkok Junk picks up and disposes of mattresses of all sizes from condos, houses, and apartments across Bangkok. No need to wrestle it into a lift yourself. Everything handled from your bedroom to the truck.</p>\n</div>\n\n<h2 class=\"tr\">What Gets Picked Up</h2>\n<ul>\n<li><span class=\"tr\">Single, double, queen, and king mattresses</span></li>\n<li><span class=\"tr\">Mattress toppers and protectors</span></li>\n<li><span class=\"tr\">Bed bases and box springs</span></li>\n<li><span class=\"tr\">Futons and sofa beds</span></li>\n</ul>\n\n<h2 class=\"tr\">How It Works</h2>\n<p class=\"tr\">Send a photo on LINE or WhatsApp, get a price quote, and have it picked up, often the same-day. Condo lift access and building rules handled so you don't have to.</p>"
+  },
+  {
+    "id": 6,
+    "zid": "ac-removal",
+    "type": "category",
+    "title": "AC Removal in Bangkok",
+    "description": "Old air conditioner needs to go? Wall-mounted and floor-standing AC units removed from Bangkok properties. Responsible disposal included.",
+    "permalink": "/ac-removal",
+    "cover_image": "https://placehold.co/800x600?text=AC+Removal",
+    "pubdate": "2026-01-02T10:00:00Z",
+    "tags": "tier2,ac,removal",
+    "created_by": 1,
+    "meta_title": "AC Removal Bangkok | Air Conditioner Pickup | Bangkok Junk",
+    "meta_description": "Old air conditioner needs to go? Wall-mounted and floor-standing AC units removed from Bangkok properties. Responsible disposal included.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Getting a new AC installed? The old unit gets removed at the same time. Bangkok Junk handles AC removal from condos, houses, and offices across Bangkok, including wall-mounted and floor-standing models. Proper disposal of refrigerants and components is ensured.</p>\n</div>\n\n<h2 class=\"tr\">What Gets Removed</h2>\n<ul>\n<li><span class=\"tr\">Wall mounted split AC units (indoor unit)</span></li>\n<li><span class=\"tr\">Floor standing AC units</span></li>\n<li><span class=\"tr\">Window AC units</span></li>\n<li><span class=\"tr\">Portable AC units</span></li>\n</ul>\n\n<h2 class=\"tr\">How It Works</h2>\n<p class=\"tr\">Get in touch on LINE or WhatsApp with a photo of the unit. You'll get a price quote and a scheduled pickup. If your AC installer is removing the old unit from the wall, it can be collected the same-day.</p>"
+  },
+  {
+    "id": 7,
+    "zid": "move-out-cleanout",
+    "type": "category",
+    "title": "Move-Out Cleanout in Bangkok",
+    "description": "Leaving your Bangkok apartment or house? Everything you can't take with you, removed. Fast, stress-free move-out junk removal service.",
+    "permalink": "/move-out-cleanout",
+    "cover_image": "https://placehold.co/800x600?text=Move+Out+Cleanout",
+    "pubdate": "2026-01-02T10:00:00Z",
+    "tags": "tier2,move-out,cleanout",
+    "created_by": 1,
+    "meta_title": "Move-Out Cleanout Bangkok | Leaving Your Apartment? | Bangkok Junk",
+    "meta_description": "Leaving your Bangkok apartment or house? Everything you can't take with you, removed. Fast, stress-free move-out junk removal service.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Moving out and need to leave the place empty? All the furniture, appliances, and junk you can't take with you, removed. Whether you're moving to a new apartment, leaving Bangkok, or handing back a rental, the property is cleared and ready for handover.</p>\n</div>\n\n<h2 class=\"tr\">What Gets Handled</h2>\n<ul>\n<li><span class=\"tr\">All furniture: sofas, beds, wardrobes, tables, chairs</span></li>\n<li><span class=\"tr\">Appliances: fridge, washer, AC, TV</span></li>\n<li><span class=\"tr\">Accumulated items: boxes, bags, miscellaneous junk</span></li>\n<li><span class=\"tr\">Kitchen items, linens, and small goods</span></li>\n</ul>\n\n<h2 class=\"tr\">How It Works</h2>\n<p class=\"tr\">Send photos of what needs to go. Get a quote, confirm, and the team shows up. Your place will be empty and ready for inspection.</p>"
+  },
+  {
+    "id": 8,
+    "zid": "renovation-debris",
+    "type": "category",
+    "title": "Renovation Debris Removal in Bangkok",
+    "description": "Post-renovation mess? Construction debris, old fixtures, and renovation waste removed from Bangkok properties. Licensed disposal.",
+    "permalink": "/renovation-debris",
+    "cover_image": "https://placehold.co/800x600?text=Renovation+Debris",
+    "pubdate": "2026-01-02T10:00:00Z",
+    "tags": "tier2,renovation,debris",
+    "created_by": 1,
+    "meta_title": "Renovation Debris Removal Bangkok | Construction Waste | Bangkok Junk",
+    "meta_description": "Post-renovation mess? Construction debris, old fixtures, and renovation waste removed from Bangkok properties. Licensed disposal.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Renovation complete but the debris is still there? Construction waste, old fixtures, and left-behind materials removed from Bangkok condos, houses, and commercial spaces. All waste disposed of through proper channels, no illegal dumping.</p>\n</div>\n\n<h2 class=\"tr\">What Gets Removed</h2>\n<ul>\n<li><span class=\"tr\">Drywall, plaster, and concrete debris</span></li>\n<li><span class=\"tr\">Old tiles, flooring, and carpet</span></li>\n<li><span class=\"tr\">Removed fixtures: sinks, toilets, cabinets</span></li>\n<li><span class=\"tr\">Wood scraps, metal, and packaging waste</span></li>\n</ul>\n\n<h2 class=\"tr\">How It Works</h2>\n<p class=\"tr\">Send a photo of the debris and get a quote based on volume. The right size truck is dispatched and multi-load jobs for larger renovations are no problem.</p>"
+  },
+  {
+    "id": 9,
+    "zid": "hoarding-cleanout",
+    "type": "category",
+    "title": "Hoarding Cleanout in Bangkok",
+    "description": "Overwhelmed by accumulated stuff? Hoarding cleanouts handled across Bangkok with compassion and zero judgment. Discreet, professional service.",
+    "permalink": "/hoarding-cleanout",
+    "cover_image": "https://placehold.co/800x600?text=Hoarding+Cleanout",
+    "pubdate": "2026-01-02T10:00:00Z",
+    "tags": "tier2,hoarding,cleanout",
+    "created_by": 1,
+    "meta_title": "Hoarding Cleanout Bangkok | No Judgment, Just Results | Bangkok Junk",
+    "meta_description": "Overwhelmed by accumulated stuff? Hoarding cleanouts handled across Bangkok with compassion and zero judgment. Discreet, professional service.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">No judgment, no matter the situation. Hoarding cleanouts require patience, discretion, and experience. The team handles these jobs with compassion and professionalism, clearing the space at your pace while treating your belongings with respect.</p>\n</div>\n\n<h2 class=\"tr\">The Approach</h2>\n<ul>\n<li><span class=\"tr\">No judgment. Ever</span></li>\n<li><span class=\"tr\">Everything done at your pace</span></li>\n<li><span class=\"tr\">Full discretion: no branded vehicles if preferred</span></li>\n<li><span class=\"tr\">Items sorted: keep, donate, recycle, dispose</span></li>\n</ul>\n\n<h2 class=\"tr\">How It Works</h2>\n<p class=\"tr\">Get in touch privately on LINE or phone. A visit to assess the situation can be arranged before quoting. Everything is handled with complete confidentiality.</p>"
+  },
+  {
+    "id": 10,
+    "zid": "ikea-furniture-removal",
+    "type": "category",
+    "title": "IKEA Furniture Removal in Bangkok",
+    "description": "Moving out of an IKEA-furnished Bangkok condo? Billy bookcases, Kallax shelves, Malm beds, and all IKEA pieces removed fast.",
+    "permalink": "/ikea-furniture-removal",
+    "cover_image": "https://placehold.co/800x600?text=IKEA+Removal",
+    "pubdate": "2026-01-02T10:00:00Z",
+    "tags": "tier2,ikea,furniture",
+    "created_by": 1,
+    "meta_title": "IKEA Furniture Removal Bangkok | Condo Clearout Specialists | Bangkok Junk",
+    "meta_description": "Moving out of an IKEA-furnished Bangkok condo? Billy bookcases, Kallax shelves, Malm beds, and all IKEA pieces removed fast.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Bangkok's condos are full of IKEA furniture. When it's time to move out, Bangkok Junk takes it all away. Thousands of IKEA pieces removed: Billy bookcases, Kallax shelves, Malm beds, Hemnes dressers, PAX wardrobes, and more. Every product line known and removed efficiently.</p>\n</div>\n\n<h2 class=\"tr\">Common IKEA Items Removed</h2>\n<ul>\n<li><span class=\"tr\">Billy bookcases and Kallax shelving</span></li>\n<li><span class=\"tr\">Malm beds and Hemnes dressers</span></li>\n<li><span class=\"tr\">PAX wardrobes</span></li>\n<li><span class=\"tr\">Lack tables and TV stands</span></li>\n<li><span class=\"tr\">Kitchen cabinets and Besta units</span></li>\n<li><span class=\"tr\">Poang chairs and Ektorp sofas</span></li>\n</ul>\n\n<h2 class=\"tr\">How It Works</h2>\n<p class=\"tr\">Send photos of everything that needs to go. You'll get a single price for the lot and it all gets cleared in one trip.</p>"
+  },
+  {
+    "id": 11,
+    "zid": "rubbish-removal",
+    "type": "category",
+    "title": "Rubbish Removal in Bangkok",
+    "description": "Need bulky rubbish collected from your Bangkok property? Fast, affordable rubbish clearance for homes and offices across Bangkok.",
+    "permalink": "/rubbish-removal",
+    "cover_image": "https://placehold.co/800x600?text=Rubbish+Removal",
+    "pubdate": "2026-01-02T10:00:00Z",
+    "tags": "tier2,rubbish,removal",
+    "created_by": 1,
+    "meta_title": "Rubbish Removal Bangkok | Bulky Waste Collection | Bangkok Junk",
+    "meta_description": "Need bulky rubbish collected from your Bangkok property? Fast, affordable rubbish clearance for homes and offices across Bangkok.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Got bulky rubbish that the regular waste collection won't take? Fast, reliable rubbish removal and clearance available across Bangkok. From old furniture and broken appliances to bags of accumulated waste, everything collected and disposed of properly.</p>\n<p class=\"tr\">Whether you need a one-off collection or a full property clearance, everything is handled. Recyclables sorted, usable items donated, and responsible disposal of all waste ensured.</p>\n</div>\n\n<h2 class=\"tr\">What Gets Collected</h2>\n<ul>\n<li><span class=\"tr\">Bulky household waste and rubbish</span></li>\n<li><span class=\"tr\">Old furniture and broken items</span></li>\n<li><span class=\"tr\">Garden waste and outdoor rubbish</span></li>\n<li><span class=\"tr\">Accumulated bags and boxes</span></li>\n<li><span class=\"tr\">Commercial waste from offices and shops</span></li>\n</ul>\n\n<h2 class=\"tr\">How It Works</h2>\n<p class=\"tr\">Send a photo of the rubbish on LINE or WhatsApp. Get a quote based on volume and have it collected at a time that suits you. Same-day clearance available.</p>"
+  },
+  {
+    "id": 20,
+    "zid": "blog-sukhumvit-clearout",
+    "type": "blog",
+    "title": "Full Condo Clearout in Sukhumvit Soi 36",
+    "description": "A two-bedroom condo on Sukhumvit Soi 36 cleared out. All furniture, appliances, and accumulated items removed in one trip.",
+    "permalink": "/blog/sukhumvit-soi-36-clearout",
+    "cover_image": "https://placehold.co/800x600?text=Sukhumvit+Clearout",
+    "pubdate": "2026-02-10T10:00:00Z",
+    "tags": "case-study,sukhumvit,clearout",
+    "created_by": 1,
+    "meta_title": "Condo Clearout Sukhumvit Soi 36 | Case Study | Bangkok Junk",
+    "meta_description": "Full two-bedroom condo clearout on Sukhumvit Soi 36. All furniture, appliances, and accumulated items removed in a single trip by Bangkok Junk.",
+    "content": "<p class=\"tr\">An expat family was leaving Bangkok and needed their entire two-bedroom condo cleared before the lease handover. The property had accumulated years of furniture, appliances, and personal items, including a large L-shaped sofa, double fridge, washing machine, and wardrobes in both bedrooms.</p>\n<h2 class=\"tr\">The Job</h2>\n<p class=\"tr\">The building's juristic office at 15 Residences was coordinated with to book the service lift for the morning. A team of four arrived at 9am, wrapped the lift interior with protective padding, and began clearing from the bedrooms first.</p>\n<p class=\"tr\">The entire job took about 3 hours. Every item was carried down to the truck in the loading area, including the sofa which required careful maneuvering through the corridor. By noon the condo was completely empty and ready for inspection.</p>\n<h2 class=\"tr\">Items Removed</h2>\n<ul>\n<li><span class=\"tr\">L-shaped sofa and coffee table</span></li>\n<li><span class=\"tr\">Queen bed and single bed with mattresses</span></li>\n<li><span class=\"tr\">Two wardrobes</span></li>\n<li><span class=\"tr\">Double-door fridge</span></li>\n<li><span class=\"tr\">Washing machine</span></li>\n<li><span class=\"tr\">Dining table with 4 chairs</span></li>\n<li><span class=\"tr\">Multiple boxes of household items</span></li>\n</ul>\n<p class=\"tr\">Usable items were donated. The fridge and washing machine were sent for proper recycling.</p>\n<p>Need a <a href=\"/condo-clearout\"><span class=\"tr\">full property clearout</span></a> in <a href=\"/sukhumvit\"><span class=\"tr\">Sukhumvit</span></a>? <a href=\"/go\"><span class=\"tr\">Get a free quote</span></a>.</p>"
+  },
+  {
+    "id": 21,
+    "zid": "blog-thonglor-furniture",
+    "type": "blog",
+    "title": "Sofa and Wardrobe Removal in Thonglor",
+    "description": "Quick furniture pickup in Thonglor. Old sofa and wardrobe removed from a high-rise condo to make way for new furniture delivery.",
+    "permalink": "/blog/thonglor-furniture-removal",
+    "cover_image": "https://placehold.co/800x600?text=Thonglor+Furniture",
+    "pubdate": "2026-02-05T10:00:00Z",
+    "tags": "case-study,thonglor,furniture",
+    "created_by": 1,
+    "meta_title": "Furniture Removal Thonglor | Sofa & Wardrobe Pickup | Bangkok Junk",
+    "meta_description": "Quick furniture pickup in Thonglor. Old sofa and wardrobe removed from a high-rise condo to make way for new furniture delivery.",
+    "content": "<p class=\"tr\">A resident in a Thonglor high-rise had a new sofa being delivered the following day and needed the old 3-seater gone that afternoon. They also wanted a freestanding wardrobe removed from the bedroom.</p>\n<h2 class=\"tr\">The Job</h2>\n<p class=\"tr\">The team arrived within 2 hours of the LINE message. The sofa was carried down via the service lift after coordinating with the building's front desk. The wardrobe was partially disassembled on site to fit through the bedroom doorway. Total time on site: about 90 minutes.</p>\n<h2 class=\"tr\">Items Removed</h2>\n<ul>\n<li><span class=\"tr\">3-seater fabric sofa</span></li>\n<li><span class=\"tr\">Freestanding wardrobe</span></li>\n</ul>\n<p class=\"tr\">The sofa was in good condition and was donated. The wardrobe was recycled.</p>\n<p>Need <a href=\"/furniture-removal\"><span class=\"tr\">furniture removal</span></a> in <a href=\"/thonglor\"><span class=\"tr\">Thonglor</span></a>? <a href=\"/go\"><span class=\"tr\">Book a pickup</span></a>.</p>"
+  },
+  {
+    "id": 22,
+    "zid": "blog-sathorn-office",
+    "type": "blog",
+    "title": "Office Clearout in Sathorn Business Tower",
+    "description": "Full office clearout in Sathorn. 40 desks, chairs, filing cabinets, and IT equipment removed from a closing business in two days.",
+    "permalink": "/blog/sathorn-office-clearout",
+    "cover_image": "https://placehold.co/800x600?text=Sathorn+Office",
+    "pubdate": "2026-01-28T10:00:00Z",
+    "tags": "case-study,sathorn,office",
+    "created_by": 1,
+    "meta_title": "Office Clearout Sathorn | 40 Desks Removed | Bangkok Junk",
+    "meta_description": "Full office clearout in Sathorn. 40 desks, chairs, filing cabinets, and IT equipment removed from a closing business in two days.",
+    "content": "<p class=\"tr\">A small company was closing their Sathorn office and needed everything removed before their lease ended. The office spanned half a floor and included 40 desks, ergonomic chairs, filing cabinets, a server rack, printers, and kitchen equipment.</p>\n<h2 class=\"tr\">The Job</h2>\n<p class=\"tr\">The clearout was scheduled over a weekend to avoid disrupting other tenants in the building. The team worked with building management to book the loading dock and freight lift for both days. All IT equipment was separated for certified e-waste disposal.</p>\n<h2 class=\"tr\">Items Removed</h2>\n<ul>\n<li><span class=\"tr\">40 office desks</span></li>\n<li><span class=\"tr\">40 ergonomic chairs</span></li>\n<li><span class=\"tr\">12 filing cabinets</span></li>\n<li><span class=\"tr\">Server rack and networking equipment</span></li>\n<li><span class=\"tr\">3 large printers</span></li>\n<li><span class=\"tr\">Kitchen appliances and furniture</span></li>\n</ul>\n<p>Need an <a href=\"/office-clearout\"><span class=\"tr\">office clearout</span></a> in <a href=\"/sathorn\"><span class=\"tr\">Sathorn</span></a>? <a href=\"/go\"><span class=\"tr\">Get a free quote</span></a>.</p>"
+  },
+  {
+    "id": 23,
+    "zid": "blog-onnut-appliance",
+    "type": "blog",
+    "title": "Fridge and Washing Machine Removal in On Nut",
+    "description": "Same-day appliance removal in On Nut. Old fridge and washing machine picked up from a condo to make room for new deliveries.",
+    "permalink": "/blog/on-nut-appliance-removal",
+    "cover_image": "https://placehold.co/800x600?text=On+Nut+Appliances",
+    "pubdate": "2026-01-20T10:00:00Z",
+    "tags": "case-study,on-nut,appliances",
+    "created_by": 1,
+    "meta_title": "Appliance Removal On Nut | Fridge & Washer Pickup | Bangkok Junk",
+    "meta_description": "Same-day appliance removal in On Nut. Old fridge and washing machine picked up from a condo to make room for new deliveries.",
+    "content": "<p class=\"tr\">A condo resident in On Nut had new appliances being delivered the next morning and needed their old fridge and washing machine removed before the delivery window. They reached out at 2pm and the team was there by 4pm.</p>\n<h2 class=\"tr\">The Job</h2>\n<p class=\"tr\">Both appliances were disconnected and ready on arrival. The washing machine and fridge were carried down to the loading area via the service lift and loaded onto the truck. Total time: about 45 minutes.</p>\n<h2 class=\"tr\">Items Removed</h2>\n<ul>\n<li><span class=\"tr\">Double-door fridge</span></li>\n<li><span class=\"tr\">Front-loading washing machine</span></li>\n</ul>\n<p>Need <a href=\"/appliance-removal\"><span class=\"tr\">appliance removal</span></a> in <a href=\"/on-nut\"><span class=\"tr\">On Nut</span></a>? <a href=\"/go\"><span class=\"tr\">Book a same-day pickup</span></a>.</p>"
+  },
+  {
+    "id": 24,
+    "zid": "blog-udelight-clearout",
+    "type": "blog",
+    "title": "U Delight Condo Full Clearout in Phra Khanong",
+    "description": "Complete clearout of a one-bedroom unit at U Delight Residence in Phra Khanong. All furniture and appliances removed before lease handover.",
+    "permalink": "/blog/u-delight-phra-khanong-clearout",
+    "cover_image": "https://placehold.co/800x600?text=U+Delight+Clearout",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "case-study,phra-khanong,clearout",
+    "created_by": 1,
+    "meta_title": "U Delight Clearout Phra Khanong | Full Condo Removal | Bangkok Junk",
+    "meta_description": "Complete clearout of a one-bedroom unit at U Delight Residence in Phra Khanong. All furniture and appliances removed before lease handover.",
+    "content": "<p class=\"tr\">A tenant at U Delight Residence in Phra Khanong was ending their lease and needed the entire unit cleared out. The one-bedroom condo was fully furnished with a mix of original furniture and items accumulated over three years.</p>\n<h2 class=\"tr\">The Job</h2>\n<p class=\"tr\">The U Delight juristic office was coordinated with directly to book the service lift and loading area. The team cleared the entire unit in about 2 hours: bedroom, living room, kitchen, and bathroom. The condo was left empty and broom-clean for the handover inspection.</p>\n<h2 class=\"tr\">Items Removed</h2>\n<ul>\n<li><span class=\"tr\">Queen bed with mattress</span></li>\n<li><span class=\"tr\">Wardrobe and dresser</span></li>\n<li><span class=\"tr\">Sofa and TV stand</span></li>\n<li><span class=\"tr\">Dining table with 2 chairs</span></li>\n<li><span class=\"tr\">Microwave and small appliances</span></li>\n<li><span class=\"tr\">Multiple bags of household items</span></li>\n</ul>\n<p>Need a <a href=\"/condo-clearout\"><span class=\"tr\">condo clearout</span></a> in <a href=\"/phra-khanong\"><span class=\"tr\">Phra Khanong</span></a>? <a href=\"/go\"><span class=\"tr\">Get a free quote</span></a>.</p>"
+  },
+  {
+    "id": 25,
+    "zid": "blog-bangna-ikea",
+    "type": "blog",
+    "title": "Full IKEA Condo Clearout in Bang Na",
+    "description": "Removed a full apartment of IKEA furniture from a Bang Na condo: shelves, beds, desks, and kitchen items all gone in one trip.",
+    "permalink": "/blog/bang-na-ikea-clearout",
+    "cover_image": "https://placehold.co/800x600?text=Bang+Na+IKEA",
+    "pubdate": "2026-01-10T10:00:00Z",
+    "tags": "case-study,bang-na,ikea,furniture",
+    "created_by": 1,
+    "meta_title": "IKEA Furniture Removal Bang Na | Full Condo Clearout | Bangkok Junk",
+    "meta_description": "Removed a full apartment of IKEA furniture from a Bang Na condo: shelves, beds, desks, and kitchen items all gone in one trip.",
+    "content": "<p class=\"tr\">An expat couple near IKEA Bang Na had furnished their entire condo with IKEA products over two years. They were leaving Thailand and needed everything removed in a single day before their flight.</p>\n<h2 class=\"tr\">The Job</h2>\n<p class=\"tr\">The condo was packed with IKEA staples: two Billy bookcases, a Kallax unit, Malm bed frame, Hemnes dresser, LACK coffee table, and a full set of kitchen items. Everything was cleared in about 3 hours. Items in good condition were set aside for donation.</p>\n<h2 class=\"tr\">Items Removed</h2>\n<ul>\n<li><span class=\"tr\">2 Billy bookcases</span></li>\n<li><span class=\"tr\">Kallax 4x4 shelving unit</span></li>\n<li><span class=\"tr\">Malm queen bed frame with mattress</span></li>\n<li><span class=\"tr\">Hemnes 6-drawer dresser</span></li>\n<li><span class=\"tr\">LACK coffee table and side tables</span></li>\n<li><span class=\"tr\">Desk and chair</span></li>\n<li><span class=\"tr\">Kitchen items and small appliances</span></li>\n</ul>\n<p>Moving out of an IKEA-furnished condo? See the <a href=\"/ikea-furniture-removal\"><span class=\"tr\">IKEA removal service</span></a> or <a href=\"/go\"><span class=\"tr\">get a quote</span></a>.</p>"
+  },
+  {
+    "id": 26,
+    "zid": "about-page",
+    "type": "page",
+    "title": "About Bangkok Junk",
+    "description": "Bangkok Junk is a professional junk removal service covering Bangkok, Samut Prakan, and Nonthaburi. English and Thai-speaking team.",
+    "permalink": "/about",
+    "cover_image": "https://placehold.co/800x600?text=About+Us",
+    "pubdate": "2026-01-01T10:00:00Z",
+    "tags": "about,no-cta",
+    "created_by": 1,
+    "meta_title": "About Bangkok Junk | Professional Junk Removal Service",
+    "meta_description": "Bangkok Junk is a professional junk removal service covering Bangkok, Samut Prakan, and Nonthaburi. English and Thai-speaking team.",
+    "content": "<p class=\"tr\">Bangkok Junk is part of the Khun Clean family of service brands operating across Bangkok. The focus: junk removal, picking up and disposing of unwanted furniture, appliances, and property contents for homeowners, renters, landlords, and businesses.</p>\n\n<h2 class=\"tr\">What Bangkok Junk Does</h2>\n<p class=\"tr\">Things you no longer need, removed. That might be a single sofa or an entire property's contents. The heavy lifting, the logistics, and the responsible disposal are all taken care of. You just point at what needs to go.</p>\n\n<h2 class=\"tr\">The Team</h2>\n<p class=\"tr\">The team speaks both English and Thai. Every unique challenge of working in Bangkok is understood: condo building rules, juristic offices, lift restrictions, and truck access. Hundreds of jobs completed across every major district and property type.</p>\n\n<h2 class=\"tr\">Responsible Disposal</h2>\n<p class=\"tr\">Nothing just gets dumped in a landfill. Usable items are donated to charities and community organizations. Recyclable materials are separated and sent to proper facilities. Appliances containing refrigerants are handled through certified disposal channels. This is taken seriously.</p>\n\n<h2 class=\"tr\">Service Area</h2>\n<p class=\"tr\">All of Bangkok, Samut Prakan, and Nonthaburi covered. The busiest areas include Sukhumvit, Thonglor, Silom, Sathorn, Ekkamai, Asok, On Nut, and Phra Khanong, but the team goes wherever the job is.</p>"
+  },
+  {
+    "id": 27,
+    "zid": "reviews-page",
+    "type": "page",
+    "title": "Reviews",
+    "description": "See what customers say about Bangkok Junk. Rated 5 stars on Google. Real reviews from real customers across Bangkok.",
+    "permalink": "/reviews",
+    "cover_image": "https://placehold.co/800x600?text=Reviews",
+    "pubdate": "2026-01-01T10:00:00Z",
+    "tags": "reviews",
+    "created_by": 1,
+    "meta_title": "Bangkok Junk Reviews | 5 Star Rated Junk Removal | Bangkok",
+    "meta_description": "See what customers say about Bangkok Junk. Rated 5 stars on Google. Real reviews from real customers across Bangkok.",
+    "content": "<h2 class=\"tr\">What Customers Say</h2>\n\n<div class=\"space-y-8 my-8\">\n\n<div class=\"bg-warm-50 border border-black/8 p-8 rounded-none\">\n<p class=\"text-ink-soft text-sm leading-relaxed italic\">\"Absolutely brilliant service. They came within hours, cleared out my entire condo, and left the place spotless. Highly recommend to anyone leaving Bangkok.\"</p>\n<p class=\"mt-4 text-xs font-medium uppercase tracking-[0.15em] text-ink\">David Walker</p>\n</div>\n\n<div class=\"bg-warm-50 border border-black/8 p-8 rounded-none\">\n<p class=\"text-ink-soft text-sm leading-relaxed italic\">\"We had a massive clearout. Years of accumulated furniture and junk in our townhouse. The team was professional, fast, and didn't judge the state of the place. Great experience.\"</p>\n<p class=\"mt-4 text-xs font-medium uppercase tracking-[0.15em] text-ink\">Trevor Cardozo</p>\n</div>\n\n<div class=\"bg-warm-50 border border-black/8 p-8 rounded-none\">\n<p class=\"text-ink-soft text-sm leading-relaxed italic\">\"Quick response, showed up on time, took away everything we needed gone. Couldn't be easier. Will use again next time we upgrade our furniture.\"</p>\n<p class=\"mt-4 text-xs font-medium uppercase tracking-[0.15em] text-ink\">Mason Doty</p>\n</div>\n\n</div>\n\n<p class=\"tr\">Read more reviews on Google.</p>"
+  },
+  {
+    "id": 30,
+    "zid": "area-sukhumvit",
+    "type": "page",
+    "title": "Junk Removal in Sukhumvit, Bangkok",
+    "description": "Fast junk removal in Sukhumvit, Bangkok. Condos, offices, and apartments cleared along the BTS corridor. Same-day pickup available. Get a free quote today.",
+    "permalink": "/sukhumvit",
+    "cover_image": "https://placehold.co/800x600?text=Sukhumvit",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,sukhumvit",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Sukhumvit Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Fast junk removal in Sukhumvit, Bangkok. Condos, offices, and apartments cleared along the BTS corridor. Same-day pickup available. Get a free quote today.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Fast, reliable junk removal across Sukhumvit, one of Bangkok's busiest and most sought-after expat corridors. Whether you're in a high-rise condo near Nana or a townhouse off Sukhumvit Soi 77, the team knows how to navigate the area's building rules and traffic patterns to get your job done efficiently.</p>\n<p class=\"tr\">Sukhumvit residents frequently upgrade furniture, replace appliances, and move between apartments. All of it handled: single-item pickups, full condo clearouts, and everything in between.</p>\n<p class=\"tr\">From Asok all the way to On Nut, Sukhumvit is the most active service area. The loading bays, juristic offices, and building requirements along this corridor are well-known, and pickups are coordinated with minimal disruption.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Sukhumvit</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Sukhumvit</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Sukhumvit</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Sukhumvit</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Sukhumvit</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Sukhumvit</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Sukhumvit</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Sukhumvit</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Sukhumvit</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 31,
+    "zid": "area-thonglor",
+    "type": "page",
+    "title": "Junk Removal in Thonglor, Bangkok",
+    "description": "Professional junk removal in Thonglor, Bangkok. Luxury condos, serviced apartments, and restaurants served in this upscale district. Same-day service available.",
+    "permalink": "/thonglor",
+    "cover_image": "https://placehold.co/800x600?text=Thonglor",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,thonglor",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Thonglor Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Professional junk removal in Thonglor, Bangkok. Luxury condos, serviced apartments, and restaurants served in this upscale district. Same-day service available.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Thonglor is one of Bangkok's most sought-after neighborhoods, known for its upscale condominiums, trendy restaurants, and young professional residents. Bangkok Junk provides discreet, efficient junk removal throughout Thonglor to match the area's high standards.</p>\n<p class=\"tr\">Whether you're clearing out a serviced apartment on Thonglor Soi 10 or removing old furniture from a restaurant that's just been renovated, the time-sensitive nature of Thonglor operations is understood, and everything is scheduled around you.</p>\n<p class=\"tr\">Many Thonglor residents also relocate within the area or upgrade their interiors regularly. The team handles single-item removals and complete property clearouts with equal care and professionalism.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Thonglor</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Thonglor</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Thonglor</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Thonglor</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Thonglor</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Thonglor</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Thonglor</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Thonglor</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Thonglor</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 32,
+    "zid": "area-silom",
+    "type": "page",
+    "title": "Junk Removal in Silom, Bangkok",
+    "description": "Junk removal in Silom, Bangkok's central business district. Offices, residential units, and mixed-use properties cleared. Flexible scheduling.",
+    "permalink": "/silom",
+    "cover_image": "https://placehold.co/800x600?text=Silom",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,silom",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Silom Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Silom, Bangkok's central business district. Offices, residential units, and mixed-use properties cleared. Flexible scheduling.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Silom is Bangkok's original central business district, blending corporate office towers with residential condominiums, hotels, and busy street-level retail. Bangkok Junk serves the full mix of Silom property types.</p>\n<p class=\"tr\">Because Silom is busiest during business hours, early morning and evening pickup slots are available so your junk removal doesn't interfere with office operations or building access windows.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Silom</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Silom</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Silom</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Silom</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Silom</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Silom</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Silom</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Silom</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Silom</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 33,
+    "zid": "area-sathorn",
+    "type": "page",
+    "title": "Junk Removal in Sathorn, Bangkok",
+    "description": "Trusted junk removal in Sathorn, Bangkok's financial and diplomatic district. Luxury condos, embassies, and corporate offices served.",
+    "permalink": "/sathorn",
+    "cover_image": "https://placehold.co/800x600?text=Sathorn",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,sathorn",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Sathorn Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Trusted junk removal in Sathorn, Bangkok's financial and diplomatic district. Luxury condos, embassies, and corporate offices served.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Sathorn is home to Bangkok's most prestigious addresses, from the glass towers of the financial district to the tree-lined sois where embassies and upscale residences sit side by side. Bangkok Junk provides professional, discreet junk removal in Sathorn.</p>\n<p class=\"tr\">Diplomatic households, international companies relocating offices, and luxury condo residents making way for new furnishings are all served regularly.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Sathorn</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Sathorn</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Sathorn</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Sathorn</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Sathorn</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Sathorn</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Sathorn</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Sathorn</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Sathorn</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 34,
+    "zid": "area-ekkamai",
+    "type": "page",
+    "title": "Junk Removal in Ekkamai, Bangkok",
+    "description": "Junk removal in Ekkamai, Bangkok. Condos, townhouses, and local businesses served in this relaxed residential neighbourhood.",
+    "permalink": "/ekkamai",
+    "cover_image": "https://placehold.co/800x600?text=Ekkamai",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,ekkamai",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Ekkamai Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Ekkamai, Bangkok. Condos, townhouses, and local businesses served in this relaxed residential neighbourhood.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Ekkamai has a quieter, more residential character than its neighbour Thonglor, with a mix of low-rise townhouses, boutique condominiums, and independent cafes and studios.</p>\n<p class=\"tr\">Because Ekkamai streets are narrower than major arterials, appropriately sized vehicles are used to access your property without blocking the road.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Ekkamai</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Ekkamai</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Ekkamai</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Ekkamai</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Ekkamai</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Ekkamai</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Ekkamai</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Ekkamai</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Ekkamai</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 35,
+    "zid": "area-asok",
+    "type": "page",
+    "title": "Junk Removal in Asok, Bangkok",
+    "description": "Junk removal in Asok, Bangkok's busy BTS and MRT interchange hub. Condos, offices, and retail spaces near Terminal 21 cleared fast.",
+    "permalink": "/asok",
+    "cover_image": "https://placehold.co/800x600?text=Asok",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,asok",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Asok Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Asok, Bangkok's busy BTS and MRT interchange hub. Condos, offices, and retail spaces near Terminal 21 cleared fast.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Asok sits at one of Bangkok's most important transport interchanges, where the BTS Sukhumvit Line meets the MRT. The area is packed with condominiums, office blocks, and service businesses.</p>\n<p class=\"tr\">Bangkok Junk handles junk removal in Asok efficiently, coordinating with building management at large residential towers and commercial loading zones.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Asok</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Asok</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Asok</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Asok</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Asok</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Asok</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Asok</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Asok</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Asok</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 36,
+    "zid": "area-on-nut",
+    "type": "page",
+    "title": "Junk Removal in On Nut, Bangkok",
+    "description": "Affordable junk removal in On Nut, Bangkok. Popular with expats and locals. Condos and apartments along the BTS line cleared fast.",
+    "permalink": "/on-nut",
+    "cover_image": "https://placehold.co/800x600?text=On+Nut",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,on nut",
+    "created_by": 1,
+    "meta_title": "Junk Removal in On Nut Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Affordable junk removal in On Nut, Bangkok. Popular with expats and locals. Condos and apartments along the BTS line cleared fast.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">On Nut has grown into one of Bangkok's most sought-after residential corridors for expats and young Thai professionals seeking good value without sacrificing BTS access.</p>\n<p class=\"tr\">Residents in On Nut move frequently, and Bangkok Junk is the service they call to handle the furniture, appliances, and belongings left behind.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in On Nut</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in On Nut</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in On Nut</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in On Nut</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in On Nut</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in On Nut</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in On Nut</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in On Nut</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in On Nut</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 37,
+    "zid": "area-bang-na",
+    "type": "page",
+    "title": "Junk Removal in Bang Na, Bangkok",
+    "description": "Junk removal in Bang Na, Bangkok. Houses, condos, and businesses served in this eastern district near IKEA and Mega Bangna.",
+    "permalink": "/bang-na",
+    "cover_image": "https://placehold.co/800x600?text=Bang+Na",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,bang na",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Bang Na Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Bang Na, Bangkok. Houses, condos, and businesses served in this eastern district near IKEA and Mega Bangna.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Bang Na stretches east from the expressway interchange toward Suvarnabhumi Airport, blending large residential estates, townhouse villages, and commercial zones anchored by Mega Bangna and the nearby IKEA.</p>\n<p class=\"tr\">Full-size trucks dispatched to Bang Na, with clearouts of detached houses, warehouse spaces, and multi-room townhouses handled with ease.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Bang Na</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Bang Na</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Bang Na</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Bang Na</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Bang Na</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Bang Na</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Bang Na</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Bang Na</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Bang Na</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 38,
+    "zid": "area-lat-phrao",
+    "type": "page",
+    "title": "Junk Removal in Lat Phrao, Bangkok",
+    "description": "Reliable junk removal in Lat Phrao, Bangkok. Local residential areas, condos, and businesses along the MRT line in northern Bangkok served.",
+    "permalink": "/lat-phrao",
+    "cover_image": "https://placehold.co/800x600?text=Lat+Phrao",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,lat phrao",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Lat Phrao Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Reliable junk removal in Lat Phrao, Bangkok. Local residential areas, condos, and businesses along the MRT line in northern Bangkok served.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Lat Phrao is a long, busy arterial district in northern Bangkok that runs from the Chatuchak area northward, lined with a mix of shophouses, residential villages, townhouses, and newer condo developments near MRT stations.</p>\n<p class=\"tr\">Thai-speaking household environments and juristic offices at the area's growing number of condominium projects are handled daily.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Lat Phrao</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Lat Phrao</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Lat Phrao</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Lat Phrao</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Lat Phrao</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Lat Phrao</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Lat Phrao</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Lat Phrao</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Lat Phrao</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 39,
+    "zid": "area-nonthaburi",
+    "type": "page",
+    "title": "Junk Removal in Nonthaburi",
+    "description": "Junk removal in Nonthaburi, Bangkok's suburban neighbour. Houses, townhouses, and commercial properties cleared across the province.",
+    "permalink": "/nonthaburi",
+    "cover_image": "https://placehold.co/800x600?text=Nonthaburi",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,nonthaburi",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Nonthaburi | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Nonthaburi, Bangkok's suburban neighbour. Houses, townhouses, and commercial properties cleared across the province.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Nonthaburi sits directly north of Bangkok and functions as one of its most important suburban provinces, home to hundreds of thousands of residents living in house-and-garden properties, townhouse villages, and newer condominium projects near the Purple Line MRT.</p>\n<p class=\"tr\">Because Nonthaburi properties tend to be larger than inner-city Bangkok units, clearouts here often involve more volume.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Nonthaburi</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Nonthaburi</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Nonthaburi</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Nonthaburi</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Nonthaburi</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Nonthaburi</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Nonthaburi</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Nonthaburi</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Nonthaburi</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 40,
+    "zid": "area-ari",
+    "type": "page",
+    "title": "Junk Removal in Ari, Bangkok",
+    "description": "Junk removal in Ari, Bangkok's charming BTS neighbourhood. Old houses, new condos, and boutique businesses served.",
+    "permalink": "/ari",
+    "cover_image": "https://placehold.co/800x600?text=Ari",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,ari",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Ari Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Ari, Bangkok's charming BTS neighbourhood. Old houses, new condos, and boutique businesses served.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Ari has earned a reputation as one of Bangkok's most livable and characterful neighbourhoods, with BTS Ari at its heart and a pleasant mix of old single-family houses, newer low-rise condominiums, and creative studios.</p>\n<p class=\"tr\">Many Ari residents are renovating older houses or downsizing from larger properties, generating a need for careful, considerate junk removal.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Ari</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Ari</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Ari</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Ari</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Ari</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Ari</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Ari</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Ari</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Ari</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 41,
+    "zid": "area-phahonyothin",
+    "type": "page",
+    "title": "Junk Removal in Phahonyothin, Bangkok",
+    "description": "Junk removal along Phahonyothin Road, Bangkok. From Chatuchak to Mo Chit and beyond. Homes, offices, and shophouses cleared.",
+    "permalink": "/phahonyothin",
+    "cover_image": "https://placehold.co/800x600?text=Phahonyothin",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,phahonyothin",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Phahonyothin Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal along Phahonyothin Road, Bangkok. From Chatuchak to Mo Chit and beyond. Homes, offices, and shophouses cleared.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Phahonyothin Road is one of Bangkok's longest and most diverse urban arteries, running north from the Victory Monument area through Ari, Chatuchak, Mo Chit, and beyond.</p>\n<p class=\"tr\">Bangkok Junk regularly handles clearouts for businesses relocating from shophouses and residents moving out of gated villages along this route.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Phahonyothin</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Phahonyothin</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Phahonyothin</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Phahonyothin</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Phahonyothin</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Phahonyothin</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Phahonyothin</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Phahonyothin</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Phahonyothin</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 42,
+    "zid": "area-ratchada",
+    "type": "page",
+    "title": "Junk Removal in Ratchada, Bangkok",
+    "description": "Junk removal in Ratchada, Bangkok. Condos, offices, and entertainment venues served in this MRT-accessible district.",
+    "permalink": "/ratchada",
+    "cover_image": "https://placehold.co/800x600?text=Ratchada",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,ratchada",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Ratchada Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Ratchada, Bangkok. Condos, offices, and entertainment venues served in this MRT-accessible district.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Ratchada, short for Ratchadaphisek Road, is Bangkok's inner-ring road connecting the north and east of the city, lined with a dense mix of condominium towers, corporate office buildings, and entertainment venues.</p>\n<p class=\"tr\">Condos along the Ratchada-Huay Kwang stretch are frequently cleared out, and office clearouts handled for companies that lease space in the area.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Ratchada</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Ratchada</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Ratchada</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Ratchada</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Ratchada</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Ratchada</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Ratchada</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Ratchada</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Ratchada</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 43,
+    "zid": "area-phra-khanong",
+    "type": "page",
+    "title": "Junk Removal in Phra Khanong, Bangkok",
+    "description": "Junk removal in Phra Khanong, Bangkok's emerging BTS district. A mix of old and new developments served. Same-day pickup available.",
+    "permalink": "/phra-khanong",
+    "cover_image": "https://placehold.co/800x600?text=Phra+Khanong",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,phra khanong",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Phra Khanong Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Phra Khanong, Bangkok's emerging BTS district. A mix of old and new developments served. Same-day pickup available.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Phra Khanong is one of Bangkok's most interesting transitional neighbourhoods: old canal-side communities and traditional shophouses sit alongside newly built condominiums and boutique co-working spaces.</p>\n<p class=\"tr\">Bangkok Junk has worked extensively throughout Phra Khanong, from removing decades-old furniture from traditional shophouses to clearing move-out piles from modern studios.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Phra Khanong</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Phra Khanong</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Phra Khanong</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Phra Khanong</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Phra Khanong</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Phra Khanong</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Phra Khanong</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Phra Khanong</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Phra Khanong</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  },
+  {
+    "id": 44,
+    "zid": "area-bearing",
+    "type": "page",
+    "title": "Junk Removal in Bearing, Bangkok",
+    "description": "Junk removal in Bearing, Bangkok. This growing eastern BTS extension district with newer condo developments and affordable properties fully covered.",
+    "permalink": "/bearing",
+    "cover_image": "https://placehold.co/800x600?text=Bearing",
+    "pubdate": "2026-01-15T10:00:00Z",
+    "tags": "area,junk removal,bearing",
+    "created_by": 1,
+    "meta_title": "Junk Removal in Bearing Bangkok | Same Day Pickup | Bangkok Junk",
+    "meta_description": "Junk removal in Bearing, Bangkok. This growing eastern BTS extension district with newer condo developments and affordable properties fully covered.",
+    "content": "<div class=\"mb-8\">\n<p class=\"tr\">Bearing sits at the eastern end of the BTS Sukhumvit Line extension and represents one of Bangkok's newer growth corridors. The area around BTS Bearing has seen steady condominium development, attracting residents who want BTS access at more affordable price points.</p>\n<p class=\"tr\">Bangkok Junk serves Bearing and the surrounding Samut Prakan border area. Whether you're a condo resident or clearing out an older property, junk removal in Bearing is available same-day.</p>\n</div>\n\n<h2 class=\"tr\">Services Available in Bearing</h2>\n<ul>\n<li><a href=\"/furniture-removal\"><span class=\"tr\">Furniture removal in Bearing</span></a></li>\n<li><a href=\"/appliance-removal\"><span class=\"tr\">Appliance removal in Bearing</span></a></li>\n<li><a href=\"/condo-clearout\"><span class=\"tr\">Condo clearout in Bearing</span></a></li>\n<li><a href=\"/office-clearout\"><span class=\"tr\">Office clearout in Bearing</span></a></li>\n<li><a href=\"/mattress-removal\"><span class=\"tr\">Mattress removal in Bearing</span></a></li>\n<li><a href=\"/ac-removal\"><span class=\"tr\">AC removal in Bearing</span></a></li>\n<li><a href=\"/move-out-cleanout\"><span class=\"tr\">Move-out cleanout in Bearing</span></a></li>\n</ul>\n\n<h2 class=\"tr\">How to Book Junk Removal in Bearing</h2>\n<p class=\"tr\">Getting a quote takes less than a minute. Send a photo of what needs to go on LINE or WhatsApp, and you'll get a price back fast.</p>\n<ul>\n<li>LINE: @khunclean</li>\n<li>WhatsApp: 082-797-3702</li>\n<li>Phone: 082-797-3702</li>\n<li><a href=\"/go\"><span class=\"tr\">Book online</span></a></li>\n</ul>"
+  }
+]

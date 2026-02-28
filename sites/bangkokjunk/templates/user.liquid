@@ -1,0 +1,29 @@
+<section class="bg-slate_d-600 py-14 md:py-24">
+  <div class="max-w-4xl mx-auto px-6 md:px-12 text-center">
+    <div class="w-10 h-px bg-copper-400 mx-auto mb-8"></div>
+    <h1 class="font-serif font-light text-3xl md:text-5xl tracking-tight text-white">{{user.name | default: "Profile"}}</h1>
+  </div>
+</section>
+
+<section class="py-16 md:py-24">
+  <div class="max-w-3xl mx-auto px-6 md:px-12">
+    <div class="bg-white border border-black/15 p-8 md:p-12 rounded-none">
+      <div class="w-8 h-px bg-copper-400 mb-6"></div>
+      <h2 class="tr font-serif font-light text-2xl tracking-tight text-ink">Account Details</h2>
+      <div class="mt-6 space-y-4">
+        {% if user.name %}
+        <div>
+          <p class="tr text-xs font-medium uppercase tracking-[0.15em] text-ink-muted">Name</p>
+          <p class="text-ink mt-1">{{user.name}}</p>
+        </div>
+        {% endif %}
+        {% if user.email %}
+        <div>
+          <p class="tr text-xs font-medium uppercase tracking-[0.15em] text-ink-muted">Email</p>
+          <p class="text-ink mt-1">{{user.email}}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Bangkok Junk Team",
+    "email": "hello@khunclean.com",
+    "role": "admin",
+    "bio": "Professional junk removal team serving Bangkok, Samut Prakan, and Nonthaburi."
+  },
+  {
+    "id": 2,
+    "name": "Somchai",
+    "email": "team@khunclean.com",
+    "role": "staff",
+    "bio": "Senior removal team lead with 5 years of experience in Bangkok property clearouts."
+  },
+  {
+    "id": 3,
+    "name": "Lek",
+    "email": "team2@khunclean.com",
+    "role": "staff",
+    "bio": "Logistics coordinator specializing in condo building access and scheduling."
+  }
+]

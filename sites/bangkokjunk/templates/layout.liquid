@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="{{locale}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta_title | default: site.name}}</title>
+  <meta name="description" content="{{meta_description | default: site.description}}">
+  <link rel="canonical" href="{{current_url}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Montserrat"', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            slate_d: {
+              400: '#3a4a5a',
+              500: '#2a3844',
+              600: '#1e2832',
+              700: '#182028',
+              800: '#121a20',
+              900: '#0c1218'
+            },
+            slate_l: {
+              500: '#2e3e4c',
+              600: '#26333f'
+            },
+            copper: {
+              300: '#d4924d',
+              400: '#b87333',
+              500: '#a0632b',
+              600: '#885424'
+            },
+            warm: {
+              50: '#f7f4ef',
+              100: '#eeebe4',
+              200: '#e5e0d6'
+            },
+            ink: {
+              DEFAULT: '#1a1f2e',
+              soft: '#374151',
+              muted: '#64748b'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    #mobile-menu.open { max-height: 600px; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-answer.open { max-height: 500px; }
+  </style>
+
+  {% partial "_seo" %}
+</head>
+<body class="min-h-screen flex flex-col bg-warm-50 font-sans font-light text-ink">
+
+  <header class="bg-slate_d-600 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 py-5 flex items-center justify-between" style="height:60px">
+      <a href="/" class="font-serif text-2xl font-light tracking-tight text-white">
+        Bangkok <span class="text-copper-400">/</span> <span class="text-copper-400 font-light">Junk</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-10" aria-label="Main navigation">
+        <div class="relative group">
+          <button class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-copper-400 transition-colors duration-300 flex items-center gap-1 cursor-pointer">
+            Services
+            <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-56 bg-slate_d-600 border border-white/15 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <a href="/furniture-removal" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">Furniture Removal</a>
+            <a href="/appliance-removal" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">Appliance Removal</a>
+            <a href="/condo-clearout" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">Condo Clearout</a>
+            <a href="/office-clearout" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">Office Clearout</a>
+            <div class="border-t border-white/15"></div>
+            <a href="/mattress-removal" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">Mattress Removal</a>
+            <a href="/ac-removal" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">AC Removal</a>
+            <a href="/move-out-cleanout" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">Move-Out Cleanout</a>
+            <a href="/rubbish-removal" class="tr block px-5 py-3 text-xs font-medium uppercase tracking-[0.15em] text-neutral-300 hover:text-copper-400 hover:bg-white/5 transition-colors">Rubbish Removal</a>
+          </div>
+        </div>
+        <a href="/about" class="tr text-xs font-medium uppercase tracking-[0.2em] text-neutral-300 hover:text-copper-400 transition-colors duration-300">About</a>
+        <a href="/go" class="tr text-xs font-medium uppercase tracking-[0.2em] bg-copper-400 text-slate_d-600 px-8 py-3 rounded-none hover:bg-copper-300 transition-colors duration-300">Book Now</a>
+        {% if locale == "th" %}
+        <a href="{{accept.en}}" title="English" notr="true" class="inline-flex items-center justify-center w-9 h-9 rounded-full hover:bg-white/10 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="24" height="12"><clipPath id="s"><rect width="60" height="30" rx="3"/></clipPath><g clip-path="url(#s)"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" clip-path="url(#s)"/><path d="M30,0 V30 M0,15 H60" stroke="#fff" stroke-width="10"/><path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"/></g></svg>
+        </a>
+        {% else %}
+        <a href="{{accept.th}}" title="ไทย" notr="true" class="inline-flex items-center justify-center w-9 h-9 rounded-full hover:bg-white/10 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="24" height="16"><rect width="900" height="600" fill="#A51931"/><rect y="100" width="900" height="400" fill="#F4F5F8"/><rect y="200" width="900" height="200" fill="#2D2A4A"/></svg>
+        </a>
+        {% endif %}
+      </nav>
+
+      <div class="flex md:hidden items-center gap-3">
+        <a href="/go" class="tr text-xs font-medium uppercase tracking-[0.15em] bg-copper-400 text-slate_d-600 px-4 py-2 hover:bg-copper-300 transition-colors duration-300">Book</a>
+        <button class="p-2 text-white" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="md:hidden border-t border-white/15" aria-label="Mobile navigation">
+      <div class="px-6 py-4 space-y-4">
+        <div>
+          <button onclick="var s=document.getElementById('mobile-services');s.classList.toggle('open');this.querySelector('.svc-icon').textContent=s.classList.contains('open')?'−':'+';" class="tr flex items-center justify-between w-full text-sm text-neutral-300 hover:text-copper-400 transition-colors cursor-pointer">
+            Services
+            <span class="svc-icon text-copper-400 text-lg leading-none">+</span>
+          </button>
+          <div id="mobile-services" class="faq-answer">
+            <div class="pt-3 pl-4 space-y-3">
+              <a href="/furniture-removal" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">Furniture Removal</a>
+              <a href="/appliance-removal" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">Appliance Removal</a>
+              <a href="/condo-clearout" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">Condo Clearout</a>
+              <a href="/office-clearout" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">Office Clearout</a>
+              <a href="/mattress-removal" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">Mattress Removal</a>
+              <a href="/ac-removal" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">AC Removal</a>
+              <a href="/move-out-cleanout" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">Move-Out Cleanout</a>
+              <a href="/rubbish-removal" class="tr block text-sm text-neutral-400 hover:text-copper-400 transition-colors">Rubbish Removal</a>
+            </div>
+          </div>
+        </div>
+        <a href="/about" class="tr block text-sm text-neutral-300 hover:text-copper-400 transition-colors">About</a>
+        <div class="pt-2 border-t border-white/15 flex flex-col gap-3">
+          <a href="https://line.me/R/ti/p/@khunclean" class="inline-flex items-center gap-2 text-sm text-white bg-[#06C755] px-4 py-2.5 rounded-none">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.271.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            <span class="tr">LINE @khunclean</span>
+          </a>
+          <a href="tel:+66827973702" class="text-sm text-neutral-300 hover:text-copper-400 transition-colors">082-797-3702</a>
+        </div>
+        <div class="pt-2">
+          {% if locale == "th" %}
+          <a href="{{accept.en}}" notr="true" class="text-sm text-neutral-400 hover:text-white transition-colors">English</a>
+          {% else %}
+          <a href="{{accept.th}}" notr="true" class="text-sm text-neutral-400 hover:text-white transition-colors">ไทย</a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow">
+    {{body}}
+  </main>
+
+  <footer class="bg-slate_d-600 pt-20 pb-12" itemscope itemtype="https://schema.org/LocalBusiness">
+    <div class="max-w-6xl mx-auto px-6 md:px-12">
+      <div class="grid md:grid-cols-4 gap-12">
+
+        <div>
+          <h3 class="font-serif text-xl font-light text-copper-400 mb-6" itemprop="name">Bangkok Junk</h3>
+          <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <p class="text-neutral-400 text-sm leading-relaxed">
+              <span class="tr" itemprop="addressLocality">Bangkok</span>,
+              <span itemprop="addressCountry">Thailand</span>
+            </p>
+          </div>
+          <p class="mt-4">
+            <a href="tel:+66827973702" itemprop="telephone" class="text-neutral-400 text-sm hover:text-copper-400 transition-colors duration-300">082-797-3702</a>
+          </p>
+          <p class="mt-1">
+            <a href="mailto:{{site.email}}" itemprop="email" class="text-neutral-400 text-sm hover:text-copper-400 transition-colors duration-300">{{site.email}}</a>
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="https://line.me/R/ti/p/@khunclean" class="text-neutral-400 hover:text-[#06C755] transition-colors text-sm">LINE</a>
+            <span class="text-neutral-600">|</span>
+            <a href="https://wa.me/66827973702" class="text-neutral-400 hover:text-[#25D366] transition-colors text-sm">WhatsApp</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="tr text-xs font-medium uppercase tracking-[0.2em] text-copper-400 mb-6">Services</h3>
+          <nav aria-label="Services navigation">
+            <ul class="space-y-3 text-neutral-400 text-sm">
+              <li><a href="/furniture-removal" class="tr hover:text-copper-400 transition-colors duration-300">Furniture Removal</a></li>
+              <li><a href="/appliance-removal" class="tr hover:text-copper-400 transition-colors duration-300">Appliance Removal</a></li>
+              <li><a href="/condo-clearout" class="tr hover:text-copper-400 transition-colors duration-300">Condo Clearout</a></li>
+              <li><a href="/office-clearout" class="tr hover:text-copper-400 transition-colors duration-300">Office Clearout</a></li>
+              <li><a href="/mattress-removal" class="tr hover:text-copper-400 transition-colors duration-300">Mattress Removal</a></li>
+              <li><a href="/ac-removal" class="tr hover:text-copper-400 transition-colors duration-300">AC Removal</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <h3 class="tr text-xs font-medium uppercase tracking-[0.2em] text-copper-400 mb-6">Service Areas</h3>
+          <nav aria-label="Areas navigation">
+            <ul class="space-y-3 text-neutral-400 text-sm">
+              <li><a href="/sukhumvit" class="tr hover:text-copper-400 transition-colors duration-300">Sukhumvit</a></li>
+              <li><a href="/thonglor" class="tr hover:text-copper-400 transition-colors duration-300">Thonglor</a></li>
+              <li><a href="/silom" class="tr hover:text-copper-400 transition-colors duration-300">Silom</a></li>
+              <li><a href="/sathorn" class="tr hover:text-copper-400 transition-colors duration-300">Sathorn</a></li>
+              <li><a href="/ekkamai" class="tr hover:text-copper-400 transition-colors duration-300">Ekkamai</a></li>
+              <li><a href="/asok" class="tr hover:text-copper-400 transition-colors duration-300">Asok</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <h3 class="tr text-xs font-medium uppercase tracking-[0.2em] text-copper-400 mb-6">Quick Links</h3>
+          <nav aria-label="Footer navigation">
+            <ul class="space-y-3 text-neutral-400 text-sm">
+              <li><a href="/about" class="tr hover:text-copper-400 transition-colors duration-300">About</a></li>
+              <li><a href="/reviews" class="tr hover:text-copper-400 transition-colors duration-300">Reviews</a></li>
+              <li><a href="/blog" class="tr hover:text-copper-400 transition-colors duration-300">Blog</a></li>
+              <li><a href="/go" class="tr hover:text-copper-400 transition-colors duration-300">Get a Quote</a></li>
+              <li><a href="/contact" class="tr hover:text-copper-400 transition-colors duration-300">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+      <div class="border-t border-white/15 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-neutral-500 text-xs tracking-wide">&copy; {{year}} {{site.name}}. All rights reserved.</p>
+        <p class="tr text-neutral-500 text-xs tracking-wide mt-2 md:mt-0">Junk Removal in Bangkok, Thailand</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var faqBtns = document.querySelectorAll('.faq-toggle');
+      faqBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var answer = this.nextElementSibling;
+          var icon = this.querySelector('.faq-icon');
+          answer.classList.toggle('open');
+          if (icon) icon.textContent = answer.classList.contains('open') ? '-' : '+';
+        });
+      });
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "type": "booking",
+    "title": "Booking Request",
+    "customer": {
+      "name": "James Mitchell",
+      "email": "james@example.com",
+      "phone": "091-234-5678"
+    },
+    "notes": "Need to remove old sofa and wardrobe from 12th floor condo in Sukhumvit",
+    "location": "Sukhumvit Soi 24",
+    "data": {
+      "items": ["furniture"]
+    },
+    "created_at": "2026-02-20T14:30:00Z"
+  },
+  {
+    "id": 2,
+    "type": "booking",
+    "title": "Booking Request",
+    "customer": {
+      "name": "Sarah Chen",
+      "email": "sarah@example.com",
+      "phone": "089-876-5432"
+    },
+    "notes": "Full condo clearout - leaving Thailand next month. 2 bedroom unit.",
+    "location": "Thonglor Soi 13",
+    "data": {
+      "items": ["condo-clearout"]
+    },
+    "created_at": "2026-02-18T09:15:00Z"
+  },
+  {
+    "id": 3,
+    "type": "contact",
+    "title": "Contact Form",
+    "customer": {
+      "name": "Michael Torres",
+      "email": "mike@example.com",
+      "phone": "086-111-2222"
+    },
+    "notes": "How much for removing 3 old AC units from our office?",
+    "created_at": "2026-02-15T11:00:00Z"
+  }
+]

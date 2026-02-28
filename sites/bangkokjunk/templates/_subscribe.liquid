@@ -1,0 +1,11 @@
+<div class="bg-warm-100 py-12 px-6">
+  <div class="max-w-xl mx-auto text-center">
+    <h3 class="tr font-serif font-light text-2xl tracking-tight text-ink">Stay Updated</h3>
+    <p class="tr mt-3 text-sm text-ink-soft">Get tips on decluttering, moving, and keeping your space clear.</p>
+    <form action="/api/subscribe" method="post" class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+      <input type="hidden" name="return_url" value="/?subscribed=1">
+      <input type="email" name="email" required placeholder="Your email" class="px-4 py-3 border border-black/15 bg-white text-ink text-sm focus:outline-none focus:border-copper-400 transition-colors flex-1 max-w-xs">
+      <button type="submit" class="tr inline-block bg-copper-400 text-white text-xs font-medium uppercase tracking-[0.2em] px-8 py-3 rounded-none hover:bg-copper-300 transition-colors duration-300 cursor-pointer">Subscribe</button>
+    </form>
+  </div>
+</div>
